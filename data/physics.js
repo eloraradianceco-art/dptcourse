@@ -3,15 +3,24 @@
   track: "prereq",
   order: 5,
   code: "PRE 121",
-  title: "Physics for Health Sciences",
+  title: "Physics I",
   credits: 4,
-  desc: "Algebra-based physics applied to the body: forces, torque, levers, energy, fluids, electricity, and sound. PTs use these principles every day to reason about joint loading, exercise resistance, aquatic therapy, and electrophysical agents.",
+  desc: "Algebra-based mechanics applied to the body: vectors, Newton's laws, torque and levers, work-energy-power-momentum, fluids, and the stress-strain behavior of tissue. PTs use these principles every day to reason about joint loading, exercise resistance, aquatic therapy, and tissue response to stretch and load. First semester of the physics sequence; electricity, waves, optics, heat, and imaging follow in Physics II.",
   objectives: [
     "Resolve forces into components and apply Newton's three laws to human movement",
     "Calculate torque and solve static equilibrium problems for joints modeled as levers",
     "Compute work, power, kinetic and potential energy, momentum, and impulse in exercise scenarios",
     "Apply pressure, Pascal's principle, and buoyancy to edema management and aquatic therapy",
-    "Use Ohm's law, current types, and wave properties to explain electrical stimulation and ultrasound"
+    "Calculate stress, strain, and stiffness and interpret the stress-strain curve of tendon, ligament, and bone",
+    "Explain viscoelastic behaviors (creep, stress relaxation, hysteresis) and apply them to stretching and loading decisions",
+    "Use mechanical reasoning to modify exercise difficulty and joint load without changing external weight"
+  ],
+  references: [
+    "Giancoli DC. Physics: Principles with Applications. Pearson.",
+    "Serway RA, Vuille C. College Physics. Cengage.",
+    "Neumann DA. Kinesiology of the Musculoskeletal System: Foundations for Rehabilitation. Elsevier.",
+    "Levangie PK, Norkin CC, Lewek MD. Joint Structure and Function: A Comprehensive Analysis. F.A. Davis.",
+    "Nordin M, Frankel VH. Basic Biomechanics of the Musculoskeletal System. Wolters Kluwer."
   ],
   units: [
     {
