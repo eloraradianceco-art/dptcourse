@@ -1,1179 +1,324 @@
 (window.SUBJECTS = window.SUBJECTS || []).push({
- "id": "psychology",
- "track": "prereq",
- "order": 6,
- "code": "PRE 131",
- "title": "Psychology & Lifespan Development",
- "credits": 3,
- "desc": "Core psychology for rehab: how people learn movement, what drives behavior change, how humans develop across the lifespan, and how thoughts and emotions shape pain. PTs need this to teach motor skills, improve adherence, treat across all ages, and recognize psychosocial barriers to recovery.",
- "objectives": [
-  "Distinguish major research designs in psychology and interpret their strengths and limits",
-  "Apply classical and operant conditioning, stages of motor learning, practice schedules, and feedback to exercise instruction",
-  "Use the transtheoretical model, self-efficacy, and motivational interviewing to support behavior change",
-  "Describe key lifespan development theories (Piaget, Erikson) and major gross motor milestones",
-  "Explain the biopsychosocial model of pain and identify fear-avoidance, catastrophizing, and yellow flags",
-  "Recognize when psychosocial findings call for referral to a mental health professional and explain pain in plain language"
- ],
- "references": [
-  "Myers DG, DeWall CN. Psychology. Worth Publishers.",
-  "Santrock JW. Life-Span Development. McGraw Hill.",
-  "Schmidt RA, Lee TD, Winstein CJ, Wulf G, Zelaznik HN. Motor Control and Learning: A Behavioral Emphasis. Human Kinetics.",
-  "Miller WR, Rollnick S. Motivational Interviewing: Helping People Change and Grow. Guilford Press.",
-  "Linton SJ. Understanding Pain for Better Clinical Practice: A Psychological Perspective. Elsevier."
- ],
- "units": [
-  {
-   "t": "Foundations & Research Methods",
-   "sub": "Perspectives in psychology, descriptive vs correlational vs experimental designs, variables, validity",
-   "lesson": [
-    "Psychology is the scientific study of behavior and mental processes. For a physical therapist it is not a side subject. Every exercise you prescribe is a behavior you hope the patient repeats, every cue you give is an attempt to shape learning, and every pain report is filtered through beliefs, emotions, and social context. The field grew out of several perspectives: <b>biological</b> (brain, hormones, genes), <b>behavioral</b> (observable responses shaped by the environment), <b>cognitive</b> (thinking, memory, expectation), <b>psychodynamic</b> (unconscious conflict), <b>humanistic</b> (Maslow and Rogers, growth and self-actualization), and <b>sociocultural</b> (family, culture, community). Modern psychology treats these as complementary lenses, which is the same integrative logic behind the biopsychosocial model you will use in the clinic.",
-    "Research designs differ in what they are allowed to claim. <b>Descriptive</b> research, including case studies, naturalistic observation, and surveys, tells you what happens and how often. A case study of one patient with an unusual recovery can spark a hypothesis but cannot prove anything about other patients. Surveys depend on question wording and on who answers: a random sample of a population lets you generalize to that population, while a convenience sample of your own clients describes only people like them.",
-    "<b>Correlational</b> research measures how two variables move together, summarized by the correlation coefficient <i>r</i>, which runs from -1 to +1. The sign gives direction and the absolute value gives strength, so r = -0.70 between fear of movement and daily step count is a stronger relationship than r = +0.30. Correlation cannot establish cause for two reasons. The <i>directionality problem</i>: does fear reduce walking, or does inactivity breed fear? The <i>third-variable problem</i>: depression could drive both fear and inactivity.",
-    "<b>Experiments</b> are built to answer cause-and-effect questions. The researcher manipulates the <b>independent variable</b>, measures the <b>dependent variable</b>, and uses <b>random assignment</b> so that confounding variables are spread evenly across groups. Each variable needs an <b>operational definition</b>; 'better balance' becomes 'seconds in single-leg stance with eyes closed.' Control groups, placebo conditions, and blinding protect against expectation effects. Participants may change because they guess the hypothesis (<i>demand characteristics</i>), because they know they are being watched (the <i>Hawthorne effect</i>), or because the researcher unconsciously treats groups differently (<i>experimenter bias</i>). Double-blinding hides group assignment from both participants and data collectors.",
-    "Measurement quality matters as much as design. <b>Reliability</b> is consistency: the same result on repeated testing (test-retest), between examiners (inter-rater), or within one examiner (intra-rater). <b>Validity</b> is accuracy: does the tool measure what it claims? A bathroom scale that always reads 2 kg heavy is reliable but not valid. A measure must be reasonably reliable to be valid, but reliability alone never guarantees validity.",
-    "<b>Worked example.</b> A clinic notices that desk workers who stretch report less neck stiffness. That observation is correlational; the stretchers may also be younger, more active, or less stressed. To test cause, recruit 60 desk workers and randomly assign 30 to a 10-minute daily mobility routine and 30 to a waitlist control. The independent variable is the routine (yes or no). The dependent variable, operationally defined, is a 0-10 stiffness rating at 4 weeks, collected by an assessor who does not know group assignment. Both groups receive the same number of check-in calls so attention alone cannot explain a difference. If the routine group improves more, a causal conclusion is reasonable for desk workers like these.",
-    "Ethics protect the people who make research possible. The Belmont Report's principles of <b>respect for persons</b>, <b>beneficence</b>, and <b>justice</b> translate into informed consent, the right to withdraw without penalty, confidentiality, minimal risk, and debriefing when any deception is used. Historical abuses such as the Tuskegee syphilis study are the reason <b>Institutional Review Boards</b> must approve human-subjects research before it begins. Collecting clinic outcomes for routine care is quality improvement; planning to publish them as generalizable knowledge makes it research that needs IRB review."
-   ],
-   "guide": [
-    "<b>Major perspectives</b>: biological, behavioral, cognitive, psychodynamic, humanistic (Maslow, Rogers), and sociocultural. Modern psychology integrates them.",
-    "<b>Descriptive research</b>: case studies, naturalistic observation, and surveys describe behavior but cannot establish cause.",
-    "<b>Correlational research</b>: measures how two variables relate (r from -1 to +1). <i>Correlation does not imply causation</i>; a third variable may explain both.",
-    "<b>Experiments</b>: the researcher manipulates the <b>independent variable</b> and measures the <b>dependent variable</b>. <b>Random assignment</b> to groups is what allows cause-and-effect conclusions.",
-    "<b>Controls and bias</b>: placebo groups, blinding (single and double), and control of confounding variables. The <b>Hawthorne effect</b> is behavior change caused simply by being observed.",
-    "<b>Reliability vs validity</b>: reliability is consistency of a measure; validity is whether it measures what it claims. A measure can be reliable without being valid, but cannot be valid without being reliable.",
-    "<b>Ethics</b>: informed consent, the right to withdraw, confidentiality, debriefing, and Institutional Review Board (IRB) approval for human-subjects research."
-   ],
-   "terms": [
-    [
-     "Independent variable",
-     "The factor a researcher manipulates or uses to form groups in order to see its effect."
-    ],
-    [
-     "Dependent variable",
-     "The outcome a researcher measures to see whether it changes with the independent variable."
-    ],
-    [
-     "Confounding variable",
-     "An uncontrolled factor related to both the independent and dependent variables that offers an alternative explanation for results."
-    ],
-    [
-     "Random assignment",
-     "Placing participants into groups by chance so that known and unknown confounds are balanced across groups."
-    ],
-    [
-     "Random sampling",
-     "Selecting participants so every member of the population has an equal chance of inclusion, which supports generalization."
-    ],
-    [
-     "Correlation coefficient (r)",
-     "A number from -1 to +1 describing the direction and strength of a linear relationship between two variables."
-    ],
-    [
-     "Operational definition",
-     "A precise statement of how a variable will be measured or manipulated in a particular study."
-    ],
-    [
-     "Placebo effect",
-     "Improvement caused by a person's expectations rather than by the active component of a treatment."
-    ],
-    [
-     "Hawthorne effect",
-     "A change in behavior that occurs because people know they are being observed."
-    ],
-    [
-     "Reliability",
-     "The consistency of a measurement across repeated trials, examiners, or time."
-    ],
-    [
-     "Validity",
-     "The degree to which a tool or study measures or demonstrates what it claims to."
-    ],
-    [
-     "Institutional Review Board (IRB)",
-     "A committee that reviews human-subjects research to protect participants' rights and safety."
-    ]
-   ],
-   "assignment": {
-    "title": "Design a mini-study",
-    "task": "Write a one-page proposal to test whether a 10-minute daily mobility routine improves a self-reported stiffness score in desk workers. Name the independent and dependent variables, describe random assignment and a control condition, identify two possible confounds, and explain how you would protect participants ethically.",
-    "deliverable": "One-page study proposal."
-   },
-   "gen": [],
-   "qs": [
-    [
-     "A researcher randomly assigns clients to either a balance program or a stretching program and then compares fall rates. The type of program is the:",
-     [
-      "Independent variable",
-      "Dependent variable",
-      "Confounding variable",
-      "Control variable"
-     ],
-     "The independent variable is what the researcher manipulates. Fall rate, the outcome measured, is the dependent variable."
-    ],
-    [
-     "Which feature of a study most allows a researcher to conclude cause and effect?",
-     [
-      "Random assignment of participants to groups",
-      "A large survey sample",
-      "A strong correlation coefficient",
-      "Detailed case observations"
-     ],
-     "Random assignment balances unknown confounds between groups, which is what supports causal inference. Correlations and surveys cannot establish cause."
-    ],
-    [
-     "A study finds that people who own more running shoes report less back pain. What is the most appropriate conclusion?",
-     [
-      "The two variables are related, but this does not show that shoes reduce back pain",
-      "Buying running shoes prevents back pain",
-      "Back pain causes people to buy fewer shoes",
-      "There is no relationship between the variables"
-     ],
-     "Correlation does not imply causation. A third variable, such as overall activity level, could explain both."
-    ],
-    [
-     "Which correlation coefficient represents the strongest relationship?",
-     [
-      "-0.85",
-      "+0.40",
-      "+0.10",
-      "0.00"
-     ],
-     "Strength is the absolute value of r. -0.85 is a strong negative relationship; the sign shows only direction."
-    ],
-    [
-     "Workers increase their productivity simply because they know researchers are watching them. This is called the:",
-     [
-      "Hawthorne effect",
-      "Placebo effect",
-      "Halo effect",
-      "Pygmalion effect"
-     ],
-     "The Hawthorne effect is a change in behavior due to awareness of being observed, which is a threat to validity in clinical studies."
-    ],
-    [
-     "A goniometer gives the same reading every time but is consistently 10° off from the true joint angle. This tool is:",
-     [
-      "Reliable but not valid",
-      "Valid but not reliable",
-      "Both reliable and valid",
-      "Neither reliable nor valid"
-     ],
-     "Consistency equals reliability; accuracy equals validity. A consistent but systematically wrong measure is reliable but not valid."
-    ],
-    [
-     "In a double-blind study:",
-     [
-      "Neither the participants nor the researchers collecting data know who is in which group",
-      "Only the participants are unaware of their group",
-      "Participants are assigned to groups twice",
-      "Two independent researchers analyze the data"
-     ],
-     "Double-blinding prevents both participant expectations and researcher bias from influencing results."
-    ],
-    [
-     "A clinic wants to publish outcomes collected from its patients as research. What is required before data collection begins?",
-     [
-      "Approval from an Institutional Review Board and informed consent",
-      "Permission from the clinic owner only",
-      "Approval from the patients' insurance companies",
-      "Nothing, because clinical data belongs to the clinic"
-     ],
-     "Human-subjects research requires IRB review and informed consent to protect participants."
-    ],
-    [
-     "A detailed report of one patient's unusual recovery after a rare nerve injury is best described as:",
-     [
-      "A case study",
-      "A randomized controlled trial",
-      "A correlational study",
-      "A cohort experiment"
-     ],
-     "A case study describes one individual in depth. It generates hypotheses but cannot establish causation or generalize widely."
-    ],
-    [
-     "Which psychological perspective emphasizes personal growth, free will, and self-actualization?",
-     [
-      "Humanistic",
-      "Behavioral",
-      "Psychodynamic",
-      "Biological"
-     ],
-     "Humanistic psychology (Maslow, Rogers) focuses on growth and self-actualization. Behaviorism focuses on observable learned behavior."
-    ],
-    [
-     "A researcher defines 'improved balance' as an increase of at least 5 seconds in single-leg stance time. This is an example of:",
-     [
-      "An operational definition",
-      "A research hypothesis",
-      "A confounding variable",
-      "A psychological theory"
-     ],
-     "An operational definition states exactly how a variable is measured. A hypothesis is a testable prediction, not a measurement rule."
-    ],
-    [
-     "A PT surveys her own clients and finds that those who attend yoga report less anxiety. She wants to know whether yoga reduces anxiety in adults generally. What is the MOST important limitation of her data?",
-     [
-      "The design is correlational and the sample is not representative",
-      "The anxiety ratings should have been collected by a licensed psychologist",
-      "Yoga cannot be studied with any scientific method",
-      "The sample is too large to show meaningful differences"
-     ],
-     "A survey of her own clients cannot show cause (no manipulation or random assignment) and does not generalize (convenience sample). Who collects the ratings is a smaller issue."
-    ],
-    [
-     "Participants change their behavior because they guess what the researcher hopes to find. This threat to validity is called:",
-     [
-      "Demand characteristics",
-      "Regression to the mean",
-      "Random assignment",
-      "Sampling error"
-     ],
-     "Demand characteristics are cues that let participants infer the hypothesis and act accordingly. Blinding participants to the hypothesis reduces them."
-    ],
-    [
-     "Which ethical requirement ensures participants are told they may leave a study at any time without penalty?",
-     [
-      "Right to withdraw as part of informed consent",
-      "Beneficence, achieved through a full debriefing afterward",
-      "Justice in how participants are selected",
-      "Confidentiality of stored research data"
-     ],
-     "Informed consent includes the right to withdraw freely. Debriefing, fair selection, and confidentiality are separate protections."
-    ],
-    [
-     "A therapist tests a new balance program and knows which patients received it while she scores their balance. Which change would BEST reduce bias in the outcome scores?",
-     [
-      "Have an assessor who is unaware of group assignment score balance",
-      "Let the therapist score only the patients she knows best",
-      "Increase the number of balance tests performed each visit",
-      "Ask patients to rate their own balance after each session"
-     ],
-     "Blinding the outcome assessor prevents knowledge of group assignment from influencing scoring. More tests or self-ratings do not remove the expectation bias."
-    ]
-   ]
-  },
-  {
-   "t": "Learning & Motor Learning Theory",
-   "sub": "Classical and operant conditioning, Fitts and Posner stages, practice schedules, feedback",
-   "lesson": [
-    "<b>Learning</b> is a relatively permanent change in behavior that results from experience. Two classic forms of associative learning explain a surprising amount of what happens in the clinic. In <b>classical conditioning</b> (Pavlov), a neutral stimulus is repeatedly paired with an unconditioned stimulus that naturally produces a response. Eventually the neutral stimulus alone triggers a similar, conditioned response. A patient who had painful sessions may tense when they merely see the treatment table. The response can <i>generalize</i> to similar stimuli (any clinic room) and can be weakened by <i>extinction</i>: repeated exposure to the table without pain gradually reduces the tensing, although it may briefly return later (spontaneous recovery).",
-    "<b>Operant conditioning</b> (Skinner) explains behavior by its consequences. Reinforcement increases a behavior; punishment decreases it. 'Positive' means something is added and 'negative' means something is removed. Praise or a sticker chart after a child completes exercises is positive reinforcement. Avoiding a painful movement and feeling relief is <i>negative reinforcement</i>, which is exactly how avoidance behavior grows. <b>Shaping</b> reinforces successive approximations of a goal, such as praising sit-to-stand from a high surface and lowering the seat over sessions. Continuous reinforcement speeds acquisition; intermittent reinforcement, especially a variable-ratio schedule, makes behavior more resistant to extinction. Bandura added <b>observational learning</b>: people learn by watching a model, which is why a clear demonstration often beats a long explanation.",
-    "<b>Motor learning</b> is a set of processes, tied to practice or experience, that produce relatively permanent changes in the capability for skilled movement. The key distinction is between <b>performance</b> and <b>learning</b>. Performance is what you see during practice, and it is inflated or depressed by fatigue, motivation, and your cues. Learning is inferred later with a <b>retention test</b> (the same task after a delay, without coaching) or a <b>transfer test</b> (a new version or context of the task). A patient who looks perfect at the end of a heavily cued session may not have learned much.",
-    "Fitts and Posner described three stages. In the <b>cognitive</b> stage the learner is figuring out what to do: errors are frequent and attention demands are high, so use demonstrations, short instructions, a stable environment, and more feedback. In the <b>associative</b> stage the learner refines how to do it: errors drop, so start fading feedback and adding variability. In the <b>autonomous</b> stage the skill is largely automatic and the learner can talk, scan, or carry objects at the same time, so dual tasks and real-world environments become the training focus.",
-    "Practice structure changes what sticks. <b>Blocked</b> practice (all repetitions of one task, then the next) produces good in-session performance. <b>Random</b> practice (tasks interleaved) creates <b>contextual interference</b>, which makes practice feel harder but improves retention. <b>Variable</b> practice (changing parameters such as step height) improves transfer. Continuous skills such as gait are usually practiced whole, while serial skills with separable steps, such as a transfer, can be broken into parts and then recombined. These principles are introduced here; the theory behind them is developed in the Motor Control and Motor Learning course.",
-    "Feedback is powerful and easy to overuse. <b>Intrinsic</b> feedback comes from the learner's own senses; <b>extrinsic</b> (augmented) feedback comes from you or a device. <b>Knowledge of results</b> describes the outcome ('you stood up without using your hands'), and <b>knowledge of performance</b> describes the movement ('your trunk came forward first'). Frequent, immediate feedback helps early, but constant feedback creates dependence, so fade it, give summary feedback after several trials, or give it only when errors fall outside a set bandwidth. Cues that direct attention to the movement's effect ('push the floor away') generally support learning better than cues focused on body parts ('squeeze your quads').",
-    "<b>Worked example.</b> A patient with an ankle fracture is learning non-weight-bearing crutch gait. In session 1 (cognitive stage), demonstrate the whole pattern, give one simple cue, and provide knowledge of performance after most trials on level ground. In session 2 (associative stage), give summary feedback after every three or four trials and add a doorway and a turn. In session 3, start with a retention test, walking 10 meters before any coaching, then practice level walking, a curb, and a ramp in random order. Specific praise for safe performance provides positive reinforcement throughout."
-   ],
-   "guide": [
-    "<b>Classical conditioning (Pavlov)</b>: a neutral stimulus paired with an unconditioned stimulus comes to produce a conditioned response. Example: a patient tenses at the sight of a treatment table after painful sessions.",
-    "<b>Operant conditioning (Skinner)</b>: behavior is shaped by consequences. <i>Positive</i> = add a stimulus; <i>negative</i> = remove a stimulus. <i>Reinforcement</i> increases behavior; <i>punishment</i> decreases it. Variable-ratio schedules are most resistant to extinction.",
-    "<b>Stages of motor learning (Fitts &amp; Posner)</b>: <i>cognitive</i> (what to do; many errors, high attention), <i>associative</i> (how to do it; refining, fewer errors), <i>autonomous</i> (automatic; can dual-task).",
-    "<b>Motor learning vs performance</b>: learning is a relatively permanent change measured by <b>retention</b> and <b>transfer</b> tests, not by performance during practice.",
-    "<b>Practice schedules</b>: <i>blocked</i> practice (same task repeated) improves performance during the session; <i>random</i> practice (tasks interleaved) creates contextual interference and improves retention. <i>Variable</i> practice improves transfer.",
-    "<b>Whole vs part practice</b>: continuous skills (such as gait) and fast discrete skills with tightly linked components are best practiced whole; longer serial skills with separable steps (such as a transfer) can be broken into parts.",
-    "<b>Feedback</b>: <i>intrinsic</i> (from the person's own senses) vs <i>extrinsic/augmented</i> (from the clinician). <i>Knowledge of results</i> (KR) is about the outcome; <i>knowledge of performance</i> (KP) is about the movement pattern.",
-    "<b>Feedback schedules</b>: frequent, immediate feedback helps early; reduce it as skill improves (faded or summary feedback) to prevent dependence and improve retention."
-   ],
-   "terms": [
-    [
-     "Classical conditioning",
-     "Learning in which a neutral stimulus, after pairing with an unconditioned stimulus, comes to trigger a conditioned response."
-    ],
-    [
-     "Extinction",
-     "The weakening of a learned response when the conditioned stimulus or behavior is no longer followed by the original stimulus or reinforcer."
-    ],
-    [
-     "Operant conditioning",
-     "Learning in which the likelihood of a behavior is changed by its consequences."
-    ],
-    [
-     "Negative reinforcement",
-     "Increasing a behavior by removing an unpleasant stimulus, such as avoiding a movement to escape pain."
-    ],
-    [
-     "Shaping",
-     "Reinforcing successive approximations of a target behavior until the full behavior is achieved."
-    ],
-    [
-     "Observational learning",
-     "Learning by watching a model perform a behavior and seeing its consequences."
-    ],
-    [
-     "Motor learning",
-     "Practice-related processes that produce relatively permanent changes in the capability for skilled movement."
-    ],
-    [
-     "Retention test",
-     "A test of a practiced skill after a delay and without augmented feedback, used to infer learning."
-    ],
-    [
-     "Transfer test",
-     "A test of a skill in a new context or variation, used to measure how well learning generalizes."
-    ],
-    [
-     "Contextual interference",
-     "The difficulty created by interleaving different tasks during practice, which lowers practice performance but improves retention."
-    ],
-    [
-     "Knowledge of results",
-     "Augmented feedback about the outcome of a movement relative to its goal."
-    ],
-    [
-     "Knowledge of performance",
-     "Augmented feedback about the movement pattern or quality that produced the outcome."
-    ]
-   ],
-   "assignment": {
-    "title": "Re-coach a lift with motor learning principles",
-    "task": "Pick a client who is learning a hip hinge or deadlift. Identify their current stage of motor learning, then write a 3-session plan describing your practice schedule (blocked vs random, whole vs part), feedback type (KR vs KP), and feedback frequency, and how each will change across sessions. Include a retention test you would use in session 3.",
-    "deliverable": "3-session coaching plan (one page) with a stated retention test."
-   },
-   "gen": [],
-   "qs": [
-    [
-     "A patient who had painful sessions now tenses up as soon as they see the treatment table. This is an example of:",
-     [
-      "Classical conditioning",
-      "Operant conditioning",
-      "Negative reinforcement",
-      "Observational learning"
-     ],
-     "A neutral stimulus (the table) has been paired with pain and now triggers a conditioned response (tensing)."
-    ],
-    [
-     "A client's back pain eases when they skip their walk, so they skip walking more often. Which principle explains the increase in skipping?",
-     [
-      "Negative reinforcement",
-      "Positive punishment",
-      "Positive reinforcement",
-      "Extinction"
-     ],
-     "Removing an unpleasant stimulus (pain) increases the behavior (skipping). Negative reinforcement increases behavior by taking something away."
-    ],
-    [
-     "A patient learning to use crutches needs constant verbal cues, makes frequent errors, and cannot talk while practicing. Which stage of motor learning are they in?",
-     [
-      "Cognitive",
-      "Associative",
-      "Autonomous",
-      "Retention"
-     ],
-     "High attentional demand, many errors, and reliance on cues characterize the cognitive stage."
-    ],
-    [
-     "A patient can now walk with a cane while carrying on a conversation and scanning the environment. This indicates the:",
-     [
-      "Autonomous stage",
-      "Cognitive stage",
-      "Associative stage",
-      "Acquisition stage"
-     ],
-     "Performing a skill under dual-task conditions with little attention indicates the autonomous stage."
-    ],
-    [
-     "Your goal is long-term retention of three different transfer types. Which practice schedule is best?",
-     [
-      "Random practice, mixing the three transfers",
-      "Blocked practice, finishing all reps of one before the next",
-      "Practicing only the easiest transfer",
-      "Mental practice only"
-     ],
-     "Random practice creates contextual interference, which lowers performance during practice but improves retention and transfer."
-    ],
-    [
-     "During the session, a patient practicing in a blocked schedule performs better than one practicing in a random schedule. What should you expect at a 48-hour retention test?",
-     [
-      "The random-practice patient will likely retain the skill better",
-      "The blocked-practice patient will retain the skill better",
-      "Both will retain equally because their practice was equal",
-      "Neither will retain anything without feedback"
-     ],
-     "Blocked practice boosts in-session performance, but random practice produces better retention. Performance during practice is not the same as learning."
-    ],
-    [
-     "You tell a client, 'Your hips moved before your chest that time; keep your spine neutral.' What type of feedback is this?",
-     [
-      "Knowledge of performance",
-      "Knowledge of results",
-      "Intrinsic feedback",
-      "Concurrent bandwidth feedback"
-     ],
-     "Knowledge of performance describes the movement pattern itself. Knowledge of results describes the outcome, such as 'you jumped 30 cm.'"
-    ],
-    [
-     "A patient in the associative stage relies on your cues for every repetition. What is the best change to your feedback?",
-     [
-      "Fade feedback frequency or give summary feedback after several reps",
-      "Increase feedback to every repetition",
-      "Stop all feedback immediately and permanently",
-      "Switch to only giving feedback during the movement"
-     ],
-     "Reducing feedback frequency as skill improves prevents dependence and encourages the learner to use intrinsic feedback, which improves retention."
-    ],
-    [
-     "Which skill is generally best practiced as a whole rather than broken into parts?",
-     [
-      "Walking (a continuous skill)",
-      "A sit-to-stand-pivot transfer",
-      "A wheelchair-to-bed transfer setup sequence",
-      "A multi-step home exercise routine"
-     ],
-     "Continuous skills with interdependent components like gait are best practiced whole. Serial tasks with separable steps can be practiced in parts."
-    ],
-    [
-     "Motor learning is best measured by:",
-     [
-      "Retention and transfer tests after a delay",
-      "Performance on the last trial of practice",
-      "The number of repetitions completed",
-      "The patient's confidence rating during practice"
-     ],
-     "Learning is a relatively permanent change, so it is measured after a delay (retention) or in a new context (transfer)."
-    ],
-    [
-     "A child in therapy earns a sticker for each set of exercises completed and completes more sets over time. This is:",
-     [
-      "Positive reinforcement",
-      "Negative reinforcement",
-      "Positive punishment",
-      "Classical conditioning"
-     ],
-     "Adding a desirable stimulus (the sticker) increases the behavior. Negative reinforcement increases behavior by removing something unpleasant."
-    ],
-    [
-     "A patient can only stand from a 24-inch surface. You praise each successful stand while gradually lowering the seat over several sessions. Which operant technique is this?",
-     [
-      "Shaping through successive approximations",
-      "Extinction of an unwanted behavior pattern",
-      "Classical counterconditioning",
-      "Variable-ratio reinforcement"
-     ],
-     "Shaping reinforces closer and closer approximations of the goal (standing from a normal chair). Nothing is being extinguished here."
-    ],
-    [
-     "A patient who used to tense at the sight of the treatment table now stays relaxed after many pain-free sessions on it. This reflects:",
-     [
-      "Extinction of the conditioned response",
-      "Spontaneous recovery of the response",
-      "Generalization to similar stimuli",
-      "Positive punishment of tensing"
-     ],
-     "Repeated exposure to the conditioned stimulus (table) without the unconditioned stimulus (pain) weakens the conditioned response. Spontaneous recovery is the later return of an extinguished response."
-    ],
-    [
-     "While coaching a squat, which cue reflects an external focus of attention that tends to improve learning?",
-     [
-      "'Push the floor away from you as you stand.'",
-      "'Squeeze your quadriceps as hard as you can.'",
-      "'Keep your knees lined up over your toes.'",
-      "'Tighten your glutes at the very top.'"
-     ],
-     "An external focus directs attention to the movement's effect on the environment (the floor). The other cues direct attention to body parts, an internal focus."
-    ],
-    [
-     "A patient performed a new home exercise perfectly at the end of yesterday's session with constant cues, but today cannot perform it correctly without cues. What does this MOST likely indicate?",
-     [
-      "Performance improved during practice, but learning was limited",
-      "The patient has already reached the autonomous stage of learning",
-      "Blocked practice always produces superior long-term retention",
-      "The exercise was learned and then forgotten because of fatigue"
-     ],
-     "Cued in-session performance is not the same as learning. Poor performance on a delayed, uncued attempt (a retention test) shows the skill was not yet retained."
-    ]
-   ]
-  },
-  {
-   "t": "Motivation, Behavior Change & Health Psychology",
-   "sub": "Transtheoretical model, self-efficacy, health belief model, motivational interviewing, adherence",
-   "lesson": [
-    "Knowing what a patient should do is rarely the hard part of rehabilitation. Getting them to do it is. A large share of patients do not complete home programs as prescribed, and adherence predicts outcomes. Health psychology gives you models for understanding why people do or do not change, and tools for helping them. None of these models is a script; each is a lens for choosing what to say next.",
-    "The <b>transtheoretical model</b> (Prochaska and DiClemente) describes readiness in stages. In <b>precontemplation</b> the person is not considering change within about 6 months. In <b>contemplation</b> they are considering it but are ambivalent; the pros and cons (decisional balance) feel roughly even. In <b>preparation</b> they intend to act within about a month and may have taken small steps. <b>Action</b> covers roughly the first 6 months of changed behavior, and <b>maintenance</b> follows. Relapse is common and is treated as recycling through the stages, not failure. The practical rule is to match the intervention to the stage: awareness and rapport for precontemplators, exploring ambivalence for contemplators, concrete planning for preparation, and relapse prevention for action and maintenance.",
-    "<b>Self-efficacy</b> (Bandura) is confidence in one's ability to perform a <i>specific</i> task, such as walking to the mailbox without a cane. It predicts effort, persistence, and adherence. Its four sources, from strongest to weakest, are <b>mastery experiences</b> (succeeding at the task), <b>vicarious experience</b> (seeing a similar person succeed), <b>verbal persuasion</b>, and <b>physiological and emotional states</b> (how one interprets breathlessness or a racing heart). Clinically, this means designing early sessions so the patient succeeds at graded tasks, rather than relying on pep talks.",
-    "Other models fill in the picture. The <b>health belief model</b> says action depends on perceived susceptibility, perceived severity, perceived benefits, perceived barriers, cues to action, and self-efficacy; a patient who doubts that exercise will help has low perceived benefit. <b>Self-determination theory</b> holds that motivation is most durable when three needs are met: <b>autonomy</b> (choice), <b>competence</b> (feeling capable), and <b>relatedness</b> (connection). Intrinsic motivation, doing something because it is enjoyable or matches one's values, usually outlasts motivation driven only by external rewards or pressure.",
-    "<b>Motivational interviewing</b> (MI) is a collaborative, person-centered conversation style for strengthening a person's own motivation. Its spirit is partnership, acceptance, compassion, and evocation: drawing reasons out rather than putting them in. The core skills are <b>OARS</b>: Open questions, Affirmations, Reflective listening, and Summaries. You listen for <b>change talk</b> (desire, ability, reasons, need, commitment) and reflect it back, while responding to <b>sustain talk</b> without arguing. The <b>righting reflex</b>, the urge to persuade and fix, usually makes the patient defend the status quo. Importance and confidence rulers are quick tools: 'On a scale of 0 to 10, how important is this to you? Why a 6 and not a 2?' The answer to the second question is change talk.",
-    "<b>Worked example.</b> A 58-year-old with knee osteoarthritis says, 'I know the exercises would help, but I never get to them.' That is contemplation. You reflect: 'You believe they would help, and finding the time has been the hard part.' Importance is 8/10 and confidence is 3/10, so the gap is confidence, not knowledge. You affirm the effort to keep coming in, then cut the program to two exercises the patient performs successfully in clinic, which is a mastery experience. Together you set a goal: 'Do both exercises right after brushing my teeth each morning, 5 days this week, and check them off on the sheet.' Linking a new behavior to an existing routine and self-monitoring both support adherence.",
-    "Practical adherence strategies follow from these models: keep programs short and specific, use written, picture, or video instructions, set SMART goals together, ask about barriers such as time, pain, cost, and transportation, build in early wins, schedule an early follow-up, and treat a lapse as a problem to solve rather than a character flaw."
-   ],
-   "guide": [
-    "<b>Transtheoretical model (stages of change)</b>: precontemplation (not considering change in the next 6 months) → contemplation (considering, ambivalent) → preparation (planning within about a month) → action (changed behavior for less than 6 months) → maintenance (6+ months). Relapse can occur at any stage.",
-    "<b>Match the intervention to the stage</b>: raise awareness in precontemplation, resolve ambivalence in contemplation, build a concrete plan in preparation, and prevent relapse in action and maintenance.",
-    "<b>Self-efficacy (Bandura)</b>: confidence in one's ability to perform a specific task. The strongest source is <b>mastery experiences</b> (succeeding), followed by vicarious experience, verbal persuasion, and physiological/emotional states.",
-    "<b>Health belief model</b>: action depends on perceived susceptibility, perceived severity, perceived benefits, perceived barriers, cues to action, and self-efficacy.",
-    "<b>Intrinsic vs extrinsic motivation</b>: intrinsic motivation (enjoyment, values) tends to sustain behavior better than external rewards alone. Self-determination theory emphasizes autonomy, competence, and relatedness.",
-    "<b>Motivational interviewing (MI)</b>: a collaborative, client-centered style that elicits the client's own reasons for change. Core skills are <b>OARS</b>: Open questions, Affirmations, Reflective listening, Summaries.",
-    "<b>MI in practice</b>: listen for and reinforce <i>change talk</i>; avoid the 'righting reflex' (arguing for change), which increases resistance. Use importance and confidence rulers (0-10).",
-    "<b>Adherence strategies</b>: SMART goals set collaboratively, a simple home program, self-monitoring, and early wins that build self-efficacy."
-   ],
-   "terms": [
-    [
-     "Transtheoretical model",
-     "A stage model of behavior change running from precontemplation through contemplation, preparation, action, and maintenance."
-    ],
-    [
-     "Decisional balance",
-     "A person's weighing of the pros and cons of changing a behavior."
-    ],
-    [
-     "Self-efficacy",
-     "Confidence in one's ability to successfully perform a specific task or behavior."
-    ],
-    [
-     "Mastery experience",
-     "Personally succeeding at a task, the strongest source of self-efficacy."
-    ],
-    [
-     "Health belief model",
-     "A model predicting health behavior from perceived susceptibility, severity, benefits, barriers, cues to action, and self-efficacy."
-    ],
-    [
-     "Self-determination theory",
-     "A theory that durable motivation depends on satisfying needs for autonomy, competence, and relatedness."
-    ],
-    [
-     "Intrinsic motivation",
-     "Motivation that comes from enjoyment of an activity or its fit with a person's own values."
-    ],
-    [
-     "Motivational interviewing",
-     "A collaborative conversation style that strengthens a person's own motivation and commitment to change."
-    ],
-    [
-     "OARS",
-     "The core MI skills: Open questions, Affirmations, Reflective listening, and Summaries."
-    ],
-    [
-     "Change talk",
-     "Statements by the person expressing desire, ability, reasons, need, or commitment to change."
-    ],
-    [
-     "Righting reflex",
-     "The clinician's urge to persuade or fix, which tends to provoke resistance to change."
-    ],
-    [
-     "SMART goal",
-     "A goal that is specific, measurable, achievable, relevant, and time-bound."
-    ]
-   ],
-   "assignment": {
-    "title": "MI conversation script",
-    "task": "Write a short dialogue (about 12 exchanges) between you and a client who says they 'know they should do their home exercises but never get to it.' Identify the client's stage of change, label each of your responses with the OARS skill used, and highlight at least two examples of change talk you reinforced.",
-    "deliverable": "Annotated one-to-two page dialogue script."
-   },
-   "gen": [],
-   "qs": [
-    [
-     "A client says, 'I know I should start exercising, but I'm just not sure it's worth the hassle right now.' Which stage of change are they in?",
-     [
-      "Contemplation",
-      "Precontemplation",
-      "Preparation",
-      "Action"
-     ],
-     "They recognize the issue but are ambivalent and have no plan, which is classic contemplation."
-    ],
-    [
-     "A patient has been doing their home program consistently for 3 months. According to the transtheoretical model, they are in:",
-     [
-      "Action",
-      "Maintenance",
-      "Preparation",
-      "Contemplation"
-     ],
-     "Action covers about the first 6 months of changed behavior. Maintenance begins after 6 months."
-    ],
-    [
-     "A client in precontemplation insists their knee pain has nothing to do with their weight or activity. What is the most appropriate approach?",
-     [
-      "Raise awareness and explore their perspective without pressure",
-      "Give them a detailed 12-week exercise plan",
-      "Focus on relapse prevention strategies",
-      "Tell them firmly that they must change now"
-     ],
-     "Precontemplators are not considering change. Building awareness and rapport fits their stage; detailed plans and pressure tend to increase resistance."
-    ],
-    [
-     "According to Bandura, which is the most powerful source of self-efficacy?",
-     [
-      "Mastery experiences",
-      "Verbal persuasion",
-      "Vicarious experience",
-      "Physiological states"
-     ],
-     "Successfully performing the task yourself is the strongest builder of self-efficacy. This is why early, achievable wins matter in rehab."
-    ],
-    [
-     "An older adult afraid of stairs successfully climbs two steps in clinic with supervision. Why is this the best way to boost their confidence?",
-     [
-      "It provides a mastery experience, the strongest source of self-efficacy",
-      "It provides vicarious experience by watching others",
-      "It relies on verbal persuasion from the therapist",
-      "It reduces their perceived susceptibility to falling"
-     ],
-     "Personal success at a graded task (mastery) builds self-efficacy more than watching others or being encouraged verbally."
-    ],
-    [
-     "In motivational interviewing, what does OARS stand for?",
-     [
-      "Open questions, Affirmations, Reflective listening, Summaries",
-      "Observe, Assess, Recommend, Schedule",
-      "Objectives, Actions, Results, Strategies",
-      "Open questions, Advice, Reassurance, Solutions"
-     ],
-     "OARS are the core communication skills of MI. Unsolicited advice and reassurance are not part of OARS."
-    ],
-    [
-     "A client says, 'I guess if I walked more my back might feel better.' What is the best MI response?",
-     [
-      "'You're noticing that walking might help your back.'",
-      "'Yes, so you need to walk 30 minutes every day.'",
-      "'Then why haven't you started already?'",
-      "'Most people feel better if they walk.'"
-     ],
-     "Reflecting the client's own change talk reinforces it. Prescribing or challenging triggers the righting reflex and resistance."
-    ],
-    [
-     "A clinician repeatedly argues all the reasons a patient should quit smoking, and the patient becomes defensive. In MI terms, the clinician is showing:",
-     [
-      "The righting reflex",
-      "Reflective listening",
-      "Developing discrepancy",
-      "Rolling with resistance"
-     ],
-     "The righting reflex is the urge to fix and persuade, which often provokes the client to defend the status quo."
-    ],
-    [
-     "Under the health belief model, a patient who thinks home exercises will not help their condition has low:",
-     [
-      "Perceived benefits",
-      "Perceived susceptibility",
-      "Perceived severity",
-      "Cues to action"
-     ],
-     "Perceived benefits reflect belief that an action will be effective. Low perceived benefit predicts poor adherence."
-    ],
-    [
-     "Which goal best supports exercise adherence?",
-     [
-      "'Walk 15 minutes after dinner on Monday, Wednesday, and Friday for the next 2 weeks,' set together with the client",
-      "'Get in better shape,' set by the therapist",
-      "'Exercise as much as possible,' set by the client's family",
-      "'Never miss a workout again,' set by the client alone"
-     ],
-     "Specific, measurable, time-bound, and collaboratively set goals (SMART) improve adherence more than vague or imposed goals."
-    ],
-    [
-     "A client rates the importance of exercising as 8/10 but confidence as 3/10. Which focus is MOST appropriate next?",
-     [
-      "Build confidence with small, achievable tasks that create early success",
-      "Explain the dangers of inactivity to raise perceived importance",
-      "Give a detailed 10-exercise program to show commitment",
-      "Wait until the client rates confidence higher on their own"
-     ],
-     "Importance is already high; the barrier is confidence. Mastery experiences from small successes are the strongest way to build self-efficacy."
-    ],
-    [
-     "A patient has bought walking shoes and plans to start a walking program next week. Which stage of change is this?",
-     [
-      "Preparation",
-      "Contemplation",
-      "Action",
-      "Maintenance"
-     ],
-     "Intending to act soon and taking small steps defines preparation. Action begins once the behavior itself has started."
-    ],
-    [
-     "Self-determination theory proposes that motivation is best supported by meeting which three needs?",
-     [
-      "Autonomy, competence, and relatedness",
-      "Safety, esteem, and belonging",
-      "Susceptibility, severity, and benefits",
-      "Awareness, planning, and action"
-     ],
-     "Autonomy, competence, and relatedness are the basic needs in self-determination theory. Susceptibility, severity, and benefits come from the health belief model."
-    ],
-    [
-     "During an MI conversation a client says, 'I don't have time to exercise, and it probably wouldn't help anyway.' This statement is an example of:",
-     [
-      "Sustain talk",
-      "Change talk",
-      "Developing discrepancy",
-      "An affirmation"
-     ],
-     "Sustain talk argues for keeping the current behavior. The clinician should reflect it without arguing, which avoids the righting reflex."
-    ],
-    [
-     "A patient who had maintained a walking routine for 8 months stops after a holiday trip and says they feel like a failure. What is the BEST response?",
-     [
-      "Normalize the lapse as common and plan with them how to restart",
-      "Tell them they must now start over at precontemplation",
-      "Discharge them because they are not committed to change",
-      "Emphasize how disappointed you are, to motivate them"
-     ],
-     "Relapse is a normal part of change in the transtheoretical model. Normalizing it and problem-solving a restart protects self-efficacy; shame and discharge do not."
-    ]
-   ]
-  },
-  {
-   "t": "Lifespan Development",
-   "sub": "Piaget, Erikson, gross motor milestones, aging changes",
-   "lesson": [
-    "Development is the pattern of change from conception through old age, and it happens across physical, cognitive, and psychosocial domains that constantly interact. A child who cannot yet sit cannot explore objects with both hands, which limits cognitive growth; an older adult who stops driving may lose social roles, which affects mood and activity. Development reflects both <b>nature</b> (genes, maturation) and <b>nurture</b> (environment, practice, culture), and some skills have <i>sensitive periods</i> when experience has an outsized effect. PTs treat people at every point on this span, so you must adjust how you teach to how the person thinks and what they value.",
-    "<b>Piaget</b> proposed that children actively build mental frameworks called <b>schemas</b>, fitting new information into them (assimilation) or changing them when they do not fit (accommodation). In the <b>sensorimotor</b> stage (0-2 years) infants learn through senses and movement and develop <b>object permanence</b>. In the <b>preoperational</b> stage (2-7 years) symbolic and pretend play flourish, but thinking is <i>egocentric</i> and the child lacks <i>conservation</i>. In the <b>concrete operational</b> stage (7-11 years) children reason logically about concrete things and follow rules. In the <b>formal operational</b> stage (11+ years) abstract and hypothetical reasoning appears. Clinically: toddlers need toys and play to elicit movement, preschoolers need pretend games and very short instructions, school-age children respond to rules, charts, and challenges, and adolescents can understand the reasoning behind a plan.",
-    "<b>Erikson</b> described eight psychosocial crises: trust vs mistrust (infancy), autonomy vs shame and doubt (toddler), initiative vs guilt (preschool), industry vs inferiority (school age), identity vs role confusion (adolescence), intimacy vs isolation (young adult), generativity vs stagnation (middle adult), and integrity vs despair (older adult). These stages help you understand what is at stake for the patient. An injured adolescent athlete may feel their identity is threatened; a middle-aged parent may be driven by being able to coach or care for others; an older adult may judge recovery by whether they can keep meaningful roles.",
-    "Motor development follows predictable principles: <b>cephalocaudal</b> (head control before trunk, trunk before legs), <b>proximodistal</b> (shoulder control before fine finger control), and gross motor before fine motor. Approximate milestones are head control about 4 months, rolling about 4-6 months, independent sitting about 6-8 months, crawling about 7-10 months, pulling to stand about 9 months, and independent walking about 12 months, with a wide normal range. Primitive reflexes such as the Moro and asymmetric tonic neck reflex normally integrate in the first months as postural reactions emerge. Red flags include persistent primitive reflexes, marked asymmetry, loss of previously gained skills, and not walking by about 18 months. Detailed pediatric assessment is covered in the Pediatrics course.",
-    "Adolescence brings rapid growth spurts. Bones can lengthen faster than muscles and tendons adapt, so flexibility and coordination may temporarily decline. Adulthood is a long plateau of capacity that slowly declines with inactivity and age. With aging, muscle mass and strength decrease (<b>sarcopenia</b>), power declines faster than strength, reaction time slows, and vision, vestibular, and somatosensory inputs become less reliable, shrinking balance reserve. <b>Crystallized intelligence</b> (knowledge and vocabulary) is well preserved, while <b>fluid intelligence</b> and processing speed decline. Crucially, older adults keep the capacity to learn motor skills and to gain strength with progressive resistance training; they may simply need more practice, more time, and clear demonstrations.",
-    "<b>Worked example.</b> Teaching a curb step-up to three people. For a 6-year-old (preoperational moving into concrete operational; initiative vs guilt shifting to industry vs inferiority), make it a game: 'Step up onto the island before the lava rises,' with one short cue and lots of repetitions. For a 35-year-old (formal operational; intimacy vs isolation), explain why the hip and knee must work together, and tie the goal to their life, such as hiking with a partner. For a 78-year-old (integrity vs despair), demonstrate slowly, practice with a rail first, allow more trials and rest, and link the task to something meaningful, such as stepping onto a grandchild's porch. Avoid ageist assumptions: challenge the older adult at a level that actually produces adaptation.",
-    "Across the lifespan, the same exercise can be right for everyone, but the delivery must fit the learner's cognitive stage, psychosocial priorities, and physical capacity."
-   ],
-   "guide": [
-    "<b>Piaget's cognitive stages</b>: <i>sensorimotor</i> (0-2 y; object permanence), <i>preoperational</i> (2-7 y; symbolic play, egocentrism), <i>concrete operational</i> (7-11 y; conservation, logical thinking about concrete things), <i>formal operational</i> (11+ y; abstract and hypothetical reasoning).",
-    "<b>Erikson's psychosocial stages</b>: trust vs mistrust (infancy); autonomy vs shame and doubt (toddler); initiative vs guilt (preschool); industry vs inferiority (school age); identity vs role confusion (adolescence); intimacy vs isolation (young adult); generativity vs stagnation (middle adult); integrity vs despair (older adult).",
-    "<b>Motor development principles</b>: cephalocaudal (head to tail) and proximal-to-distal; gross motor before fine motor; milestones vary within normal ranges.",
-    "<b>Gross motor milestones (approximate)</b>: head control about 4 months; rolling about 4-6 months; sitting independently about 6-8 months; crawling about 7-10 months; pulling to stand about 9 months; walking independently about 12 months (normal range to about 15-18 months).",
-    "<b>Primitive reflexes</b> (such as Moro and asymmetric tonic neck reflex) normally integrate in the first months of life; persistence beyond the expected window is a red flag for neurological involvement.",
-    "<b>Adolescence</b>: rapid growth spurts can temporarily affect coordination and flexibility. Formal operational thinking allows more abstract goal-setting.",
-    "<b>Older adulthood</b>: sarcopenia, declining power, slower reaction time, and reduced balance reserve are typical. Learning capacity is preserved but may need more practice and time; fall risk rises."
-   ],
-   "terms": [
-    [
-     "Schema",
-     "In Piaget's theory, a mental framework that organizes and interprets information."
-    ],
-    [
-     "Object permanence",
-     "Understanding that objects continue to exist when out of sight, developed in the sensorimotor stage."
-    ],
-    [
-     "Conservation",
-     "Understanding that quantity stays the same despite changes in shape or appearance, achieved in the concrete operational stage."
-    ],
-    [
-     "Egocentrism",
-     "A young child's difficulty taking another person's point of view, typical of the preoperational stage."
-    ],
-    [
-     "Cephalocaudal development",
-     "The principle that motor control develops from the head downward toward the feet."
-    ],
-    [
-     "Proximodistal development",
-     "The principle that motor control develops from the trunk and proximal joints outward to the hands and fingers."
-    ],
-    [
-     "Gross motor milestone",
-     "A large-muscle skill, such as sitting or walking, that most children achieve within a typical age range."
-    ],
-    [
-     "Primitive reflex",
-     "An automatic infant movement pattern, such as the Moro reflex, that normally integrates in early infancy."
-    ],
-    [
-     "Generativity",
-     "Erikson's middle-adulthood task of contributing to and guiding the next generation."
-    ],
-    [
-     "Integrity vs despair",
-     "Erikson's late-adulthood stage of reflecting on whether one's life has been meaningful."
-    ],
-    [
-     "Sarcopenia",
-     "Age-related loss of skeletal muscle mass and strength or function."
-    ],
-    [
-     "Crystallized intelligence",
-     "Accumulated knowledge and verbal skills, which are largely preserved with aging."
-    ]
-   ],
-   "assignment": {
-    "title": "Same exercise, three ages",
-    "task": "Take one functional skill (such as stepping up a curb) and write how you would teach it to a 6-year-old, a 35-year-old, and a 78-year-old. For each, name the Piaget and Erikson stage and explain how it changes your cueing, goal-setting, and motivation strategy.",
-    "deliverable": "Three-column comparison table with a short rationale per age."
-   },
-   "gen": [],
-   "qs": [
-    [
-     "A 9-month-old searches for a toy after it is hidden under a blanket. Which Piagetian achievement does this show?",
-     [
-      "Object permanence",
-      "Conservation",
-      "Abstract reasoning",
-      "Egocentrism"
-     ],
-     "Object permanence develops during the sensorimotor stage (0-2 years) and means understanding objects exist when out of sight."
-    ],
-    [
-     "A 4-year-old believes a tall, thin glass holds more juice than a short, wide glass with the same amount. Which stage is this child in?",
-     [
-      "Preoperational",
-      "Concrete operational",
-      "Formal operational",
-      "Sensorimotor"
-     ],
-     "Lack of conservation is typical of the preoperational stage (2-7 years). Conservation emerges in the concrete operational stage."
-    ],
-    [
-     "A 15-year-old athlete can reason through 'what if' scenarios about a return-to-sport plan. This reflects which Piaget stage?",
-     [
-      "Formal operational",
-      "Concrete operational",
-      "Preoperational",
-      "Sensorimotor"
-     ],
-     "Formal operational thinking (about 11+ years) allows abstract and hypothetical reasoning."
-    ],
-    [
-     "According to Erikson, the main psychosocial task of an older adult reviewing their life is:",
-     [
-      "Integrity vs despair",
-      "Generativity vs stagnation",
-      "Intimacy vs isolation",
-      "Identity vs role confusion"
-     ],
-     "Late adulthood centers on integrity vs despair, a reflection on whether life has been meaningful."
-    ],
-    [
-     "A 45-year-old patient is highly motivated to recover so they can keep coaching youth sports and mentoring others. This reflects which Erikson stage?",
-     [
-      "Generativity vs stagnation",
-      "Integrity vs despair",
-      "Industry vs inferiority",
-      "Autonomy vs shame and doubt"
-     ],
-     "Middle adulthood's task is generativity: contributing to and guiding the next generation."
-    ],
-    [
-     "Motor control developing from the head downward toward the feet describes which principle?",
-     [
-      "Cephalocaudal development",
-      "Proximal-to-distal development",
-      "Fine-before-gross development",
-      "Contextual interference"
-     ],
-     "Cephalocaudal means head-to-tail. Infants gain head control before trunk control and before standing."
-    ],
-    [
-     "At approximately what age do most infants first walk independently?",
-     [
-      "About 12 months",
-      "About 6 months",
-      "About 24 months",
-      "About 4 months"
-     ],
-     "Independent walking typically emerges around 12 months, with a normal range extending to about 15-18 months."
-    ],
-    [
-     "A 12-month-old still shows a strong Moro reflex. What is the most appropriate interpretation?",
-     [
-      "It is a possible sign of neurological involvement that warrants further evaluation",
-      "It is normal and expected at this age",
-      "It indicates advanced motor development",
-      "It means the child will walk early"
-     ],
-     "The Moro reflex normally integrates in the first months of life. Persistence well beyond that window is a red flag."
-    ],
-    [
-     "A school-age child in physical therapy is most motivated by mastering new skills and comparing well with peers. This fits which Erikson stage?",
-     [
-      "Industry vs inferiority",
-      "Initiative vs guilt",
-      "Trust vs mistrust",
-      "Intimacy vs isolation"
-     ],
-     "School-age children (about 6-12 years) work through industry vs inferiority, building competence through accomplishment."
-    ],
-    [
-     "Which change is typical of healthy aging and most relevant to fall risk?",
-     [
-      "Declining muscle power and slower reaction time",
-      "Loss of the ability to learn new motor skills",
-      "Increased muscle mass in the lower limbs",
-      "Faster nerve conduction velocity"
-     ],
-     "Older adults lose power faster than strength and react more slowly, both of which increase fall risk. Motor learning capacity is preserved."
-    ],
-    [
-     "A 5-year-old in therapy quickly loses interest in repetitive heel raises. Which strategy BEST fits their developmental stage?",
-     [
-      "Turn the exercise into a pretend game, like reaching up to pick apples",
-      "Explain the biomechanics of the ankle plantarflexors in detail",
-      "Give a written log for the child to complete independently",
-      "Increase the number of repetitions to build discipline"
-     ],
-     "Preschoolers are in the preoperational stage, where symbolic and pretend play drive engagement. Abstract explanations and written logs do not fit their thinking."
-    ],
-    [
-     "Infants typically gain control of the shoulders before control of the fingers. This illustrates:",
-     [
-      "Proximal-to-distal development",
-      "Cephalocaudal (head-to-toe) development",
-      "Contextual interference",
-      "Object permanence"
-     ],
-     "Proximodistal development moves from the trunk and proximal joints outward. Cephalocaudal development describes the head-to-feet direction."
-    ],
-    [
-     "A 16-year-old soccer player is distressed after an ACL tear because 'being an athlete is who I am.' Which Erikson stage is MOST relevant?",
-     [
-      "Identity vs role confusion",
-      "Industry vs inferiority",
-      "Intimacy vs isolation",
-      "Generativity vs stagnation"
-     ],
-     "Adolescence centers on forming an identity. Injury that threatens an athletic identity is a common source of distress at this age."
-    ],
-    [
-     "Which ability is typically MOST preserved with healthy aging?",
-     [
-      "Crystallized knowledge such as vocabulary",
-      "Speed of processing new information",
-      "Muscle power in the lower limbs",
-      "Reaction time to unexpected perturbations"
-     ],
-     "Crystallized intelligence stays largely stable with age. Processing speed, power, and reaction time all decline."
-    ],
-    [
-     "An 80-year-old starting a strengthening program says, 'At my age, I can't get any stronger.' What is the MOST accurate response?",
-     [
-      "Older adults can still make meaningful strength gains with progressive training",
-      "Strength cannot improve after age 75, but balance can still be maintained",
-      "Only light range-of-motion exercise is safe after age 80",
-      "Strength gains are possible only with medication support"
-     ],
-     "Older adults remain trainable and gain strength with adequately dosed progressive resistance exercise. Under-dosing because of age is a common error."
-    ]
-   ]
-  },
-  {
-   "t": "Pain Psychology & Psychosocial Factors",
-   "sub": "Biopsychosocial model, fear-avoidance, catastrophizing, yellow flags, pain science education",
-   "lesson": [
-    "For most of the twentieth century, medicine used a <b>biomedical model</b>: find the damaged tissue, fix it, and the pain should go away. That model works well for an acute fracture but poorly for persistent back or neck pain, where imaging findings and pain often do not line up. Engel's <b>biopsychosocial model</b> proposes that health and illness emerge from interacting biological factors (tissue, nervous system, genetics), psychological factors (beliefs, emotions, coping, attention), and social factors (work, family, culture, finances). This unit introduces the psychology of pain; the neurophysiology and full management of persistent pain are covered in the Pain Science and Psychosocial Care course.",
-    "The International Association for the Study of Pain defines pain as 'an unpleasant sensory and emotional experience associated with, or resembling that associated with, actual or potential tissue damage.' Two consequences follow. First, <b>nociception</b>, the nervous system's detection of potentially harmful stimuli, is not the same as pain. Nociception can occur without pain, as when an injured athlete keeps playing, and pain can occur without nociception, as in phantom limb pain. Second, pain is shaped by context, meaning, attention, and expectation. Many people without pain have disc bulges or rotator cuff changes on imaging, so a scan finding is not automatically the cause of a patient's symptoms.",
-    "The <b>fear-avoidance model</b> (Vlaeyen and Linton) explains why some people recover from an episode of pain while others become stuck. After pain begins, a person who interprets it as non-threatening keeps moving and gradually recovers. A person who interprets it <b>catastrophically</b> ('my spine is crumbling') develops <b>fear of movement</b>, avoids activity, and becomes hypervigilant to body sensations. Avoidance brings short-term relief, which is negatively reinforcing, but over time leads to deconditioning, disuse, low mood, and more disability, which feeds back into more pain and fear.",
-    "Several psychological factors are measurable. <b>Pain catastrophizing</b> includes rumination, magnification, and helplessness, measured with the Pain Catastrophizing Scale. <b>Kinesiophobia</b>, fear of movement or re-injury, is measured with the Tampa Scale of Kinesiophobia. The Fear-Avoidance Beliefs Questionnaire has physical activity and work subscales. Low self-efficacy, depression, and anxiety also predict poorer outcomes. The <b>STarT Back Screening Tool</b> sorts people with low back pain into low, medium, or high risk of a poor outcome; high-risk patients may benefit from psychologically informed physical therapy.",
-    "<b>Yellow flags</b> are psychosocial risk factors for persistent pain and disability: fear-avoidance, catastrophizing, the belief that hurt means harm, passive coping, low mood, and work problems. They are not reasons to refuse treatment; they are targets for treatment. <b>Red flags</b> are signs of possible serious pathology, such as cancer, infection, fracture, or cauda equina syndrome, and require medical referral. When a patient shows signs of significant depression, anxiety, trauma, or thoughts of self-harm, screen within your scope and refer to a physician or mental health professional.",
-    "PTs have effective tools for the psychological side of pain. <b>Pain neuroscience education</b> explains how the nervous system produces pain, reducing threat and making movement feel safer. <b>Graded activity</b> increases activity by pre-set time or quota goals rather than by daily pain, breaking the boom-and-bust cycle. <b>Graded exposure</b> builds a hierarchy of feared activities and works up it step by step so the patient learns that feared movements are safe. Language matters: 'your back is strong and adaptable' supports recovery, while 'your spine is degenerating' can create fear.",
-    "<b>Worked example.</b> A 42-year-old warehouse worker has had low back pain for 4 months and avoids bending because he fears 'slipping a disc.' Red flags are screened and absent. His STarT Back score is high risk and his Tampa score is elevated. You explain in plain language that backs are strong, that pain does not equal damage, and that gradual loading makes tissues more resilient. Together you build an exposure ladder: pick up a towel from a stool, then from a low step, then from the floor, then lift a light box from the floor, progressing on a weekly plan rather than on daily pain. You repeat the Tampa Scale and a function measure at 4 weeks to track change."
-   ],
-   "guide": [
-    "<b>Biopsychosocial model</b>: pain and disability result from interacting biological (tissue, nervous system), psychological (beliefs, emotions, coping), and social (work, family, culture) factors. It replaces a purely biomedical view.",
-    "<b>Pain is an experience</b>: the IASP defines pain as an unpleasant sensory and emotional experience associated with, or resembling that associated with, actual or potential tissue damage. Nociception and pain are not the same.",
-    "<b>Fear-avoidance model</b>: pain → catastrophic interpretation → fear of movement → avoidance and hypervigilance → deconditioning, disability, and more pain. Low-fear patients confront activity and tend to recover.",
-    "<b>Pain catastrophizing</b>: rumination, magnification, and helplessness about pain. Measured with the <b>Pain Catastrophizing Scale (PCS)</b>; higher scores predict worse outcomes.",
-    "<b>Kinesiophobia</b>: fear of movement or re-injury, measured with the <b>Tampa Scale of Kinesiophobia</b>. The <b>Fear-Avoidance Beliefs Questionnaire (FABQ)</b> has physical activity and work subscales.",
-    "<b>Yellow flags</b> are psychosocial risk factors for chronicity (fear-avoidance, catastrophizing, low mood, passive coping, belief that hurt equals harm, work dissatisfaction). They differ from <b>red flags</b>, which suggest serious pathology requiring medical referral.",
-    "<b>Screening tools</b>: the <b>STarT Back Screening Tool</b> stratifies low back pain patients into low, medium, and high risk of poor outcome to guide treatment.",
-    "<b>Interventions</b>: pain neuroscience education, graded activity (time-contingent goals), graded exposure to feared movements, and promoting active coping. Refer to a mental health professional when depression, anxiety, or trauma exceed PT scope."
-   ],
-   "terms": [
-    [
-     "Biopsychosocial model",
-     "A model in which health and illness arise from interacting biological, psychological, and social factors."
-    ],
-    [
-     "Nociception",
-     "The nervous system's detection and processing of potentially harmful stimuli, which is not the same as pain."
-    ],
-    [
-     "Pain (IASP definition)",
-     "An unpleasant sensory and emotional experience associated with, or resembling that associated with, actual or potential tissue damage."
-    ],
-    [
-     "Fear-avoidance model",
-     "A model in which catastrophic interpretation of pain leads to fear, avoidance, deconditioning, and ongoing disability."
-    ],
-    [
-     "Pain catastrophizing",
-     "An exaggerated negative mindset toward pain involving rumination, magnification, and helplessness."
-    ],
-    [
-     "Kinesiophobia",
-     "An excessive fear of movement or physical activity due to a feeling of vulnerability to injury or re-injury."
-    ],
-    [
-     "Yellow flags",
-     "Psychosocial risk factors that increase the likelihood of persistent pain and disability."
-    ],
-    [
-     "Red flags",
-     "Signs or symptoms suggesting serious pathology that requires medical referral."
-    ],
-    [
-     "STarT Back Screening Tool",
-     "A brief questionnaire that stratifies low back pain patients into low, medium, or high risk of a poor outcome."
-    ],
-    [
-     "Graded activity",
-     "An approach that increases activity using pre-set time or quota goals rather than pain levels."
-    ],
-    [
-     "Graded exposure",
-     "Systematic, step-by-step confrontation of feared movements or activities to reduce fear and avoidance."
-    ],
-    [
-     "Pain neuroscience education",
-     "Teaching patients how the nervous system produces pain in order to reduce threat and support active recovery."
-    ]
-   ],
-   "assignment": {
-    "title": "Yellow-flag screen and graded exposure plan",
-    "task": "Write a case of a client with 4 months of low back pain who avoids bending because they fear 'slipping a disc.' Identify their yellow flags, choose two screening tools you would administer, and outline a 4-week graded exposure plan for bending. Include the education message you would give in plain language.",
-    "deliverable": "One-page case summary with screening plan, graded exposure ladder, and education script."
-   },
-   "gen": [],
-   "qs": [
-    [
-     "Which model explains pain as the interaction of tissue, beliefs and emotions, and social context?",
-     [
-      "Biopsychosocial model",
-      "Biomedical model",
-      "Transtheoretical model",
-      "Health belief model"
-     ],
-     "The biopsychosocial model integrates biological, psychological, and social factors. The biomedical model looks only at tissue pathology."
-    ],
-    [
-     "A patient with low back pain believes bending will damage their spine, so they avoid it and become increasingly deconditioned. This pattern is described by the:",
-     [
-      "Fear-avoidance model",
-      "Gate control theory",
-      "Stages of motor learning",
-      "Health belief model"
-     ],
-     "Catastrophic beliefs lead to fear, avoidance, and deconditioning, which perpetuate pain and disability in the fear-avoidance cycle."
-    ],
-    [
-     "A patient says, 'This pain is terrible and it's never going to get better. I can't stop thinking about it.' This most reflects:",
-     [
-      "Pain catastrophizing",
-      "Kinesiophobia only",
-      "Malingering",
-      "A red flag for cancer"
-     ],
-     "Rumination, magnification, and helplessness are the components of catastrophizing, measured with the Pain Catastrophizing Scale."
-    ],
-    [
-     "Which finding is a yellow flag rather than a red flag?",
-     [
-      "Belief that hurt always means harm",
-      "Unexplained weight loss with night pain",
-      "Saddle anesthesia and new bladder retention",
-      "History of cancer with new constant pain"
-     ],
-     "Yellow flags are psychosocial risk factors for chronic disability. The other options are red flags suggesting serious pathology."
-    ],
-    [
-     "Which tool is designed to stratify patients with low back pain into low, medium, or high risk of a poor outcome?",
-     [
-      "STarT Back Screening Tool",
-      "Tampa Scale of Kinesiophobia",
-      "Berg Balance Scale",
-      "Fear-Avoidance Beliefs Questionnaire"
-     ],
-     "STarT Back stratifies risk to match treatment intensity. Tampa and FABQ measure specific fear constructs rather than overall risk stratification."
-    ],
-    [
-     "You want to measure a patient's fear of movement and re-injury specifically. Which tool is most appropriate?",
-     [
-      "Tampa Scale of Kinesiophobia",
-      "Pain Catastrophizing Scale",
-      "Numeric Pain Rating Scale",
-      "Oswestry Disability Index"
-     ],
-     "The Tampa Scale measures kinesiophobia. PCS measures catastrophizing; the NPRS measures intensity; the Oswestry measures disability."
-    ],
-    [
-     "A patient with high fear of lifting has been cleared of serious pathology. What is the most appropriate intervention approach?",
-     [
-      "Pain education plus graded exposure to progressively more feared lifting tasks",
-      "Strict avoidance of lifting until pain fully resolves",
-      "Passive modalities only until fear subsides",
-      "Bed rest with gradual return when pain-free"
-     ],
-     "Graded exposure, combined with education, directly targets fear-avoidance by showing the feared movement is safe. Avoidance and rest reinforce the cycle."
-    ],
-    [
-     "In graded activity for chronic pain, progression is best based on:",
-     [
-      "Pre-set time or quota goals rather than pain levels",
-      "Stopping whenever pain increases at all",
-      "The patient's daily pain rating alone",
-      "Doing as much as possible on good days"
-     ],
-     "Graded activity uses time- or quota-contingent progression to break the pain-guided boom-and-bust cycle."
-    ],
-    [
-     "According to the IASP definition, which statement about pain is correct?",
-     [
-      "Pain is a sensory and emotional experience and is not the same as nociception",
-      "Pain always indicates the amount of tissue damage",
-      "Pain only exists when tissue damage is visible on imaging",
-      "Nociception and pain are identical processes"
-     ],
-     "Pain is an experience produced by the nervous system. Nociception can occur without pain and pain can occur without nociception."
-    ],
-    [
-     "During treatment, a patient discloses persistent hopelessness and loss of interest in all activities for the past month. What is the most appropriate action?",
-     [
-      "Screen further and refer to a physician or mental health professional",
-      "Ignore it because it is outside the musculoskeletal complaint",
-      "Increase exercise intensity to improve mood",
-      "Tell the patient to think more positively"
-     ],
-     "Possible depression is beyond PT scope to treat but within scope to screen and refer. Appropriate referral is part of biopsychosocial care."
-    ],
-    [
-     "A person's lumbar MRI shows disc bulges, but they have no back pain. What concept does this BEST illustrate?",
-     [
-      "Imaging findings and pain are often poorly related",
-      "Disc bulges always become painful within a year",
-      "The MRI must have been read incorrectly",
-      "Pain is caused only by structural changes"
-     ],
-     "Structural findings are common in people without pain, so they do not automatically explain symptoms. This supports a biopsychosocial view of pain."
-    ],
-    [
-     "In the fear-avoidance model, a person who interprets their new pain as non-threatening is MOST likely to:",
-     [
-      "Confront activity and recover",
-      "Develop hypervigilance",
-      "Avoid movement and decondition",
-      "Increase catastrophizing"
-     ],
-     "Low-fear interpretation leads to continued activity (confrontation) and recovery. The other options describe the catastrophizing pathway."
-    ],
-    [
-     "A patient with chronic neck pain stops all activity on bad days and overdoes it on good days. Which approach BEST addresses this pattern?",
-     [
-      "Set time-based activity quotas that progress gradually regardless of daily pain",
-      "Encourage the patient to do as much as they can whenever pain levels are low",
-      "Prescribe complete rest on days when pain is above 5/10",
-      "Use passive treatments only until the pain fully resolves"
-     ],
-     "Graded activity uses time- or quota-contingent goals to break the boom-and-bust cycle. Letting pain dictate activity keeps the cycle going."
-    ],
-    [
-     "Which statement BEST describes pain neuroscience education?",
-     [
-      "Teaching patients how the nervous system produces pain to reduce threat",
-      "Teaching patients the anatomy of each injured tissue in detail",
-      "Telling patients their pain is psychological and not real",
-      "Explaining that pain always equals the extent of tissue damage"
-     ],
-     "PNE reframes pain as a protective output of the nervous system, which lowers threat. It never tells patients their pain is not real."
-    ],
-    [
-     "A patient's STarT Back score places them in the high-risk group. What does this MOST suggest?",
-     [
-      "They may benefit from psychologically informed physical therapy",
-      "They need immediate referral for spinal surgery",
-      "They have a serious pathology such as cancer",
-      "They need only brief advice and reassurance, then discharge from care"
-     ],
-     "High STarT Back risk reflects psychosocial factors linked to poor outcomes, which suits psychologically informed care. It is not a screen for serious pathology."
-    ]
-   ]
-  }
- ]
+  id: "psychology",
+  track: "prereq",
+  order: 6,
+  code: "PRE 131",
+  title: "Psychology & Lifespan Development",
+  credits: 3,
+  desc: "Core psychology for rehab: how people learn movement, what drives behavior change, how humans develop across the lifespan, and how thoughts and emotions shape pain. PTs need this to teach motor skills, improve adherence, treat across all ages, and recognize psychosocial barriers to recovery.",
+  objectives: [
+    "Distinguish major research designs in psychology and interpret their strengths and limits",
+    "Apply classical and operant conditioning, stages of motor learning, practice schedules, and feedback to exercise instruction",
+    "Use the transtheoretical model, self-efficacy, and motivational interviewing to support behavior change",
+    "Describe key lifespan development theories (Piaget, Erikson) and major gross motor milestones",
+    "Explain the biopsychosocial model of pain and identify fear-avoidance, catastrophizing, and yellow flags",
+    "Recognize when psychosocial findings call for referral to a mental health professional and explain pain in plain language"
+  ],
+  references: [
+    "Myers DG, DeWall CN. Psychology. Worth Publishers.",
+    "Santrock JW. Life-Span Development. McGraw Hill.",
+    "Schmidt RA, Lee TD, Winstein CJ, Wulf G, Zelaznik HN. Motor Control and Learning: A Behavioral Emphasis. Human Kinetics.",
+    "Miller WR, Rollnick S. Motivational Interviewing: Helping People Change and Grow. Guilford Press.",
+    "Linton SJ. Understanding Pain for Better Clinical Practice: A Psychological Perspective. Elsevier."
+  ],
+  units: [
+    {
+      t: "Foundations & Research Methods",
+      sub: "Perspectives in psychology, descriptive vs correlational vs experimental designs, variables, validity",
+      lesson: [
+        "Psychology is the scientific study of behavior and mental processes. For a physical therapist it is not a side subject. Every exercise you prescribe is a behavior you hope the patient repeats, every cue you give is an attempt to shape learning, and every pain report is filtered through beliefs, emotions, and social context. The field grew out of several perspectives: <b>biological</b> (brain, hormones, genes), <b>behavioral</b> (observable responses shaped by the environment), <b>cognitive</b> (thinking, memory, expectation), <b>psychodynamic</b> (unconscious conflict), <b>humanistic</b> (Maslow and Rogers, growth and self-actualization), and <b>sociocultural</b> (family, culture, community). Modern psychology treats these as complementary lenses, which is the same integrative logic behind the biopsychosocial model you will use in the clinic.",
+        "Research designs differ in what they are allowed to claim. <b>Descriptive</b> research, including case studies, naturalistic observation, and surveys, tells you what happens and how often. A case study of one patient with an unusual recovery can spark a hypothesis but cannot prove anything about other patients. Surveys depend on question wording and on who answers: a random sample of a population lets you generalize to that population, while a convenience sample of your own clients describes only people like them.",
+        "<b>Correlational</b> research measures how two variables move together, summarized by the correlation coefficient <i>r</i>, which runs from -1 to +1. The sign gives direction and the absolute value gives strength, so r = -0.70 between fear of movement and daily step count is a stronger relationship than r = +0.30. Correlation cannot establish cause for two reasons. The <i>directionality problem</i>: does fear reduce walking, or does inactivity breed fear? The <i>third-variable problem</i>: depression could drive both fear and inactivity.",
+        "<b>Experiments</b> are built to answer cause-and-effect questions. The researcher manipulates the <b>independent variable</b>, measures the <b>dependent variable</b>, and uses <b>random assignment</b> so that confounding variables are spread evenly across groups. Each variable needs an <b>operational definition</b>; 'better balance' becomes 'seconds in single-leg stance with eyes closed.' Control groups, placebo conditions, and blinding protect against expectation effects. Participants may change because they guess the hypothesis (<i>demand characteristics</i>), because they know they are being watched (the <i>Hawthorne effect</i>), or because the researcher unconsciously treats groups differently (<i>experimenter bias</i>). Double-blinding hides group assignment from both participants and data collectors.",
+        "Measurement quality matters as much as design. <b>Reliability</b> is consistency: the same result on repeated testing (test-retest), between examiners (inter-rater), or within one examiner (intra-rater). <b>Validity</b> is accuracy: does the tool measure what it claims? A bathroom scale that always reads 2 kg heavy is reliable but not valid. A measure must be reasonably reliable to be valid, but reliability alone never guarantees validity.",
+        "<b>Worked example.</b> A clinic notices that desk workers who stretch report less neck stiffness. That observation is correlational; the stretchers may also be younger, more active, or less stressed. To test cause, recruit 60 desk workers and randomly assign 30 to a 10-minute daily mobility routine and 30 to a waitlist control. The independent variable is the routine (yes or no). The dependent variable, operationally defined, is a 0-10 stiffness rating at 4 weeks, collected by an assessor who does not know group assignment. Both groups receive the same number of check-in calls so attention alone cannot explain a difference. If the routine group improves more, a causal conclusion is reasonable for desk workers like these.",
+        "Ethics protect the people who make research possible. The Belmont Report's principles of <b>respect for persons</b>, <b>beneficence</b>, and <b>justice</b> translate into informed consent, the right to withdraw without penalty, confidentiality, minimal risk, and debriefing when any deception is used. Historical abuses such as the Tuskegee syphilis study are the reason <b>Institutional Review Boards</b> must approve human-subjects research before it begins. Collecting clinic outcomes for routine care is quality improvement; planning to publish them as generalizable knowledge makes it research that needs IRB review."
+      ],
+      guide: [
+        "<b>Major perspectives</b>: biological, behavioral, cognitive, psychodynamic, humanistic (Maslow, Rogers), and sociocultural. Modern psychology integrates them.",
+        "<b>Descriptive research</b>: case studies, naturalistic observation, and surveys describe behavior but cannot establish cause.",
+        "<b>Correlational research</b>: measures how two variables relate (r from -1 to +1). <i>Correlation does not imply causation</i>; a third variable may explain both.",
+        "<b>Experiments</b>: the researcher manipulates the <b>independent variable</b> and measures the <b>dependent variable</b>. <b>Random assignment</b> to groups is what allows cause-and-effect conclusions.",
+        "<b>Controls and bias</b>: placebo groups, blinding (single and double), and control of confounding variables. The <b>Hawthorne effect</b> is behavior change caused simply by being observed.",
+        "<b>Reliability vs validity</b>: reliability is consistency of a measure; validity is whether it measures what it claims. A measure can be reliable without being valid, but cannot be valid without being reliable.",
+        "<b>Ethics</b>: informed consent, the right to withdraw, confidentiality, debriefing, and Institutional Review Board (IRB) approval for human-subjects research."
+      ],
+      terms: [
+        ["Independent variable","The factor a researcher manipulates or uses to form groups in order to see its effect."],
+        ["Dependent variable","The outcome a researcher measures to see whether it changes with the independent variable."],
+        ["Confounding variable","An uncontrolled factor related to both the independent and dependent variables that offers an alternative explanation for results."],
+        ["Random assignment","Placing participants into groups by chance so that known and unknown confounds are balanced across groups."],
+        ["Random sampling","Selecting participants so every member of the population has an equal chance of inclusion, which supports generalization."],
+        ["Correlation coefficient (r)","A number from -1 to +1 describing the direction and strength of a linear relationship between two variables."],
+        ["Operational definition","A precise statement of how a variable will be measured or manipulated in a particular study."],
+        ["Placebo effect","Improvement caused by a person's expectations rather than by the active component of a treatment."],
+        ["Hawthorne effect","A change in behavior that occurs because people know they are being observed."],
+        ["Reliability","The consistency of a measurement across repeated trials, examiners, or time."],
+        ["Validity","The degree to which a tool or study measures or demonstrates what it claims to."],
+        ["Institutional Review Board (IRB)","A committee that reviews human-subjects research to protect participants' rights and safety."]
+      ],
+      assignment: {
+        title: "Design a mini-study",
+        task: "Write a one-page proposal to test whether a 10-minute daily mobility routine improves a self-reported stiffness score in desk workers. Name the independent and dependent variables, describe random assignment and a control condition, identify two possible confounds, and explain how you would protect participants ethically.",
+        deliverable: "One-page study proposal."
+      },
+      gen: [],
+      qs: [
+        ["A researcher randomly assigns clients to either a balance program or a stretching program and then compares fall rates. The type of program is the:",["Independent variable","Dependent variable","Confounding variable","Control variable"],"The independent variable is what the researcher manipulates. Fall rate, the outcome measured, is the dependent variable."],
+        ["Which feature of a study most allows a researcher to conclude cause and effect?",["Random assignment of participants to groups","A large survey sample","A strong correlation coefficient","Detailed case observations"],"Random assignment balances unknown confounds between groups, which is what supports causal inference. Correlations and surveys cannot establish cause."],
+        ["A study finds that people who own more running shoes report less back pain. What is the most appropriate conclusion?",["The two variables are related, but this does not show that shoes reduce back pain","Buying running shoes prevents back pain","Back pain causes people to buy fewer shoes","There is no relationship between the variables"],"Correlation does not imply causation. A third variable, such as overall activity level, could explain both."],
+        ["Which correlation coefficient represents the strongest relationship?",["-0.85","+0.40","+0.10","0.00"],"Strength is the absolute value of r. -0.85 is a strong negative relationship; the sign shows only direction."],
+        ["Workers increase their productivity simply because they know researchers are watching them. This is called the:",["Hawthorne effect","Placebo effect","Halo effect","Pygmalion effect"],"The Hawthorne effect is a change in behavior due to awareness of being observed, which is a threat to validity in clinical studies."],
+        ["A goniometer gives the same reading every time but is consistently 10° off from the true joint angle. This tool is:",["Reliable but not valid","Valid but not reliable","Both reliable and valid","Neither reliable nor valid"],"Consistency equals reliability; accuracy equals validity. A consistent but systematically wrong measure is reliable but not valid."],
+        ["In a double-blind study:",["Neither the participants nor the researchers collecting data know who is in which group","Only the participants are unaware of their group","Participants are assigned to groups twice","Two independent researchers analyze the data"],"Double-blinding prevents both participant expectations and researcher bias from influencing results."],
+        ["A clinic wants to publish outcomes collected from its patients as research. What is required before data collection begins?",["Approval from an Institutional Review Board and informed consent","Permission from the clinic owner only","Approval from the patients' insurance companies","Nothing, because clinical data belongs to the clinic"],"Human-subjects research requires IRB review and informed consent to protect participants."],
+        ["A detailed report of one patient's unusual recovery after a rare nerve injury is best described as:",["A case study","A randomized controlled trial","A correlational study","A cohort experiment"],"A case study describes one individual in depth. It generates hypotheses but cannot establish causation or generalize widely."],
+        ["Which psychological perspective emphasizes personal growth, free will, and self-actualization?",["Humanistic","Behavioral","Psychodynamic","Biological"],"Humanistic psychology (Maslow, Rogers) focuses on growth and self-actualization. Behaviorism focuses on observable learned behavior."],
+        ["A researcher defines 'improved balance' as an increase of at least 5 seconds in single-leg stance time. This is an example of:",["An operational definition","A research hypothesis","A confounding variable","A psychological theory"],"An operational definition states exactly how a variable is measured. A hypothesis is a testable prediction, not a measurement rule."],
+        ["A PT surveys her own clients and finds that those who attend yoga report less anxiety. She wants to know whether yoga reduces anxiety in adults generally. What is the MOST important limitation of her data?",["The design is correlational and the sample is not representative","The anxiety ratings should have been collected by a licensed psychologist","Yoga cannot be studied with any scientific method","The sample is too large to show meaningful differences"],"A survey of her own clients cannot show cause (no manipulation or random assignment) and does not generalize (convenience sample). Who collects the ratings is a smaller issue."],
+        ["Participants change their behavior because they guess what the researcher hopes to find. This threat to validity is called:",["Demand characteristics","Regression to the mean","Random assignment","Sampling error"],"Demand characteristics are cues that let participants infer the hypothesis and act accordingly. Blinding participants to the hypothesis reduces them."],
+        ["Which ethical requirement ensures participants are told they may leave a study at any time without penalty?",["Right to withdraw as part of informed consent","Beneficence, achieved through a full debriefing afterward","Justice in how participants are selected","Confidentiality of stored research data"],"Informed consent includes the right to withdraw freely. Debriefing, fair selection, and confidentiality are separate protections."],
+        ["A therapist tests a new balance program and knows which patients received it while she scores their balance. Which change would BEST reduce bias in the outcome scores?",["Have an assessor who is unaware of group assignment score balance","Let the therapist score only the patients she knows best","Increase the number of balance tests performed each visit","Ask patients to rate their own balance after each session"],"Blinding the outcome assessor prevents knowledge of group assignment from influencing scoring. More tests or self-ratings do not remove the expectation bias."]
+      ]
+    },
+    {
+      t: "Learning & Motor Learning Theory",
+      sub: "Classical and operant conditioning, Fitts and Posner stages, practice schedules, feedback",
+      lesson: [
+        "<b>Learning</b> is a relatively permanent change in behavior that results from experience. Two classic forms of associative learning explain a surprising amount of what happens in the clinic. In <b>classical conditioning</b> (Pavlov), a neutral stimulus is repeatedly paired with an unconditioned stimulus that naturally produces a response. Eventually the neutral stimulus alone triggers a similar, conditioned response. A patient who had painful sessions may tense when they merely see the treatment table. The response can <i>generalize</i> to similar stimuli (any clinic room) and can be weakened by <i>extinction</i>: repeated exposure to the table without pain gradually reduces the tensing, although it may briefly return later (spontaneous recovery).",
+        "<b>Operant conditioning</b> (Skinner) explains behavior by its consequences. Reinforcement increases a behavior; punishment decreases it. 'Positive' means something is added and 'negative' means something is removed. Praise or a sticker chart after a child completes exercises is positive reinforcement. Avoiding a painful movement and feeling relief is <i>negative reinforcement</i>, which is exactly how avoidance behavior grows. <b>Shaping</b> reinforces successive approximations of a goal, such as praising sit-to-stand from a high surface and lowering the seat over sessions. Continuous reinforcement speeds acquisition; intermittent reinforcement, especially a variable-ratio schedule, makes behavior more resistant to extinction. Bandura added <b>observational learning</b>: people learn by watching a model, which is why a clear demonstration often beats a long explanation.",
+        "<b>Motor learning</b> is a set of processes, tied to practice or experience, that produce relatively permanent changes in the capability for skilled movement. The key distinction is between <b>performance</b> and <b>learning</b>. Performance is what you see during practice, and it is inflated or depressed by fatigue, motivation, and your cues. Learning is inferred later with a <b>retention test</b> (the same task after a delay, without coaching) or a <b>transfer test</b> (a new version or context of the task). A patient who looks perfect at the end of a heavily cued session may not have learned much.",
+        "Fitts and Posner described three stages. In the <b>cognitive</b> stage the learner is figuring out what to do: errors are frequent and attention demands are high, so use demonstrations, short instructions, a stable environment, and more feedback. In the <b>associative</b> stage the learner refines how to do it: errors drop, so start fading feedback and adding variability. In the <b>autonomous</b> stage the skill is largely automatic and the learner can talk, scan, or carry objects at the same time, so dual tasks and real-world environments become the training focus.",
+        "Practice structure changes what sticks. <b>Blocked</b> practice (all repetitions of one task, then the next) produces good in-session performance. <b>Random</b> practice (tasks interleaved) creates <b>contextual interference</b>, which makes practice feel harder but improves retention. <b>Variable</b> practice (changing parameters such as step height) improves transfer. Continuous skills such as gait are usually practiced whole, while serial skills with separable steps, such as a transfer, can be broken into parts and then recombined. These principles are introduced here; the theory behind them is developed in the Motor Control and Motor Learning course.",
+        "Feedback is powerful and easy to overuse. <b>Intrinsic</b> feedback comes from the learner's own senses; <b>extrinsic</b> (augmented) feedback comes from you or a device. <b>Knowledge of results</b> describes the outcome ('you stood up without using your hands'), and <b>knowledge of performance</b> describes the movement ('your trunk came forward first'). Frequent, immediate feedback helps early, but constant feedback creates dependence, so fade it, give summary feedback after several trials, or give it only when errors fall outside a set bandwidth. Cues that direct attention to the movement's effect ('push the floor away') generally support learning better than cues focused on body parts ('squeeze your quads').",
+        "<b>Worked example.</b> A patient with an ankle fracture is learning non-weight-bearing crutch gait. In session 1 (cognitive stage), demonstrate the whole pattern, give one simple cue, and provide knowledge of performance after most trials on level ground. In session 2 (associative stage), give summary feedback after every three or four trials and add a doorway and a turn. In session 3, start with a retention test, walking 10 meters before any coaching, then practice level walking, a curb, and a ramp in random order. Specific praise for safe performance provides positive reinforcement throughout."
+      ],
+      guide: [
+        "<b>Classical conditioning (Pavlov)</b>: a neutral stimulus paired with an unconditioned stimulus comes to produce a conditioned response. Example: a patient tenses at the sight of a treatment table after painful sessions.",
+        "<b>Operant conditioning (Skinner)</b>: behavior is shaped by consequences. <i>Positive</i> = add a stimulus; <i>negative</i> = remove a stimulus. <i>Reinforcement</i> increases behavior; <i>punishment</i> decreases it. Variable-ratio schedules are most resistant to extinction.",
+        "<b>Stages of motor learning (Fitts &amp; Posner)</b>: <i>cognitive</i> (what to do; many errors, high attention), <i>associative</i> (how to do it; refining, fewer errors), <i>autonomous</i> (automatic; can dual-task).",
+        "<b>Motor learning vs performance</b>: learning is a relatively permanent change measured by <b>retention</b> and <b>transfer</b> tests, not by performance during practice.",
+        "<b>Practice schedules</b>: <i>blocked</i> practice (same task repeated) improves performance during the session; <i>random</i> practice (tasks interleaved) creates contextual interference and improves retention. <i>Variable</i> practice improves transfer.",
+        "<b>Whole vs part practice</b>: continuous skills (such as gait) and fast discrete skills with tightly linked components are best practiced whole; longer serial skills with separable steps (such as a transfer) can be broken into parts.",
+        "<b>Feedback</b>: <i>intrinsic</i> (from the person's own senses) vs <i>extrinsic/augmented</i> (from the clinician). <i>Knowledge of results</i> (KR) is about the outcome; <i>knowledge of performance</i> (KP) is about the movement pattern.",
+        "<b>Feedback schedules</b>: frequent, immediate feedback helps early; reduce it as skill improves (faded or summary feedback) to prevent dependence and improve retention."
+      ],
+      terms: [
+        ["Classical conditioning","Learning in which a neutral stimulus, after pairing with an unconditioned stimulus, comes to trigger a conditioned response."],
+        ["Extinction","The weakening of a learned response when the conditioned stimulus or behavior is no longer followed by the original stimulus or reinforcer."],
+        ["Operant conditioning","Learning in which the likelihood of a behavior is changed by its consequences."],
+        ["Negative reinforcement","Increasing a behavior by removing an unpleasant stimulus, such as avoiding a movement to escape pain."],
+        ["Shaping","Reinforcing successive approximations of a target behavior until the full behavior is achieved."],
+        ["Observational learning","Learning by watching a model perform a behavior and seeing its consequences."],
+        ["Motor learning","Practice-related processes that produce relatively permanent changes in the capability for skilled movement."],
+        ["Retention test","A test of a practiced skill after a delay and without augmented feedback, used to infer learning."],
+        ["Transfer test","A test of a skill in a new context or variation, used to measure how well learning generalizes."],
+        ["Contextual interference","The difficulty created by interleaving different tasks during practice, which lowers practice performance but improves retention."],
+        ["Knowledge of results","Augmented feedback about the outcome of a movement relative to its goal."],
+        ["Knowledge of performance","Augmented feedback about the movement pattern or quality that produced the outcome."]
+      ],
+      assignment: {
+        title: "Re-coach a lift with motor learning principles",
+        task: "Pick a client who is learning a hip hinge or deadlift. Identify their current stage of motor learning, then write a 3-session plan describing your practice schedule (blocked vs random, whole vs part), feedback type (KR vs KP), and feedback frequency, and how each will change across sessions. Include a retention test you would use in session 3.",
+        deliverable: "3-session coaching plan (one page) with a stated retention test."
+      },
+      gen: [],
+      qs: [
+        ["A patient who had painful sessions now tenses up as soon as they see the treatment table. This is an example of:",["Classical conditioning","Operant conditioning","Negative reinforcement","Observational learning"],"A neutral stimulus (the table) has been paired with pain and now triggers a conditioned response (tensing)."],
+        ["A client's back pain eases when they skip their walk, so they skip walking more often. Which principle explains the increase in skipping?",["Negative reinforcement","Positive punishment","Positive reinforcement","Extinction"],"Removing an unpleasant stimulus (pain) increases the behavior (skipping). Negative reinforcement increases behavior by taking something away."],
+        ["A patient learning to use crutches needs constant verbal cues, makes frequent errors, and cannot talk while practicing. Which stage of motor learning are they in?",["Cognitive","Associative","Autonomous","Retention"],"High attentional demand, many errors, and reliance on cues characterize the cognitive stage."],
+        ["A patient can now walk with a cane while carrying on a conversation and scanning the environment. This indicates the:",["Autonomous stage","Cognitive stage","Associative stage","Acquisition stage"],"Performing a skill under dual-task conditions with little attention indicates the autonomous stage."],
+        ["Your goal is long-term retention of three different transfer types. Which practice schedule is best?",["Random practice, mixing the three transfers","Blocked practice, finishing all reps of one before the next","Practicing only the easiest transfer","Mental practice only"],"Random practice creates contextual interference, which lowers performance during practice but improves retention and transfer."],
+        ["During the session, a patient practicing in a blocked schedule performs better than one practicing in a random schedule. What should you expect at a 48-hour retention test?",["The random-practice patient will likely retain the skill better","The blocked-practice patient will retain the skill better","Both will retain equally because their practice was equal","Neither will retain anything without feedback"],"Blocked practice boosts in-session performance, but random practice produces better retention. Performance during practice is not the same as learning."],
+        ["You tell a client, 'Your hips moved before your chest that time; keep your spine neutral.' What type of feedback is this?",["Knowledge of performance","Knowledge of results","Intrinsic feedback","Concurrent bandwidth feedback"],"Knowledge of performance describes the movement pattern itself. Knowledge of results describes the outcome, such as 'you jumped 30 cm.'"],
+        ["A patient in the associative stage relies on your cues for every repetition. What is the best change to your feedback?",["Fade feedback frequency or give summary feedback after several reps","Increase feedback to every repetition","Stop all feedback immediately and permanently","Switch to only giving feedback during the movement"],"Reducing feedback frequency as skill improves prevents dependence and encourages the learner to use intrinsic feedback, which improves retention."],
+        ["Which skill is generally best practiced as a whole rather than broken into parts?",["Walking (a continuous skill)","A sit-to-stand-pivot transfer","A wheelchair-to-bed transfer setup sequence","A multi-step home exercise routine"],"Continuous skills with interdependent components like gait are best practiced whole. Serial tasks with separable steps can be practiced in parts."],
+        ["Motor learning is best measured by:",["Retention and transfer tests after a delay","Performance on the last trial of practice","The number of repetitions completed","The patient's confidence rating during practice"],"Learning is a relatively permanent change, so it is measured after a delay (retention) or in a new context (transfer)."],
+        ["A child in therapy earns a sticker for each set of exercises completed and completes more sets over time. This is:",["Positive reinforcement","Negative reinforcement","Positive punishment","Classical conditioning"],"Adding a desirable stimulus (the sticker) increases the behavior. Negative reinforcement increases behavior by removing something unpleasant."],
+        ["A patient can only stand from a 24-inch surface. You praise each successful stand while gradually lowering the seat over several sessions. Which operant technique is this?",["Shaping through successive approximations","Extinction of an unwanted behavior pattern","Classical counterconditioning","Variable-ratio reinforcement"],"Shaping reinforces closer and closer approximations of the goal (standing from a normal chair). Nothing is being extinguished here."],
+        ["A patient who used to tense at the sight of the treatment table now stays relaxed after many pain-free sessions on it. This reflects:",["Extinction of the conditioned response","Spontaneous recovery of the response","Generalization to similar stimuli","Positive punishment of tensing"],"Repeated exposure to the conditioned stimulus (table) without the unconditioned stimulus (pain) weakens the conditioned response. Spontaneous recovery is the later return of an extinguished response."],
+        ["While coaching a squat, which cue reflects an external focus of attention that tends to improve learning?",["'Push the floor away from you as you stand.'","'Squeeze your quadriceps as hard as you can.'","'Keep your knees lined up over your toes.'","'Tighten your glutes at the very top.'"],"An external focus directs attention to the movement's effect on the environment (the floor). The other cues direct attention to body parts, an internal focus."],
+        ["A patient performed a new home exercise perfectly at the end of yesterday's session with constant cues, but today cannot perform it correctly without cues. What does this MOST likely indicate?",["Performance improved during practice, but learning was limited","The patient has already reached the autonomous stage of learning","Blocked practice always produces superior long-term retention","The exercise was learned and then forgotten because of fatigue"],"Cued in-session performance is not the same as learning. Poor performance on a delayed, uncued attempt (a retention test) shows the skill was not yet retained."]
+      ]
+    },
+    {
+      t: "Motivation, Behavior Change & Health Psychology",
+      sub: "Transtheoretical model, self-efficacy, health belief model, motivational interviewing, adherence",
+      lesson: [
+        "Knowing what a patient should do is rarely the hard part of rehabilitation. Getting them to do it is. A large share of patients do not complete home programs as prescribed, and adherence predicts outcomes. Health psychology gives you models for understanding why people do or do not change, and tools for helping them. None of these models is a script; each is a lens for choosing what to say next.",
+        "The <b>transtheoretical model</b> (Prochaska and DiClemente) describes readiness in stages. In <b>precontemplation</b> the person is not considering change within about 6 months. In <b>contemplation</b> they are considering it but are ambivalent; the pros and cons (decisional balance) feel roughly even. In <b>preparation</b> they intend to act within about a month and may have taken small steps. <b>Action</b> covers roughly the first 6 months of changed behavior, and <b>maintenance</b> follows. Relapse is common and is treated as recycling through the stages, not failure. The practical rule is to match the intervention to the stage: awareness and rapport for precontemplators, exploring ambivalence for contemplators, concrete planning for preparation, and relapse prevention for action and maintenance.",
+        "<b>Self-efficacy</b> (Bandura) is confidence in one's ability to perform a <i>specific</i> task, such as walking to the mailbox without a cane. It predicts effort, persistence, and adherence. Its four sources, from strongest to weakest, are <b>mastery experiences</b> (succeeding at the task), <b>vicarious experience</b> (seeing a similar person succeed), <b>verbal persuasion</b>, and <b>physiological and emotional states</b> (how one interprets breathlessness or a racing heart). Clinically, this means designing early sessions so the patient succeeds at graded tasks, rather than relying on pep talks.",
+        "Other models fill in the picture. The <b>health belief model</b> says action depends on perceived susceptibility, perceived severity, perceived benefits, perceived barriers, cues to action, and self-efficacy; a patient who doubts that exercise will help has low perceived benefit. <b>Self-determination theory</b> holds that motivation is most durable when three needs are met: <b>autonomy</b> (choice), <b>competence</b> (feeling capable), and <b>relatedness</b> (connection). Intrinsic motivation, doing something because it is enjoyable or matches one's values, usually outlasts motivation driven only by external rewards or pressure.",
+        "<b>Motivational interviewing</b> (MI) is a collaborative, person-centered conversation style for strengthening a person's own motivation. Its spirit is partnership, acceptance, compassion, and evocation: drawing reasons out rather than putting them in. The core skills are <b>OARS</b>: Open questions, Affirmations, Reflective listening, and Summaries. You listen for <b>change talk</b> (desire, ability, reasons, need, commitment) and reflect it back, while responding to <b>sustain talk</b> without arguing. The <b>righting reflex</b>, the urge to persuade and fix, usually makes the patient defend the status quo. Importance and confidence rulers are quick tools: 'On a scale of 0 to 10, how important is this to you? Why a 6 and not a 2?' The answer to the second question is change talk.",
+        "<b>Worked example.</b> A 58-year-old with knee osteoarthritis says, 'I know the exercises would help, but I never get to them.' That is contemplation. You reflect: 'You believe they would help, and finding the time has been the hard part.' Importance is 8/10 and confidence is 3/10, so the gap is confidence, not knowledge. You affirm the effort to keep coming in, then cut the program to two exercises the patient performs successfully in clinic, which is a mastery experience. Together you set a goal: 'Do both exercises right after brushing my teeth each morning, 5 days this week, and check them off on the sheet.' Linking a new behavior to an existing routine and self-monitoring both support adherence.",
+        "Practical adherence strategies follow from these models: keep programs short and specific, use written, picture, or video instructions, set SMART goals together, ask about barriers such as time, pain, cost, and transportation, build in early wins, schedule an early follow-up, and treat a lapse as a problem to solve rather than a character flaw."
+      ],
+      guide: [
+        "<b>Transtheoretical model (stages of change)</b>: precontemplation (not considering change in the next 6 months) → contemplation (considering, ambivalent) → preparation (planning within about a month) → action (changed behavior for less than 6 months) → maintenance (6+ months). Relapse can occur at any stage.",
+        "<b>Match the intervention to the stage</b>: raise awareness in precontemplation, resolve ambivalence in contemplation, build a concrete plan in preparation, and prevent relapse in action and maintenance.",
+        "<b>Self-efficacy (Bandura)</b>: confidence in one's ability to perform a specific task. The strongest source is <b>mastery experiences</b> (succeeding), followed by vicarious experience, verbal persuasion, and physiological/emotional states.",
+        "<b>Health belief model</b>: action depends on perceived susceptibility, perceived severity, perceived benefits, perceived barriers, cues to action, and self-efficacy.",
+        "<b>Intrinsic vs extrinsic motivation</b>: intrinsic motivation (enjoyment, values) tends to sustain behavior better than external rewards alone. Self-determination theory emphasizes autonomy, competence, and relatedness.",
+        "<b>Motivational interviewing (MI)</b>: a collaborative, client-centered style that elicits the client's own reasons for change. Core skills are <b>OARS</b>: Open questions, Affirmations, Reflective listening, Summaries.",
+        "<b>MI in practice</b>: listen for and reinforce <i>change talk</i>; avoid the 'righting reflex' (arguing for change), which increases resistance. Use importance and confidence rulers (0-10).",
+        "<b>Adherence strategies</b>: SMART goals set collaboratively, a simple home program, self-monitoring, and early wins that build self-efficacy."
+      ],
+      terms: [
+        ["Transtheoretical model","A stage model of behavior change running from precontemplation through contemplation, preparation, action, and maintenance."],
+        ["Decisional balance","A person's weighing of the pros and cons of changing a behavior."],
+        ["Self-efficacy","Confidence in one's ability to successfully perform a specific task or behavior."],
+        ["Mastery experience","Personally succeeding at a task, the strongest source of self-efficacy."],
+        ["Health belief model","A model predicting health behavior from perceived susceptibility, severity, benefits, barriers, cues to action, and self-efficacy."],
+        ["Self-determination theory","A theory that durable motivation depends on satisfying needs for autonomy, competence, and relatedness."],
+        ["Intrinsic motivation","Motivation that comes from enjoyment of an activity or its fit with a person's own values."],
+        ["Motivational interviewing","A collaborative conversation style that strengthens a person's own motivation and commitment to change."],
+        ["OARS","The core MI skills: Open questions, Affirmations, Reflective listening, and Summaries."],
+        ["Change talk","Statements by the person expressing desire, ability, reasons, need, or commitment to change."],
+        ["Righting reflex","The clinician's urge to persuade or fix, which tends to provoke resistance to change."],
+        ["SMART goal","A goal that is specific, measurable, achievable, relevant, and time-bound."]
+      ],
+      assignment: {
+        title: "MI conversation script",
+        task: "Write a short dialogue (about 12 exchanges) between you and a client who says they 'know they should do their home exercises but never get to it.' Identify the client's stage of change, label each of your responses with the OARS skill used, and highlight at least two examples of change talk you reinforced.",
+        deliverable: "Annotated one-to-two page dialogue script."
+      },
+      gen: [],
+      qs: [
+        ["A client says, 'I know I should start exercising, but I'm just not sure it's worth the hassle right now.' Which stage of change are they in?",["Contemplation","Precontemplation","Preparation","Action"],"They recognize the issue but are ambivalent and have no plan, which is classic contemplation."],
+        ["A patient has been doing their home program consistently for 3 months. According to the transtheoretical model, they are in:",["Action","Maintenance","Preparation","Contemplation"],"Action covers about the first 6 months of changed behavior. Maintenance begins after 6 months."],
+        ["A client in precontemplation insists their knee pain has nothing to do with their weight or activity. What is the most appropriate approach?",["Raise awareness and explore their perspective without pressure","Give them a detailed 12-week exercise plan","Focus on relapse prevention strategies","Tell them firmly that they must change now"],"Precontemplators are not considering change. Building awareness and rapport fits their stage; detailed plans and pressure tend to increase resistance."],
+        ["According to Bandura, which is the most powerful source of self-efficacy?",["Mastery experiences","Verbal persuasion","Vicarious experience","Physiological states"],"Successfully performing the task yourself is the strongest builder of self-efficacy. This is why early, achievable wins matter in rehab."],
+        ["An older adult afraid of stairs successfully climbs two steps in clinic with supervision. Why is this the best way to boost their confidence?",["It provides a mastery experience, the strongest source of self-efficacy","It provides vicarious experience by watching others","It relies on verbal persuasion from the therapist","It reduces their perceived susceptibility to falling"],"Personal success at a graded task (mastery) builds self-efficacy more than watching others or being encouraged verbally."],
+        ["In motivational interviewing, what does OARS stand for?",["Open questions, Affirmations, Reflective listening, Summaries","Observe, Assess, Recommend, Schedule","Objectives, Actions, Results, Strategies","Open questions, Advice, Reassurance, Solutions"],"OARS are the core communication skills of MI. Unsolicited advice and reassurance are not part of OARS."],
+        ["A client says, 'I guess if I walked more my back might feel better.' What is the best MI response?",["'You're noticing that walking might help your back.'","'Yes, so you need to walk 30 minutes every day.'","'Then why haven't you started already?'","'Most people feel better if they walk.'"],"Reflecting the client's own change talk reinforces it. Prescribing or challenging triggers the righting reflex and resistance."],
+        ["A clinician repeatedly argues all the reasons a patient should quit smoking, and the patient becomes defensive. In MI terms, the clinician is showing:",["The righting reflex","Reflective listening","Developing discrepancy","Rolling with resistance"],"The righting reflex is the urge to fix and persuade, which often provokes the client to defend the status quo."],
+        ["Under the health belief model, a patient who thinks home exercises will not help their condition has low:",["Perceived benefits","Perceived susceptibility","Perceived severity","Cues to action"],"Perceived benefits reflect belief that an action will be effective. Low perceived benefit predicts poor adherence."],
+        ["Which goal best supports exercise adherence?",["'Walk 15 minutes after dinner on Monday, Wednesday, and Friday for the next 2 weeks,' set together with the client","'Get in better shape,' set by the therapist","'Exercise as much as possible,' set by the client's family","'Never miss a workout again,' set by the client alone"],"Specific, measurable, time-bound, and collaboratively set goals (SMART) improve adherence more than vague or imposed goals."],
+        ["A client rates the importance of exercising as 8/10 but confidence as 3/10. Which focus is MOST appropriate next?",["Build confidence with small, achievable tasks that create early success","Explain the dangers of inactivity to raise perceived importance","Give a detailed 10-exercise program to show commitment","Wait until the client rates confidence higher on their own"],"Importance is already high; the barrier is confidence. Mastery experiences from small successes are the strongest way to build self-efficacy."],
+        ["A patient has bought walking shoes and plans to start a walking program next week. Which stage of change is this?",["Preparation","Contemplation","Action","Maintenance"],"Intending to act soon and taking small steps defines preparation. Action begins once the behavior itself has started."],
+        ["Self-determination theory proposes that motivation is best supported by meeting which three needs?",["Autonomy, competence, and relatedness","Safety, esteem, and belonging","Susceptibility, severity, and benefits","Awareness, planning, and action"],"Autonomy, competence, and relatedness are the basic needs in self-determination theory. Susceptibility, severity, and benefits come from the health belief model."],
+        ["During an MI conversation a client says, 'I don't have time to exercise, and it probably wouldn't help anyway.' This statement is an example of:",["Sustain talk","Change talk","Developing discrepancy","An affirmation"],"Sustain talk argues for keeping the current behavior. The clinician should reflect it without arguing, which avoids the righting reflex."],
+        ["A patient who had maintained a walking routine for 8 months stops after a holiday trip and says they feel like a failure. What is the BEST response?",["Normalize the lapse as common and plan with them how to restart","Tell them they must now start over at precontemplation","Discharge them because they are not committed to change","Emphasize how disappointed you are, to motivate them"],"Relapse is a normal part of change in the transtheoretical model. Normalizing it and problem-solving a restart protects self-efficacy; shame and discharge do not."]
+      ]
+    },
+    {
+      t: "Lifespan Development",
+      sub: "Piaget, Erikson, gross motor milestones, aging changes",
+      lesson: [
+        "Development is the pattern of change from conception through old age, and it happens across physical, cognitive, and psychosocial domains that constantly interact. A child who cannot yet sit cannot explore objects with both hands, which limits cognitive growth; an older adult who stops driving may lose social roles, which affects mood and activity. Development reflects both <b>nature</b> (genes, maturation) and <b>nurture</b> (environment, practice, culture), and some skills have <i>sensitive periods</i> when experience has an outsized effect. PTs treat people at every point on this span, so you must adjust how you teach to how the person thinks and what they value.",
+        "<b>Piaget</b> proposed that children actively build mental frameworks called <b>schemas</b>, fitting new information into them (assimilation) or changing them when they do not fit (accommodation). In the <b>sensorimotor</b> stage (0-2 years) infants learn through senses and movement and develop <b>object permanence</b>. In the <b>preoperational</b> stage (2-7 years) symbolic and pretend play flourish, but thinking is <i>egocentric</i> and the child lacks <i>conservation</i>. In the <b>concrete operational</b> stage (7-11 years) children reason logically about concrete things and follow rules. In the <b>formal operational</b> stage (11+ years) abstract and hypothetical reasoning appears. Clinically: toddlers need toys and play to elicit movement, preschoolers need pretend games and very short instructions, school-age children respond to rules, charts, and challenges, and adolescents can understand the reasoning behind a plan.",
+        "<b>Erikson</b> described eight psychosocial crises: trust vs mistrust (infancy), autonomy vs shame and doubt (toddler), initiative vs guilt (preschool), industry vs inferiority (school age), identity vs role confusion (adolescence), intimacy vs isolation (young adult), generativity vs stagnation (middle adult), and integrity vs despair (older adult). These stages help you understand what is at stake for the patient. An injured adolescent athlete may feel their identity is threatened; a middle-aged parent may be driven by being able to coach or care for others; an older adult may judge recovery by whether they can keep meaningful roles.",
+        "Motor development follows predictable principles: <b>cephalocaudal</b> (head control before trunk, trunk before legs), <b>proximodistal</b> (shoulder control before fine finger control), and gross motor before fine motor. Approximate milestones are head control about 4 months, rolling about 4-6 months, independent sitting about 6-8 months, crawling about 7-10 months, pulling to stand about 9 months, and independent walking about 12 months, with a wide normal range. Primitive reflexes such as the Moro and asymmetric tonic neck reflex normally integrate in the first months as postural reactions emerge. Red flags include persistent primitive reflexes, marked asymmetry, loss of previously gained skills, and not walking by about 18 months. Detailed pediatric assessment is covered in the Pediatrics course.",
+        "Adolescence brings rapid growth spurts. Bones can lengthen faster than muscles and tendons adapt, so flexibility and coordination may temporarily decline. Adulthood is a long plateau of capacity that slowly declines with inactivity and age. With aging, muscle mass and strength decrease (<b>sarcopenia</b>), power declines faster than strength, reaction time slows, and vision, vestibular, and somatosensory inputs become less reliable, shrinking balance reserve. <b>Crystallized intelligence</b> (knowledge and vocabulary) is well preserved, while <b>fluid intelligence</b> and processing speed decline. Crucially, older adults keep the capacity to learn motor skills and to gain strength with progressive resistance training; they may simply need more practice, more time, and clear demonstrations.",
+        "<b>Worked example.</b> Teaching a curb step-up to three people. For a 6-year-old (preoperational moving into concrete operational; initiative vs guilt shifting to industry vs inferiority), make it a game: 'Step up onto the island before the lava rises,' with one short cue and lots of repetitions. For a 35-year-old (formal operational; intimacy vs isolation), explain why the hip and knee must work together, and tie the goal to their life, such as hiking with a partner. For a 78-year-old (integrity vs despair), demonstrate slowly, practice with a rail first, allow more trials and rest, and link the task to something meaningful, such as stepping onto a grandchild's porch. Avoid ageist assumptions: challenge the older adult at a level that actually produces adaptation.",
+        "Across the lifespan, the same exercise can be right for everyone, but the delivery must fit the learner's cognitive stage, psychosocial priorities, and physical capacity."
+      ],
+      guide: [
+        "<b>Piaget's cognitive stages</b>: <i>sensorimotor</i> (0-2 y; object permanence), <i>preoperational</i> (2-7 y; symbolic play, egocentrism), <i>concrete operational</i> (7-11 y; conservation, logical thinking about concrete things), <i>formal operational</i> (11+ y; abstract and hypothetical reasoning).",
+        "<b>Erikson's psychosocial stages</b>: trust vs mistrust (infancy); autonomy vs shame and doubt (toddler); initiative vs guilt (preschool); industry vs inferiority (school age); identity vs role confusion (adolescence); intimacy vs isolation (young adult); generativity vs stagnation (middle adult); integrity vs despair (older adult).",
+        "<b>Motor development principles</b>: cephalocaudal (head to tail) and proximal-to-distal; gross motor before fine motor; milestones vary within normal ranges.",
+        "<b>Gross motor milestones (approximate)</b>: head control about 4 months; rolling about 4-6 months; sitting independently about 6-8 months; crawling about 7-10 months; pulling to stand about 9 months; walking independently about 12 months (normal range to about 15-18 months).",
+        "<b>Primitive reflexes</b> (such as Moro and asymmetric tonic neck reflex) normally integrate in the first months of life; persistence beyond the expected window is a red flag for neurological involvement.",
+        "<b>Adolescence</b>: rapid growth spurts can temporarily affect coordination and flexibility. Formal operational thinking allows more abstract goal-setting.",
+        "<b>Older adulthood</b>: sarcopenia, declining power, slower reaction time, and reduced balance reserve are typical. Learning capacity is preserved but may need more practice and time; fall risk rises."
+      ],
+      terms: [
+        ["Schema","In Piaget's theory, a mental framework that organizes and interprets information."],
+        ["Object permanence","Understanding that objects continue to exist when out of sight, developed in the sensorimotor stage."],
+        ["Conservation","Understanding that quantity stays the same despite changes in shape or appearance, achieved in the concrete operational stage."],
+        ["Egocentrism","A young child's difficulty taking another person's point of view, typical of the preoperational stage."],
+        ["Cephalocaudal development","The principle that motor control develops from the head downward toward the feet."],
+        ["Proximodistal development","The principle that motor control develops from the trunk and proximal joints outward to the hands and fingers."],
+        ["Gross motor milestone","A large-muscle skill, such as sitting or walking, that most children achieve within a typical age range."],
+        ["Primitive reflex","An automatic infant movement pattern, such as the Moro reflex, that normally integrates in early infancy."],
+        ["Generativity","Erikson's middle-adulthood task of contributing to and guiding the next generation."],
+        ["Integrity vs despair","Erikson's late-adulthood stage of reflecting on whether one's life has been meaningful."],
+        ["Sarcopenia","Age-related loss of skeletal muscle mass and strength or function."],
+        ["Crystallized intelligence","Accumulated knowledge and verbal skills, which are largely preserved with aging."]
+      ],
+      assignment: {
+        title: "Same exercise, three ages",
+        task: "Take one functional skill (such as stepping up a curb) and write how you would teach it to a 6-year-old, a 35-year-old, and a 78-year-old. For each, name the Piaget and Erikson stage and explain how it changes your cueing, goal-setting, and motivation strategy.",
+        deliverable: "Three-column comparison table with a short rationale per age."
+      },
+      gen: [],
+      qs: [
+        ["A 9-month-old searches for a toy after it is hidden under a blanket. Which Piagetian achievement does this show?",["Object permanence","Conservation","Abstract reasoning","Egocentrism"],"Object permanence develops during the sensorimotor stage (0-2 years) and means understanding objects exist when out of sight."],
+        ["A 4-year-old believes a tall, thin glass holds more juice than a short, wide glass with the same amount. Which stage is this child in?",["Preoperational","Concrete operational","Formal operational","Sensorimotor"],"Lack of conservation is typical of the preoperational stage (2-7 years). Conservation emerges in the concrete operational stage."],
+        ["A 15-year-old athlete can reason through 'what if' scenarios about a return-to-sport plan. This reflects which Piaget stage?",["Formal operational","Concrete operational","Preoperational","Sensorimotor"],"Formal operational thinking (about 11+ years) allows abstract and hypothetical reasoning."],
+        ["According to Erikson, the main psychosocial task of an older adult reviewing their life is:",["Integrity vs despair","Generativity vs stagnation","Intimacy vs isolation","Identity vs role confusion"],"Late adulthood centers on integrity vs despair, a reflection on whether life has been meaningful."],
+        ["A 45-year-old patient is highly motivated to recover so they can keep coaching youth sports and mentoring others. This reflects which Erikson stage?",["Generativity vs stagnation","Integrity vs despair","Industry vs inferiority","Autonomy vs shame and doubt"],"Middle adulthood's task is generativity: contributing to and guiding the next generation."],
+        ["Motor control developing from the head downward toward the feet describes which principle?",["Cephalocaudal development","Proximal-to-distal development","Fine-before-gross development","Contextual interference"],"Cephalocaudal means head-to-tail. Infants gain head control before trunk control and before standing."],
+        ["At approximately what age do most infants first walk independently?",["About 12 months","About 6 months","About 24 months","About 4 months"],"Independent walking typically emerges around 12 months, with a normal range extending to about 15-18 months."],
+        ["A 12-month-old still shows a strong Moro reflex. What is the most appropriate interpretation?",["It is a possible sign of neurological involvement that warrants further evaluation","It is normal and expected at this age","It indicates advanced motor development","It means the child will walk early"],"The Moro reflex normally integrates in the first months of life. Persistence well beyond that window is a red flag."],
+        ["A school-age child in physical therapy is most motivated by mastering new skills and comparing well with peers. This fits which Erikson stage?",["Industry vs inferiority","Initiative vs guilt","Trust vs mistrust","Intimacy vs isolation"],"School-age children (about 6-12 years) work through industry vs inferiority, building competence through accomplishment."],
+        ["Which change is typical of healthy aging and most relevant to fall risk?",["Declining muscle power and slower reaction time","Loss of the ability to learn new motor skills","Increased muscle mass in the lower limbs","Faster nerve conduction velocity"],"Older adults lose power faster than strength and react more slowly, both of which increase fall risk. Motor learning capacity is preserved."],
+        ["A 5-year-old in therapy quickly loses interest in repetitive heel raises. Which strategy BEST fits their developmental stage?",["Turn the exercise into a pretend game, like reaching up to pick apples","Explain the biomechanics of the ankle plantarflexors in detail","Give a written log for the child to complete independently","Increase the number of repetitions to build discipline"],"Preschoolers are in the preoperational stage, where symbolic and pretend play drive engagement. Abstract explanations and written logs do not fit their thinking."],
+        ["Infants typically gain control of the shoulders before control of the fingers. This illustrates:",["Proximal-to-distal development","Cephalocaudal (head-to-toe) development","Contextual interference","Object permanence"],"Proximodistal development moves from the trunk and proximal joints outward. Cephalocaudal development describes the head-to-feet direction."],
+        ["A 16-year-old soccer player is distressed after an ACL tear because 'being an athlete is who I am.' Which Erikson stage is MOST relevant?",["Identity vs role confusion","Industry vs inferiority","Intimacy vs isolation","Generativity vs stagnation"],"Adolescence centers on forming an identity. Injury that threatens an athletic identity is a common source of distress at this age."],
+        ["Which ability is typically MOST preserved with healthy aging?",["Crystallized knowledge such as vocabulary","Speed of processing new information","Muscle power in the lower limbs","Reaction time to unexpected perturbations"],"Crystallized intelligence stays largely stable with age. Processing speed, power, and reaction time all decline."],
+        ["An 80-year-old starting a strengthening program says, 'At my age, I can't get any stronger.' What is the MOST accurate response?",["Older adults can still make meaningful strength gains with progressive training","Strength cannot improve after age 75, but balance can still be maintained","Only light range-of-motion exercise is safe after age 80","Strength gains are possible only with medication support"],"Older adults remain trainable and gain strength with adequately dosed progressive resistance exercise. Under-dosing because of age is a common error."]
+      ]
+    },
+    {
+      t: "Pain Psychology & Psychosocial Factors",
+      sub: "Biopsychosocial model, fear-avoidance, catastrophizing, yellow flags, pain science education",
+      lesson: [
+        "For most of the twentieth century, medicine used a <b>biomedical model</b>: find the damaged tissue, fix it, and the pain should go away. That model works well for an acute fracture but poorly for persistent back or neck pain, where imaging findings and pain often do not line up. Engel's <b>biopsychosocial model</b> proposes that health and illness emerge from interacting biological factors (tissue, nervous system, genetics), psychological factors (beliefs, emotions, coping, attention), and social factors (work, family, culture, finances). This unit introduces the psychology of pain; the neurophysiology and full management of persistent pain are covered in the Pain Science and Psychosocial Care course.",
+        "The International Association for the Study of Pain defines pain as 'an unpleasant sensory and emotional experience associated with, or resembling that associated with, actual or potential tissue damage.' Two consequences follow. First, <b>nociception</b>, the nervous system's detection of potentially harmful stimuli, is not the same as pain. Nociception can occur without pain, as when an injured athlete keeps playing, and pain can occur without nociception, as in phantom limb pain. Second, pain is shaped by context, meaning, attention, and expectation. Many people without pain have disc bulges or rotator cuff changes on imaging, so a scan finding is not automatically the cause of a patient's symptoms.",
+        "The <b>fear-avoidance model</b> (Vlaeyen and Linton) explains why some people recover from an episode of pain while others become stuck. After pain begins, a person who interprets it as non-threatening keeps moving and gradually recovers. A person who interprets it <b>catastrophically</b> ('my spine is crumbling') develops <b>fear of movement</b>, avoids activity, and becomes hypervigilant to body sensations. Avoidance brings short-term relief, which is negatively reinforcing, but over time leads to deconditioning, disuse, low mood, and more disability, which feeds back into more pain and fear.",
+        "Several psychological factors are measurable. <b>Pain catastrophizing</b> includes rumination, magnification, and helplessness, measured with the Pain Catastrophizing Scale. <b>Kinesiophobia</b>, fear of movement or re-injury, is measured with the Tampa Scale of Kinesiophobia. The Fear-Avoidance Beliefs Questionnaire has physical activity and work subscales. Low self-efficacy, depression, and anxiety also predict poorer outcomes. The <b>STarT Back Screening Tool</b> sorts people with low back pain into low, medium, or high risk of a poor outcome; high-risk patients may benefit from psychologically informed physical therapy.",
+        "<b>Yellow flags</b> are psychosocial risk factors for persistent pain and disability: fear-avoidance, catastrophizing, the belief that hurt means harm, passive coping, low mood, and work problems. They are not reasons to refuse treatment; they are targets for treatment. <b>Red flags</b> are signs of possible serious pathology, such as cancer, infection, fracture, or cauda equina syndrome, and require medical referral. When a patient shows signs of significant depression, anxiety, trauma, or thoughts of self-harm, screen within your scope and refer to a physician or mental health professional.",
+        "PTs have effective tools for the psychological side of pain. <b>Pain neuroscience education</b> explains how the nervous system produces pain, reducing threat and making movement feel safer. <b>Graded activity</b> increases activity by pre-set time or quota goals rather than by daily pain, breaking the boom-and-bust cycle. <b>Graded exposure</b> builds a hierarchy of feared activities and works up it step by step so the patient learns that feared movements are safe. Language matters: 'your back is strong and adaptable' supports recovery, while 'your spine is degenerating' can create fear.",
+        "<b>Worked example.</b> A 42-year-old warehouse worker has had low back pain for 4 months and avoids bending because he fears 'slipping a disc.' Red flags are screened and absent. His STarT Back score is high risk and his Tampa score is elevated. You explain in plain language that backs are strong, that pain does not equal damage, and that gradual loading makes tissues more resilient. Together you build an exposure ladder: pick up a towel from a stool, then from a low step, then from the floor, then lift a light box from the floor, progressing on a weekly plan rather than on daily pain. You repeat the Tampa Scale and a function measure at 4 weeks to track change."
+      ],
+      guide: [
+        "<b>Biopsychosocial model</b>: pain and disability result from interacting biological (tissue, nervous system), psychological (beliefs, emotions, coping), and social (work, family, culture) factors. It replaces a purely biomedical view.",
+        "<b>Pain is an experience</b>: the IASP defines pain as an unpleasant sensory and emotional experience associated with, or resembling that associated with, actual or potential tissue damage. Nociception and pain are not the same.",
+        "<b>Fear-avoidance model</b>: pain → catastrophic interpretation → fear of movement → avoidance and hypervigilance → deconditioning, disability, and more pain. Low-fear patients confront activity and tend to recover.",
+        "<b>Pain catastrophizing</b>: rumination, magnification, and helplessness about pain. Measured with the <b>Pain Catastrophizing Scale (PCS)</b>; higher scores predict worse outcomes.",
+        "<b>Kinesiophobia</b>: fear of movement or re-injury, measured with the <b>Tampa Scale of Kinesiophobia</b>. The <b>Fear-Avoidance Beliefs Questionnaire (FABQ)</b> has physical activity and work subscales.",
+        "<b>Yellow flags</b> are psychosocial risk factors for chronicity (fear-avoidance, catastrophizing, low mood, passive coping, belief that hurt equals harm, work dissatisfaction). They differ from <b>red flags</b>, which suggest serious pathology requiring medical referral.",
+        "<b>Screening tools</b>: the <b>STarT Back Screening Tool</b> stratifies low back pain patients into low, medium, and high risk of poor outcome to guide treatment.",
+        "<b>Interventions</b>: pain neuroscience education, graded activity (time-contingent goals), graded exposure to feared movements, and promoting active coping. Refer to a mental health professional when depression, anxiety, or trauma exceed PT scope."
+      ],
+      terms: [
+        ["Biopsychosocial model","A model in which health and illness arise from interacting biological, psychological, and social factors."],
+        ["Nociception","The nervous system's detection and processing of potentially harmful stimuli, which is not the same as pain."],
+        ["Pain (IASP definition)","An unpleasant sensory and emotional experience associated with, or resembling that associated with, actual or potential tissue damage."],
+        ["Fear-avoidance model","A model in which catastrophic interpretation of pain leads to fear, avoidance, deconditioning, and ongoing disability."],
+        ["Pain catastrophizing","An exaggerated negative mindset toward pain involving rumination, magnification, and helplessness."],
+        ["Kinesiophobia","An excessive fear of movement or physical activity due to a feeling of vulnerability to injury or re-injury."],
+        ["Yellow flags","Psychosocial risk factors that increase the likelihood of persistent pain and disability."],
+        ["Red flags","Signs or symptoms suggesting serious pathology that requires medical referral."],
+        ["STarT Back Screening Tool","A brief questionnaire that stratifies low back pain patients into low, medium, or high risk of a poor outcome."],
+        ["Graded activity","An approach that increases activity using pre-set time or quota goals rather than pain levels."],
+        ["Graded exposure","Systematic, step-by-step confrontation of feared movements or activities to reduce fear and avoidance."],
+        ["Pain neuroscience education","Teaching patients how the nervous system produces pain in order to reduce threat and support active recovery."]
+      ],
+      assignment: {
+        title: "Yellow-flag screen and graded exposure plan",
+        task: "Write a case of a client with 4 months of low back pain who avoids bending because they fear 'slipping a disc.' Identify their yellow flags, choose two screening tools you would administer, and outline a 4-week graded exposure plan for bending. Include the education message you would give in plain language.",
+        deliverable: "One-page case summary with screening plan, graded exposure ladder, and education script."
+      },
+      gen: [],
+      qs: [
+        ["Which model explains pain as the interaction of tissue, beliefs and emotions, and social context?",["Biopsychosocial model","Biomedical model","Transtheoretical model","Health belief model"],"The biopsychosocial model integrates biological, psychological, and social factors. The biomedical model looks only at tissue pathology."],
+        ["A patient with low back pain believes bending will damage their spine, so they avoid it and become increasingly deconditioned. This pattern is described by the:",["Fear-avoidance model","Gate control theory","Stages of motor learning","Health belief model"],"Catastrophic beliefs lead to fear, avoidance, and deconditioning, which perpetuate pain and disability in the fear-avoidance cycle."],
+        ["A patient says, 'This pain is terrible and it's never going to get better. I can't stop thinking about it.' This most reflects:",["Pain catastrophizing","Kinesiophobia only","Malingering","A red flag for cancer"],"Rumination, magnification, and helplessness are the components of catastrophizing, measured with the Pain Catastrophizing Scale."],
+        ["Which finding is a yellow flag rather than a red flag?",["Belief that hurt always means harm","Unexplained weight loss with night pain","Saddle anesthesia and new bladder retention","History of cancer with new constant pain"],"Yellow flags are psychosocial risk factors for chronic disability. The other options are red flags suggesting serious pathology."],
+        ["Which tool is designed to stratify patients with low back pain into low, medium, or high risk of a poor outcome?",["STarT Back Screening Tool","Tampa Scale of Kinesiophobia","Berg Balance Scale","Fear-Avoidance Beliefs Questionnaire"],"STarT Back stratifies risk to match treatment intensity. Tampa and FABQ measure specific fear constructs rather than overall risk stratification."],
+        ["You want to measure a patient's fear of movement and re-injury specifically. Which tool is most appropriate?",["Tampa Scale of Kinesiophobia","Pain Catastrophizing Scale","Numeric Pain Rating Scale","Oswestry Disability Index"],"The Tampa Scale measures kinesiophobia. PCS measures catastrophizing; the NPRS measures intensity; the Oswestry measures disability."],
+        ["A patient with high fear of lifting has been cleared of serious pathology. What is the most appropriate intervention approach?",["Pain education plus graded exposure to progressively more feared lifting tasks","Strict avoidance of lifting until pain fully resolves","Passive modalities only until fear subsides","Bed rest with gradual return when pain-free"],"Graded exposure, combined with education, directly targets fear-avoidance by showing the feared movement is safe. Avoidance and rest reinforce the cycle."],
+        ["In graded activity for chronic pain, progression is best based on:",["Pre-set time or quota goals rather than pain levels","Stopping whenever pain increases at all","The patient's daily pain rating alone","Doing as much as possible on good days"],"Graded activity uses time- or quota-contingent progression to break the pain-guided boom-and-bust cycle."],
+        ["According to the IASP definition, which statement about pain is correct?",["Pain is a sensory and emotional experience and is not the same as nociception","Pain always indicates the amount of tissue damage","Pain only exists when tissue damage is visible on imaging","Nociception and pain are identical processes"],"Pain is an experience produced by the nervous system. Nociception can occur without pain and pain can occur without nociception."],
+        ["During treatment, a patient discloses persistent hopelessness and loss of interest in all activities for the past month. What is the most appropriate action?",["Screen further and refer to a physician or mental health professional","Ignore it because it is outside the musculoskeletal complaint","Increase exercise intensity to improve mood","Tell the patient to think more positively"],"Possible depression is beyond PT scope to treat but within scope to screen and refer. Appropriate referral is part of biopsychosocial care."],
+        ["A person's lumbar MRI shows disc bulges, but they have no back pain. What concept does this BEST illustrate?",["Imaging findings and pain are often poorly related","Disc bulges always become painful within a year","The MRI must have been read incorrectly","Pain is caused only by structural changes"],"Structural findings are common in people without pain, so they do not automatically explain symptoms. This supports a biopsychosocial view of pain."],
+        ["In the fear-avoidance model, a person who interprets their new pain as non-threatening is MOST likely to:",["Confront activity and recover","Develop hypervigilance","Avoid movement and decondition","Increase catastrophizing"],"Low-fear interpretation leads to continued activity (confrontation) and recovery. The other options describe the catastrophizing pathway."],
+        ["A patient with chronic neck pain stops all activity on bad days and overdoes it on good days. Which approach BEST addresses this pattern?",["Set time-based activity quotas that progress gradually regardless of daily pain","Encourage the patient to do as much as they can whenever pain levels are low","Prescribe complete rest on days when pain is above 5/10","Use passive treatments only until the pain fully resolves"],"Graded activity uses time- or quota-contingent goals to break the boom-and-bust cycle. Letting pain dictate activity keeps the cycle going."],
+        ["Which statement BEST describes pain neuroscience education?",["Teaching patients how the nervous system produces pain to reduce threat","Teaching patients the anatomy of each injured tissue in detail","Telling patients their pain is psychological and not real","Explaining that pain always equals the extent of tissue damage"],"PNE reframes pain as a protective output of the nervous system, which lowers threat. It never tells patients their pain is not real."],
+        ["A patient's STarT Back score places them in the high-risk group. What does this MOST suggest?",["They may benefit from psychologically informed physical therapy","They need immediate referral for spinal surgery","They have a serious pathology such as cancer","They need only brief advice and reassurance, then discharge from care"],"High STarT Back risk reflects psychosocial factors linked to poor outcomes, which suits psychologically informed care. It is not a screen for serious pathology."]
+      ]
+    }
+  ]
 });
