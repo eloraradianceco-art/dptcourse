@@ -3,20 +3,52 @@
   track: "prereq",
   order: 4,
   code: "PRE 111",
-  title: "General Chemistry",
+  title: "General Chemistry I",
   credits: 4,
-  desc: "The chemistry behind physiology: bonding, solutions and osmolarity, pH and buffers, reaction energy and enzymes, and the macromolecules that build tissue. It explains why IV fluids are isotonic, how blood pH stays stable, and where ATP energy comes from.",
+  desc: "The chemistry behind physiology: bonding, solutions and osmolarity, pH and buffers, reaction energy and enzymes, and the macromolecules that build tissue. It explains why IV fluids are isotonic, how blood pH stays stable, and where ATP energy comes from. First semester of the general chemistry sequence; gases, equilibrium, advanced acid-base, electrochemistry, and biochemistry are developed further in General Chemistry II.",
   objectives: [
     "Describe atomic structure and distinguish ionic, covalent, and hydrogen bonds",
+    "Predict molecular polarity and solubility from electronegativity and explain why it matters for drugs and membranes",
     "Calculate concentration and osmolarity and predict water movement between body compartments",
     "Explain pH, acids, bases, and buffers, including the bicarbonate buffer system",
     "Describe how energy, activation energy, and enzymes control reaction rates",
-    "Identify the structure and function of carbohydrates, lipids, proteins, and nucleic acids"
+    "Identify the structure and function of carbohydrates, lipids, proteins, and nucleic acids",
+    "Apply introductory chemistry to clinical scenarios such as electrolyte imbalance, IV fluid choice, and NSAID action"
+  ],
+  references: [
+    "Tro NJ. Chemistry: A Molecular Approach. Pearson.",
+    "Timberlake KC. General, Organic, and Biological Chemistry: Structures of Life. Pearson.",
+    "Brown TL, LeMay HE, Bursten BE, Murphy CJ, Woodward PM. Chemistry: The Central Science. Pearson.",
+    "Hall JE, Hall ME. Guyton and Hall Textbook of Medical Physiology. Elsevier.",
+    "Nelson DL, Cox MM. Lehninger Principles of Biochemistry. W.H. Freeman."
   ],
   units: [
     {
       t: "Atoms & Bonding",
       sub: "Atomic structure, ions, ionic/covalent/hydrogen bonds, polarity",
+      lesson: [
+        "Physiology is chemistry happening in water, so the first job is understanding what atoms are and why they bond. An atom has a dense nucleus of positively charged <b>protons</b> and neutral <b>neutrons</b>, surrounded by negatively charged <b>electrons</b> in shells (orbitals). The <b>atomic number</b> is the number of protons and defines the element: every atom with 6 protons is carbon, every atom with 20 is calcium. The <b>mass number</b> is protons plus neutrons. Atoms of the same element with different neutron counts are <b>isotopes</b>; some are unstable and emit radiation, which is the basis of nuclear medicine bone scans that detect stress fractures and metastases.",
+        "Chemical behavior is driven by <b>valence electrons</b>, those in the outermost shell. Atoms are most stable with a full outer shell, usually eight electrons (the octet rule). An atom can reach that state by losing, gaining, or sharing electrons. Sodium has one valence electron and readily loses it to become Na<sup>+</sup>; chlorine has seven and readily gains one to become Cl<sup>&minus;</sup>. Positive ions are <b>cations</b>; negative ions are <b>anions</b>. Calcium loses two electrons to become Ca<sup>2+</sup>.",
+        "When electrons are transferred, oppositely charged ions attract one another: an <b>ionic bond</b>. Crystals such as NaCl and the calcium phosphate mineral of bone (hydroxyapatite) are held by ionic attraction. In water, ionic compounds dissociate into free ions. Because these ions carry charge and conduct current, they are called <b>electrolytes</b>. Sodium, potassium, calcium, chloride, and bicarbonate concentrations are tightly regulated because they set membrane potentials, muscle contraction, and acid-base balance.",
+        "When atoms share electrons, they form a <b>covalent bond</b>. Whether sharing is equal depends on <b>electronegativity</b>, an atom's pull on shared electrons. Oxygen and nitrogen are highly electronegative; carbon and hydrogen are similar to each other. A C-H bond shares electrons nearly equally, so it is <b>nonpolar</b>. An O-H bond shares unequally, so oxygen carries a partial negative charge and hydrogen a partial positive charge: a <b>polar covalent</b> bond. Covalent bonds are strong and form the backbone of every biological molecule.",
+        "<b>Hydrogen bonds</b> are weak attractions between a partially positive hydrogen and a partially negative O or N on another molecule or another part of the same molecule. Individually weak, they act in enormous numbers: they hold DNA strands together, stabilize protein folding, and give collagen's triple helix much of its stability. Their weakness is useful, because DNA must be unzipped for copying and proteins must change shape to function.",
+        "Water ties it all together. Its bent shape and polar O-H bonds make it a <b>polar molecule</b> that dissolves ions and polar substances (hydrophilic) but excludes nonpolar substances (hydrophobic). That rule of thumb, 'like dissolves like', explains why fats cluster into droplets, why phospholipids form bilayers, and why lipid-soluble drugs cross membranes more easily than charged ones. Hydrogen bonding also gives water a high <b>specific heat</b> and a high heat of vaporization, so body water absorbs metabolic heat with little temperature change and sweat evaporation removes large amounts of heat.",
+        "<b>Worked example</b>: a patient taking a loop diuretic reports muscle cramps and weakness during exercise. Diuretics increase urinary loss of Na<sup>+</sup>, K<sup>+</sup>, and other electrolytes. Low potassium alters the resting membrane potential of muscle and nerve, making cells less excitable and, in the heart, prone to arrhythmia. Recognizing that 'electrolytes' are ions whose charge sets membrane potentials helps the PT see why new weakness or palpitations in this patient warrant communication with the prescriber rather than simply more stretching."
+      ],
+      terms: [
+        ["Atomic number", "The number of protons in an atom's nucleus, which defines the element."],
+        ["Mass number", "The total number of protons and neutrons in an atom's nucleus."],
+        ["Isotope", "Form of an element with the same number of protons but a different number of neutrons."],
+        ["Valence electrons", "Electrons in the outermost shell that determine how an atom bonds."],
+        ["Cation", "Positively charged ion formed when an atom loses electrons."],
+        ["Anion", "Negatively charged ion formed when an atom gains electrons."],
+        ["Electrolyte", "Substance that dissociates into ions in water and conducts electric current."],
+        ["Ionic bond", "Attraction between oppositely charged ions formed by electron transfer."],
+        ["Covalent bond", "Chemical bond formed when two atoms share a pair of electrons."],
+        ["Electronegativity", "An atom's tendency to attract shared electrons in a covalent bond."],
+        ["Hydrogen bond", "Weak attraction between a partially positive hydrogen and a partially negative O or N atom."],
+        ["Specific heat", "Amount of heat needed to raise the temperature of a unit mass of a substance by one degree."]
+      ],
       guide: [
         "<b>Atom</b>: protons (+, nucleus), neutrons (neutral, nucleus), electrons (&minus;, orbitals). Atomic number = protons; mass number = protons + neutrons.",
         "<b>Isotopes</b> have the same protons but different neutrons (e.g., carbon-12 vs carbon-14). Radioisotopes are used in imaging and bone scans.",
@@ -43,12 +75,40 @@
         ["Carbon-12 and carbon-14 differ in their number of:", ["Neutrons", "Protons", "Electrons", "Chemical bonds"], "Isotopes of an element have the same number of protons but different numbers of neutrons, which changes mass but not chemical identity."],
         ["The O-H bond in water is a polar covalent bond because:", ["Oxygen pulls the shared electrons more strongly than hydrogen", "Electrons are completely transferred to oxygen", "Hydrogen and oxygen share electrons equally", "Oxygen has no electrons to share"], "Oxygen's higher electronegativity gives it a partial negative charge and leaves hydrogens partially positive."],
         ["Why does water's high specific heat matter during exercise?", ["Body water absorbs a lot of heat with only a small rise in temperature", "Water releases heat instantly, cooling the body", "Water cannot absorb heat, so sweat is needed", "High specific heat makes water evaporate at a lower temperature"], "Water's high specific heat buffers temperature swings, and its high heat of vaporization makes sweat evaporation an effective cooling mechanism."],
-        ["Calcium usually exists in the body as Ca2+. How many electrons has it lost relative to the neutral atom?", ["Two", "One", "Three", "Zero"], "A 2+ charge means two electrons were lost. Ca2+ is critical for muscle contraction, clotting, and bone mineral."]
+        ["Calcium usually exists in the body as Ca2+. How many electrons has it lost relative to the neutral atom?", ["Two", "One", "Three", "Zero"], "A 2+ charge means two electrons were lost. Ca2+ is critical for muscle contraction, clotting, and bone mineral."],
+        ["A patient taking a loop diuretic reports new muscle weakness and cramping during exercise. Which chemical explanation is MOST likely?", ["Loss of potassium ions alters muscle membrane potential", "The diuretic breaks covalent bonds in muscle proteins", "Water loss increases the specific heat of the blood", "The diuretic converts sodium ions into neutral atoms"], "Diuretics increase urinary loss of electrolytes such as K+. Low potassium changes resting membrane potential and excitability, producing weakness, cramps, and arrhythmia risk."],
+        ["Which bond type is primarily responsible for the hardness of bone mineral (hydroxyapatite)?", ["Ionic bonds between calcium and phosphate ions", "Hydrogen bonds between water molecules", "Nonpolar covalent bonds between carbons", "Peptide bonds between amino acids"], "Hydroxyapatite is a crystal of Ca2+ and phosphate ions held by ionic attraction. Collagen supplies the organic, flexible component of bone."],
+        ["A bone scan uses a radioactive tracer that is taken up at sites of increased bone turnover. What makes the tracer atom radioactive?", ["An unstable nucleus with a particular neutron count", "Extra valence electrons in its outer shell", "A missing proton that changes its charge", "Its ability to form strong ionic bonds"], "Radioisotopes have unstable nuclei, usually from their neutron-to-proton ratio, and emit radiation as they decay. Valence electrons govern bonding, not radioactivity."],
+        ["Why are DNA strands held together by hydrogen bonds rather than covalent bonds, from a functional standpoint?", ["Weak bonds let strands separate for replication and transcription", "Hydrogen bonds are stronger than covalent bonds", "Covalent bonds cannot form between nitrogen and hydrogen", "Hydrogen bonds prevent mutations from ever occurring"], "Hydrogen bonds are individually weak, so the strands can be unzipped and rejoined. Covalent bonds are far stronger and form the sugar-phosphate backbone."],
+        ["Which molecule is MOST likely to dissolve readily in the hydrophobic core of a cell membrane?", ["A small nonpolar molecule", "A sodium ion", "A highly charged amino acid", "A glucose molecule"], "Like dissolves like: nonpolar molecules mix with the hydrophobic lipid tails. Ions and polar molecules such as glucose require proteins to cross."]
       ]
     },
     {
       t: "Solutions, Concentration & Osmolarity",
       sub: "Molarity, osmolarity, tonicity, body fluid compartments, IV fluids",
+      lesson: [
+        "The body is mostly water, and most of what PTs see in fluid balance (edema, dehydration, orthostatic dizziness, exercise-associated hyponatremia) depends on how dissolved particles are distributed across membranes. A <b>solution</b> is a <b>solute</b> dissolved in a <b>solvent</b>; in the body, the solvent is water. Concentration describes how much solute is present per unit of solution.",
+        "The workhorse unit is <b>molarity</b>: <span class='formula'>M = moles of solute / liters of solution</span>. A mole is 6.02 &times; 10<sup>23</sup> particles, and the mass of one mole in grams (the molar mass) comes from the periodic table. Glucose (C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>) has a molar mass of about 180 g/mol, so 180 g of glucose in 1 L of solution is a 1 M solution, and 90 g in 1 L is 0.5 M. Clinical labs often report electrolytes in millimoles per liter (mmol/L) or milliequivalents per liter (mEq/L); for monovalent ions like Na<sup>+</sup> and K<sup>+</sup>, the two numbers are the same.",
+        "Water movement depends not on the mass of solute but on the <b>number of dissolved particles</b>. <b>Osmolarity</b> counts them: <span class='formula'>osmolarity = molarity &times; particles per formula unit</span>. Glucose does not dissociate, so 1 M glucose is 1 Osm/L. NaCl dissociates into Na<sup>+</sup> and Cl<sup>&minus;</sup>, so 0.15 M NaCl is about 0.30 Osm/L, or 300 mOsm/L. CaCl<sub>2</sub> gives three particles. Plasma osmolality is a little under 300 mOsm/kg (reference ranges vary by lab), and it is tightly regulated by thirst and antidiuretic hormone (ADH).",
+        "<b>Osmosis</b> is the net movement of water across a semipermeable membrane toward the side with more dissolved particles. No ATP is involved; water simply moves to equalize particle concentration. <b>Tonicity</b> narrows osmolarity to what actually changes cell volume: only solutes that cannot cross the membrane create a lasting water shift. Urea crosses cell membranes freely, so it adds to osmolarity but not to tonicity. Relative to cells, an <b>isotonic</b> solution causes no volume change, a <b>hypotonic</b> one causes swelling, and a <b>hypertonic</b> one causes shrinking.",
+        "Total body water is about 60% of body weight in a typical adult male (less with more body fat and in older adults). Roughly two-thirds is <b>intracellular fluid</b>, one-third <b>extracellular</b>. Extracellular fluid is split between interstitial fluid (around cells) and plasma. Na<sup>+</sup> is the main extracellular cation and K<sup>+</sup> the main intracellular cation; the Na<sup>+</sup>/K<sup>+</sup> pump maintains this difference. Because water follows particles, extracellular sodium concentration largely determines whether cells gain or lose water.",
+        "IV fluid choice is a direct application. <b>0.9% NaCl (normal saline)</b> and lactated Ringer's are roughly isotonic, so they expand extracellular volume without major shifts into cells; they are used for blood volume replacement. Hypotonic fluids such as 0.45% saline provide free water that ultimately moves into cells. Hypertonic saline pulls water out of cells and is used in specific situations such as cerebral edema. Dextrose 5% in water starts out near isotonic, but the glucose is metabolized, leaving free water that behaves as hypotonic in the body.",
+        "<b>Worked example</b>: a runner drinks large volumes of plain water during a 5-hour marathon while losing sodium in sweat. Plasma sodium falls, plasma becomes hypotonic relative to cells, and water moves into cells. In the brain, swelling within the rigid skull produces headache, nausea, confusion, and potentially seizures: <b>exercise-associated hyponatremia</b>. Contrast that with a worker sweating all day without drinking: sweat is hypotonic, so losing it concentrates plasma, raising osmolarity and pulling water out of cells, triggering thirst and ADH release. The same particle-counting logic predicts opposite shifts and explains why drinking to thirst, rather than forcing fluids, is recommended for most endurance events."
+      ],
+      terms: [
+        ["Solute", "Substance dissolved in a solvent to form a solution."],
+        ["Solvent", "The dissolving medium of a solution; water in the body."],
+        ["Mole", "Amount of substance containing 6.02 x 10^23 particles."],
+        ["Molar mass", "Mass in grams of one mole of a substance, taken from the periodic table."],
+        ["Molarity", "Concentration expressed as moles of solute per liter of solution."],
+        ["Osmolarity", "Concentration of all dissolved particles per liter of solution."],
+        ["Osmosis", "Net movement of water across a semipermeable membrane toward higher solute concentration."],
+        ["Tonicity", "Effect of a solution on cell volume, determined by solutes that cannot cross the membrane."],
+        ["Isotonic", "Having the same effective solute concentration as cells, causing no net change in cell volume."],
+        ["Intracellular fluid", "Fluid inside cells, about two-thirds of total body water, rich in K+."],
+        ["Extracellular fluid", "Fluid outside cells (interstitial fluid and plasma), about one-third of body water, rich in Na+."],
+        ["Antidiuretic hormone", "Hormone released when plasma osmolality rises that increases water reabsorption by the kidneys."]
+      ],
       guide: [
         "<b>Solution</b> = solute dissolved in solvent (water in the body).",
         "<b>Molarity</b>: <span class='formula'>M = moles of solute / liters of solution</span>. One mole = 6.02 &times; 10<sup>23</sup> particles; molar mass in grams/mol from the periodic table.",
@@ -75,7 +135,12 @@
         ["About what fraction of total body water is intracellular?", ["Two-thirds", "One-third", "One-half", "One-tenth"], "Roughly 2/3 of body water is inside cells and 1/3 is extracellular (interstitial fluid plus plasma)."],
         ["How many particles does one formula unit of CaCl2 produce when fully dissolved?", ["Three", "Two", "One", "Four"], "CaCl2 dissociates into one Ca2+ and two Cl-, totaling 3 particles. This matters when calculating osmolarity."],
         ["A client has been sweating heavily in the heat without drinking. What happens to plasma osmolarity and cell volume?", ["Plasma osmolarity rises and water moves out of cells", "Plasma osmolarity falls and cells swell", "Plasma osmolarity stays the same and cells shrink", "Plasma osmolarity falls and water leaves cells"], "Sweat is hypotonic, so losing it concentrates plasma. Water shifts out of cells, and rising osmolarity triggers thirst and ADH release."],
-        ["Which statement distinguishes osmolarity from tonicity?", ["Osmolarity counts all dissolved particles; tonicity reflects only solutes that cannot cross the membrane and thus affect cell volume", "Osmolarity applies only to cells; tonicity applies only to blood", "They are identical terms used interchangeably", "Tonicity counts particles; osmolarity describes cell volume change"], "A solute that freely crosses the membrane (such as urea) adds to osmolarity but does not create a lasting water shift, so it does not affect tonicity."]
+        ["Which statement distinguishes osmolarity from tonicity?", ["Osmolarity counts all dissolved particles; tonicity reflects only solutes that cannot cross the membrane and thus affect cell volume", "Osmolarity applies only to cells; tonicity applies only to blood", "They are identical terms used interchangeably", "Tonicity counts particles; osmolarity describes cell volume change"], "A solute that freely crosses the membrane (such as urea) adds to osmolarity but does not create a lasting water shift, so it does not affect tonicity."],
+        ["How many grams of glucose (molar mass about 180 g/mol) are needed to make 1 liter of a 0.5 M solution?", ["90 g", "180 g", "360 g", "45 g"], "Moles = M x L = 0.5 x 1 = 0.5 mol; grams = 0.5 x 180 = 90 g. 180 g would make a 1 M solution."],
+        ["A patient receives dextrose 5% in water (D5W) by IV. Once the glucose is metabolized, how does the remaining fluid behave in the body?", ["As free water that is hypotonic", "As an isotonic volume expander", "As a hypertonic fluid that shrinks cells", "As a buffer that raises blood pH"], "D5W starts near isotonic, but cells take up and metabolize the glucose, leaving free water that distributes into cells like a hypotonic fluid."],
+        ["Which ion is the MAIN cation of intracellular fluid?", ["Potassium (K+)", "Sodium (Na+)", "Calcium (Ca2+)", "Chloride (Cl-)"], "K+ is concentrated inside cells and Na+ outside, a difference maintained by the Na+/K+ pump. Chloride is an anion."],
+        ["A home health patient is lethargic with dry mucous membranes after several days of fever with very little fluid intake. Which lab change is MOST consistent with this picture?", ["Elevated plasma osmolality", "Decreased plasma osmolality", "Decreased hematocrit from dilution", "Expanded intracellular volume"], "Losing more water than solute concentrates the plasma, raising osmolality and pulling water from cells. Dilutional findings point the other way."],
+        ["Urea crosses cell membranes freely. A solution of 300 mOsm/L urea is placed around red blood cells. What happens over time?", ["Cells swell because urea is not an effective osmole", "Cells stay the same because it is iso-osmotic", "Cells shrink because urea pulls water out", "Cells shrink and then return to normal size"], "Urea equilibrates across the membrane, so it exerts no lasting osmotic effect; the cells behave as if in pure water and swell. Iso-osmotic is not the same as isotonic."]
       ]
     },
     {
