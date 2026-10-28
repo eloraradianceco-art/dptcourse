@@ -1,6 +1,6 @@
-/* Every subject file in data/. Add a new subject by dropping its file in data/ and its id here. */
+/* Every course file in data/. Add a new course by dropping its file in data/ and its id here (and placing it in js/curriculum.js). */
 window.MANIFEST = [
-  "anatomy-physiology-1","anatomy-physiology-2","biology","chemistry","physics","psychology","medical-terminology","research-statistics",
-  "gross-anatomy","neuroscience","kinesiology-biomechanics","exercise-physiology","pathophysiology","pharmacology","exam-evaluation","therapeutic-exercise","modalities",
-  "musculoskeletal","neuromuscular","cardiopulmonary","integumentary","pediatrics","geriatrics","differential-diagnosis","evidence-based-practice","professional-practice"
+  "biology","biology-2","chemistry","chemistry-2","physics","physics-2","anatomy-physiology-1","anatomy-physiology-2","psychology","research-statistics","medical-terminology","gre-prep",
+  "gross-anatomy","patient-care-skills","neuroscience","kinesiology-biomechanics","exercise-physiology","exam-evaluation","pathophysiology","pharmacology","therapeutic-exercise","modalities","motor-control","imaging-labs","pain-science","health-promotion",
+  "evidence-based-practice","musculoskeletal","cardiopulmonary","integumentary","differential-diagnosis","neuromuscular","vestibular","prosthetics-orthotics","acute-care","pediatrics","geriatrics","pelvic-health","oncology-lymphatic","sports-pt","management","professional-practice","clinical-education","capstone-npte"
 ];
