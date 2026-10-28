@@ -54,7 +54,7 @@
         "<b>Stages of motor learning (Fitts &amp; Posner)</b>: <i>cognitive</i> (what to do; many errors, high attention), <i>associative</i> (how to do it; refining, fewer errors), <i>autonomous</i> (automatic; can dual-task).",
         "<b>Motor learning vs performance</b>: learning is a relatively permanent change measured by <b>retention</b> and <b>transfer</b> tests, not by performance during practice.",
         "<b>Practice schedules</b>: <i>blocked</i> practice (same task repeated) improves performance during the session; <i>random</i> practice (tasks interleaved) creates contextual interference and improves retention. <i>Variable</i> practice improves transfer.",
-        "<b>Whole vs part practice</b>: continuous skills (such as gait) are best practiced whole; discrete or serial skills with separable parts (such as a transfer) can be broken into parts.",
+        "<b>Whole vs part practice</b>: continuous skills (such as gait) and fast discrete skills with tightly linked components are best practiced whole; longer serial skills with separable steps (such as a transfer) can be broken into parts.",
         "<b>Feedback</b>: <i>intrinsic</i> (from the person's own senses) vs <i>extrinsic/augmented</i> (from the clinician). <i>Knowledge of results</i> (KR) is about the outcome; <i>knowledge of performance</i> (KP) is about the movement pattern.",
         "<b>Feedback schedules</b>: frequent, immediate feedback helps early; reduce it as skill improves (faded or summary feedback) to prevent dependence and improve retention."
       ],
