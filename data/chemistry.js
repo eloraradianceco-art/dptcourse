@@ -266,6 +266,29 @@
     {
       t: "Organic Chemistry & Biomolecules",
       sub: "Carbon, functional groups, carbohydrates, lipids, proteins, nucleic acids",
+      lesson: [
+        "Organic chemistry is the chemistry of carbon compounds, and the body's structural and fuel molecules are all organic. Carbon has four valence electrons and forms <b>four covalent bonds</b>, so it can build straight chains, branched chains, and rings, and can bond to oxygen, nitrogen, hydrogen, sulfur, and phosphorus. This versatility produces the four classes of biological macromolecules: carbohydrates, lipids, proteins, and nucleic acids. This unit is an introduction; their detailed chemistry and metabolism are developed in General Chemistry II and biochemistry.",
+        "A molecule's behavior depends largely on its <b>functional groups</b>. A <b>hydroxyl</b> group (&minus;OH) makes molecules polar and water-soluble, as in sugars and alcohols. A <b>carboxyl</b> group (&minus;COOH) is acidic because it donates H<sup>+</sup>; it defines fatty acids and amino acids. An <b>amino</b> group (&minus;NH<sub>2</sub>) is basic because it accepts H<sup>+</sup>. A <b>phosphate</b> group carries negative charge and is central to energy transfer (ATP) and to the DNA backbone. Recognizing functional groups lets you predict solubility, charge, and reactivity.",
+        "Large molecules are built and broken by two mirror-image reactions. <b>Dehydration synthesis</b> joins monomers by removing a water molecule, building polymers such as glycogen and proteins. <b>Hydrolysis</b> breaks polymers by adding water, which is how digestive enzymes break down food and how glycogen is mobilized during exercise.",
+        "<b>Carbohydrates</b> have the general formula (CH<sub>2</sub>O)<sub>n</sub>. Monosaccharides such as glucose and fructose are the units. Disaccharides (sucrose, lactose) are two units. Polysaccharides are long chains: <b>glycogen</b> is the highly branched animal storage form in liver and muscle, starch is the plant storage form, and cellulose is plant fiber that humans cannot digest. Muscle glycogen fuels high-intensity work, and its depletion contributes to fatigue in prolonged events.",
+        "<b>Lipids</b> are a diverse group united by being largely nonpolar and insoluble in water. <b>Triglycerides</b> (glycerol plus three fatty acids) are the main energy store in adipose tissue. Saturated fatty acids have only single C-C bonds and pack tightly (solid at room temperature); unsaturated fatty acids have one or more C=C double bonds that create kinks (liquid oils). <b>Phospholipids</b> replace one fatty acid with a polar phosphate head, making them amphipathic and ideal for membranes. <b>Steroids</b> have four fused rings; cholesterol is the precursor for cortisol, estrogen, testosterone, and vitamin D.",
+        "<b>Proteins</b> are polymers of 20 amino acids linked by <b>peptide bonds</b>. Each amino acid has an amino group, a carboxyl group, and a variable side chain (R group) whose properties drive folding. <b>Primary structure</b> is the sequence; <b>secondary</b> is local folding into alpha helices and beta sheets held by hydrogen bonds; <b>tertiary</b> is the full three-dimensional shape; <b>quaternary</b> is the assembly of multiple chains, as in hemoglobin. Function follows shape, which is why denaturation destroys function. <b>Nucleic acids</b> (DNA and RNA) are polymers of nucleotides, each a sugar, a phosphate, and a nitrogenous base. ATP is a modified nucleotide.",
+        "<b>Worked example</b>: why does a tendon resist pulling so well? Collagen's primary sequence repeats glycine every third position. Glycine is the smallest amino acid, which lets three chains wind tightly into a <b>triple helix</b> stabilized by hydrogen bonds. Those molecules then assemble side by side into fibrils joined by covalent cross-links, which form fibers aligned along the line of pull. Each structural level, from sequence to cross-links, adds tensile strength. It also explains clinical patterns: impaired cross-linking (vitamin C deficiency, certain genetic disorders) weakens tissue, and excessive glucose-driven cross-linking in diabetes stiffens tendons and joint capsules, contributing to conditions such as adhesive capsulitis."
+      ],
+      terms: [
+        ["Functional group", "Specific cluster of atoms that gives an organic molecule its characteristic properties."],
+        ["Carboxyl group", "Acidic -COOH group found in fatty acids and amino acids."],
+        ["Amino group", "Basic -NH2 group found in amino acids."],
+        ["Dehydration synthesis", "Reaction that joins monomers into a polymer by removing water."],
+        ["Hydrolysis", "Reaction that breaks a polymer into monomers by adding water."],
+        ["Monosaccharide", "Simple sugar unit, such as glucose, that builds larger carbohydrates."],
+        ["Glycogen", "Highly branched glucose polymer stored in liver and muscle."],
+        ["Triglyceride", "Lipid made of glycerol and three fatty acids that stores energy."],
+        ["Phospholipid", "Amphipathic lipid with a polar phosphate head and nonpolar tails that forms membranes."],
+        ["Steroid", "Lipid with four fused carbon rings, such as cholesterol and cortisol."],
+        ["Peptide bond", "Covalent bond linking the carboxyl group of one amino acid to the amino group of the next."],
+        ["Quaternary structure", "Arrangement of two or more polypeptide chains into a single functional protein."]
+      ],
       guide: [
         "<b>Carbon</b> forms 4 covalent bonds, building chains and rings that make up all biological macromolecules.",
         "<b>Functional groups</b>: hydroxyl (-OH), carboxyl (-COOH, acidic), amino (-NH<sub>2</sub>, basic), phosphate (-PO<sub>4</sub>, energy transfer).",
