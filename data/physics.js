@@ -26,6 +26,30 @@
     {
       t: "Vectors, Forces & Newton's Laws",
       sub: "Scalars vs vectors, force components, inertia, F = ma, action-reaction, friction",
+      lesson: [
+        "Every exercise a PT prescribes and every transfer a PT guards is a force problem. Physics starts by sorting quantities into two kinds. <b>Scalars</b> have magnitude only: mass, speed, distance, time, temperature, energy. <b>Vectors</b> have magnitude and direction: displacement, velocity, acceleration, and force. Direction matters clinically. A 100 N pull applied parallel to the tibia compresses the knee; the same 100 N applied perpendicular to the tibia tries to translate it, the very shear that the cruciate ligaments resist.",
+        "Because forces are vectors, a single force can be split into perpendicular <b>components</b>. For a force F at angle &theta; from horizontal, <span class='formula'>F<sub>x</sub> = F cos &theta;</span> and <span class='formula'>F<sub>y</sub> = F sin &theta;</span>. Applied to a muscle, the component perpendicular to the bone is the <b>rotary component</b> that turns the joint, and the component along the bone is the <b>stabilizing</b> (compressive) or dislocating (distractive) component. When the elbow is nearly straight, much of the biceps' pull runs along the forearm and compresses the elbow; near 90&deg; most of it is rotary. Vectors add tip to tail, and two perpendicular components recombine with the Pythagorean theorem.",
+        "<b>Newton's first law</b> (inertia) says an object stays at rest or keeps moving at constant velocity unless a net external force acts on it. Inertia is proportional to mass. A heavier patient takes more force to start moving in a transfer and more force to stop once moving, which is why guarding begins before the patient commits to the movement.",
+        "<b>Newton's second law</b> links force to motion: <span class='formula'>F<sub>net</sub> = m &times; a</span>. A net force produces acceleration in its direction; no net force means no acceleration, which is the condition of equilibrium. <b>Weight</b> is the gravitational force on mass, <span class='formula'>W = m &times; g</span>, with g about 9.8 m/s&sup2;. Mass is measured in kilograms and does not change with location; weight is measured in newtons. A 70 kg patient weighs about 686 N.",
+        "<b>Newton's third law</b> states that forces come in equal and opposite pairs acting on different objects. When the foot pushes on the ground, the ground pushes back with the <b>ground reaction force (GRF)</b>. In walking, the vertical GRF peaks at a little over body weight; in running it reaches roughly two to three times body weight, and landing from a jump can be considerably higher. Force plates measure GRF directly, and its direction relative to each joint determines the external moments that muscles must oppose.",
+        "<b>Friction</b> opposes sliding between surfaces and equals the coefficient of friction times the normal force: <span class='formula'>f = &mu; &times; N</span>. <b>Static friction</b>, before motion, is greater than <b>kinetic friction</b>, during sliding. Low &mu; (wet tile, socks on a polished floor) reduces available friction and increases slip risk; high &mu; (rubber-soled shoes on carpet) can catch the toe of a patient with poor foot clearance.",
+        "Stability depends on the <b>center of mass (COM)</b>, the <b>line of gravity</b>, and the <b>base of support (BOS)</b>. In anatomical position the COM lies just anterior to S2. A body is stable when its line of gravity falls within the BOS; stability increases with a wider BOS, a lower COM, a centered line of gravity, and greater mass.",
+        "<b>Worked example</b>: an older adult struggles with sit-to-stand. At seat-off, the patient must accelerate the COM forward and upward over the feet. Sliding the feet back beneath the knees moves the BOS under the COM, and trunk flexion brings the line of gravity forward into that base before the hips leave the chair, so less vertical force is needed to reach balance. A higher seat reduces the distance the COM must rise. Each cue changes a vector or a base of support, not the patient's strength."
+      ],
+      terms: [
+        ["Scalar", "Quantity with magnitude only, such as mass, speed, or energy."],
+        ["Vector", "Quantity with both magnitude and direction, such as force, velocity, or acceleration."],
+        ["Force component", "The part of a force acting along a chosen axis, found with sine and cosine of the force angle."],
+        ["Rotary component", "Component of a muscle force perpendicular to the bone that produces joint rotation."],
+        ["Inertia", "Resistance of an object to a change in its state of motion, proportional to mass."],
+        ["Newton's second law", "Net force equals mass times acceleration (F = ma)."],
+        ["Weight", "Gravitational force on a mass, equal to mass times g and measured in newtons."],
+        ["Ground reaction force", "Force exerted by the ground on the body, equal and opposite to the force the body applies."],
+        ["Coefficient of friction", "Unitless ratio describing how strongly two surfaces resist sliding against each other."],
+        ["Center of mass", "Point about which body mass is evenly distributed; just anterior to S2 in anatomical position."],
+        ["Base of support", "Area enclosed by the points of contact between the body and the support surface."],
+        ["Line of gravity", "Vertical line through the center of mass that must fall within the base of support for stability."]
+      ],
       guide: [
         "<b>Scalar vs vector</b>: scalars have magnitude only (mass, speed, distance, temperature); vectors have magnitude and direction (force, weight, velocity, acceleration, displacement).",
         "<b>Resolving a force</b>: a force F at angle θ from horizontal has components <span class='formula'>Fx = F cos θ</span> and <span class='formula'>Fy = F sin θ</span>. Vectors add tip-to-tail; perpendicular components combine by the Pythagorean theorem.",
