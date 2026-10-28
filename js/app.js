@@ -345,11 +345,11 @@ function buildNpte(n){
 function renderNpte(){
   N=null;const sess=S.session&&S.session.type==="npte"?S.session:null;const H=S.npte.history||[];const last=H[H.length-1];
   app().innerHTML=`${header("npte")}
-   <div><h2>NPTE mock exam</h2><p class="muted">Questions are drawn from every DPT course and weighted to approximate the FSBPT content outline by body system and non-system area. The real NPTE has about 250 items in 5 sections over about 5 hours, scored on a 200–800 scale with 600 to pass. Percent correct here is a readiness signal, not a scaled score. Confirm current exam details at <a href="https://www.fsbpt.org" target="_blank" rel="noopener">fsbpt.org</a>.</p></div>
+   <div><h2>NPTE mock exam</h2><p class="muted">Questions are drawn from every DPT course and weighted to approximate the FSBPT content outline by body system and non-system area. The real NPTE has 225 questions in 5 sections of 45, with 5 hours of testing time and a scheduled break after section 2, scored on a 200–800 scale with 600 to pass. Percent correct here is a readiness signal, not a scaled score. Confirm current exam details at <a href="https://www.fsbpt.org" target="_blank" rel="noopener">fsbpt.org</a>.</p></div>
    ${sess?`<div class="panel" style="border:2px solid var(--accent)"><span class="eyebrow">In progress</span><h3>${sess.kind==="full"?"Full mock":"Section practice"}: ${sess.i}/${sess.qids.length} answered</h3><div class="row"><button class="btn primary" onclick="RTN.npteResume()">Resume</button><button class="btn" id="abandon" onclick="RTN.npteAbandon()">Abandon</button></div></div>`:""}
    <div class="grid">
-    <div class="panel"><span class="eyebrow">50 questions · about 60 min</span><h3>Section practice</h3><p class="muted small">One NPTE-length section. Good for a weekly check-in.</p><button class="btn primary" onclick="RTN.npteStart('section')" ${sess?"disabled":""}>Start section</button></div>
-    <div class="panel"><span class="eyebrow">250 questions · 5 sections · about 5 hrs</span><h3>Full-length mock</h3><p class="muted small">Exam-day stamina. Progress saves after every answer, so you can stop and resume.</p><button class="btn primary" onclick="RTN.npteStart('full')" ${sess?"disabled":""}>Start full mock</button></div>
+    <div class="panel"><span class="eyebrow">45 questions · about 60 min</span><h3>Section practice</h3><p class="muted small">One NPTE-length section of 45. Good for a weekly check-in.</p><button class="btn primary" onclick="RTN.npteStart('section')" ${sess?"disabled":""}>Start section</button></div>
+    <div class="panel"><span class="eyebrow">225 questions · 5 sections · 5 hrs</span><h3>Full-length mock</h3><p class="muted small">Exam-day stamina. Progress saves after every answer, so you can stop and resume.</p><button class="btn primary" onclick="RTN.npteStart('full')" ${sess?"disabled":""}>Start full mock</button></div>
    </div>
    ${last?npteReport(last,"Last attempt"):""}
    ${H.length>1?`<div class="panel"><h3>History</h3><div class="tablewrap"><table><thead><tr><th>Date</th><th>Type</th><th class="num">Score</th></tr></thead><tbody>${H.slice().reverse().map(h=>`<tr><td class="mono">${new Date(h.date).toLocaleDateString()}</td><td>${h.kind==="full"?"Full mock":"Section"}</td><td class="num mono">${h.correct}/${h.total} (${Math.round(h.correct/h.total*100)}%)</td></tr>`).join("")}</tbody></table></div></div>`:""}`;
@@ -362,13 +362,13 @@ function npteReport(h,title){
    <p class="muted small">${h.correct}/${h.total} correct · ${h.kind==="full"?"Full mock":"Section"} · ${pct>=.7?"On track: keep sharpening your weakest area below.":pct>=.6?"Close: target the red and yellow areas.":"Build the base: go back to the courses in your weakest areas."}</p>
    <div class="areas">${rows}</div></div>`;
 }
-function npteStart(kind){const n=kind==="full"?250:50;const b=buildNpte(n);S.session={type:"npte",kind,qids:b.qids,areas:b.areas,marks:[],i:0,started:Date.now()};save();npteResume()}
+function npteStart(kind){const n=kind==="full"?225:45;const b=buildNpte(n);S.session={type:"npte",kind,qids:b.qids,areas:b.areas,marks:[],i:0,started:Date.now()};save();npteResume()}
 function npteAbandon(){const b=$("#abandon");if(b.dataset.arm){S.session=null;save();renderNpte()}else{b.dataset.arm=1;b.textContent="Tap again to abandon"}}
 function npteResume(){N=S.session;npteQ()}
 function npteQ(){
   const s=N;if(s.i>=s.qids.length)return npteFinish();
   const q=fromId(s.qids[s.i]);if(!q){s.marks[s.i]=null;s.i++;save();return npteQ()}
-  const sec=Math.floor(s.i/50)+1,secs=Math.ceil(s.qids.length/50);
+  const sec=Math.floor(s.i/45)+1,secs=Math.ceil(s.qids.length/45);
   const mins=Math.floor((Date.now()-s.started)/60000);
   app().innerHTML=`<div class="hud"><button class="linkish" onclick="RTN.go('npte')">← Save &amp; exit</button><span class="eyebrow">NPTE mock · Section ${sec}/${secs}</span><span class="mono small muted">${s.i+1}/${s.qids.length} · ${mins} min</span></div>
    <div class="pbar"><i style="width:${s.i/s.qids.length*100}%;background:var(--accent)"></i></div>
@@ -379,9 +379,9 @@ function npteAnswer(k){
   const id=s.qids[s.i];const q=fromId(id);const ok=reveal(k);s.marks[s.i]=ok;
   if(!ok&&!S.missed.includes(id))S.missed.push(id);
   s.i++;S.session=s;save();
-  const endSec=s.i%50===0&&s.i<s.qids.length;const last=s.i>=s.qids.length;
+  const endSec=s.i%45===0&&s.i<s.qids.length;const last=s.i>=s.qids.length;
   $("#fb").innerHTML=`<div class="fb ${ok?"":"no"}"><b>${ok?"Correct.":"Not quite."}</b> ${q.e}</div>
-   <div class="row" style="margin-top:12px"><button class="btn primary" id="nx" onclick="RTN.npteNext()">${last?"See results":endSec?`Start section ${s.i/50+1}`:"Next question"}</button></div>`;
+   <div class="row" style="margin-top:12px"><button class="btn primary" id="nx" onclick="RTN.npteNext()">${last?"See results":endSec?`${s.i===90?"Take your break, then start":"Start"} section ${s.i/45+1}`:"Next question"}</button></div>`;
   $("#nx").focus({preventScroll:true});$("#fb").scrollIntoView({behavior:"smooth",block:"nearest"});
 }
 function npteNext(){npteQ()}
