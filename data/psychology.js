@@ -156,7 +156,7 @@
       guide: [
         "<b>Transtheoretical model (stages of change)</b>: precontemplation (not considering change in the next 6 months) → contemplation (considering, ambivalent) → preparation (planning within about a month) → action (changed behavior for less than 6 months) → maintenance (6+ months). Relapse can occur at any stage.",
         "<b>Match the intervention to the stage</b>: raise awareness in precontemplation, resolve ambivalence in contemplation, build a concrete plan in preparation, and prevent relapse in action and maintenance.",
-        "<b>Self-efficacy (Bandura)</b>: confidence in one's ability to perform a specific task. The strongest source is <b>mastery experiences</b> (succeeding), followed by vicarious experience, verbal persuasion, and physiological/emotional states.",
+        "<b>Self-efficacy (Bandura)</b>: confidence in one's ability to perform a specific task. The strongest source is <b>mastery experiences</b> (succeeding); the others are vicarious experience, verbal persuasion, and physiological/emotional states.",
         "<b>Health belief model</b>: action depends on perceived susceptibility, perceived severity, perceived benefits, perceived barriers, cues to action, and self-efficacy.",
         "<b>Intrinsic vs extrinsic motivation</b>: intrinsic motivation (enjoyment, values) tends to sustain behavior better than external rewards alone. Self-determination theory emphasizes autonomy, competence, and relatedness.",
         "<b>Motivational interviewing (MI)</b>: a collaborative, client-centered style that elicits the client's own reasons for change. Core skills are <b>OARS</b>: Open questions, Affirmations, Reflective listening, Summaries.",
