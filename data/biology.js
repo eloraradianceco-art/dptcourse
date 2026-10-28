@@ -3,20 +3,52 @@
   track: "prereq",
   order: 3,
   code: "PRE 101",
-  title: "General Biology",
+  title: "General Biology I",
   credits: 4,
-  desc: "The cell-level biology underneath every tissue a PT treats: membranes, energy production, cell division, gene expression, and the inflammatory and repair processes that drive tissue healing timelines.",
+  desc: "The cell-level biology underneath every tissue a PT treats: membranes, energy production, cell division, gene expression, and the inflammatory and repair processes that drive tissue healing timelines. First semester of the two-course general biology sequence.",
   objectives: [
     "Describe cell organelles and compare passive and active membrane transport",
     "Explain how cells produce ATP through glycolysis, the Krebs cycle, and oxidative phosphorylation",
     "Compare mitosis and meiosis and apply basic Mendelian inheritance",
     "Trace the flow of genetic information from DNA to RNA to protein",
-    "Outline the phases of tissue healing and relate each phase to rehabilitation loading"
+    "Predict how mutation types and inheritance patterns produce neuromuscular conditions seen in PT practice",
+    "Outline the phases of tissue healing and relate each phase to rehabilitation loading",
+    "Identify local and systemic factors that delay healing and adjust loading decisions accordingly"
+  ],
+  references: [
+    "Urry LA, Cain ML, Wasserman SA, Minorsky PV, Orr RB. Campbell Biology. Pearson.",
+    "Alberts B, Heald R, Johnson A, et al. Molecular Biology of the Cell. W.W. Norton.",
+    "Kumar V, Abbas AK, Aster JC. Robbins Basic Pathology. Elsevier.",
+    "Goodman CC, Fuller KS. Pathology: Implications for the Physical Therapist. Elsevier.",
+    "Kisner C, Colby LA, Borstad J. Therapeutic Exercise: Foundations and Techniques. F.A. Davis."
   ],
   units: [
     {
       t: "Cell Structure & Membrane Transport",
       sub: "Organelles, plasma membrane, diffusion, osmosis, active transport",
+      lesson: [
+        "Every tissue a PT loads, stretches, or stimulates is built from cells, and every cell lives or dies by its membrane. Human cells are <b>eukaryotic</b>: DNA is enclosed in a nucleus and work is divided among membrane-bound organelles. Ribosomes read genetic instructions and build proteins; those on the <b>rough endoplasmic reticulum</b> make proteins destined for export or for membranes, such as the procollagen a fibroblast secretes into a healing ligament. The <b>Golgi apparatus</b> modifies, sorts, and packages those proteins. <b>Lysosomes</b> digest worn-out parts and engulfed debris. <b>Mitochondria</b> run aerobic metabolism and supply most ATP, which is why endurance-trained muscle is packed with them. Smooth ER builds lipids, and in muscle it is specialized as the <b>sarcoplasmic reticulum</b>, the calcium store that triggers contraction.",
+        "The plasma membrane is a <b>phospholipid bilayer</b>. Each phospholipid has a hydrophilic phosphate head and two hydrophobic fatty-acid tails, so in water the molecules self-assemble with heads facing the fluid on both sides and tails tucked inside. Cholesterol sits among the tails and moderates fluidity. Proteins float in this layer like tiles in a mosaic: channels, carriers, pumps, receptors, and adhesion molecules. The hydrophobic core is the key to transport. Small nonpolar molecules (O<sub>2</sub>, CO<sub>2</sub>, steroid hormones, many lipid-soluble drugs) slip straight through, while ions and polar molecules such as glucose need a protein pathway.",
+        "<b>Passive transport</b> moves substances down their concentration gradient and costs no ATP. In <b>simple diffusion</b>, the rate rises with a steeper gradient and a larger surface area and falls as the membrane or diffusion distance thickens; that is why fluid in the alveolar walls impairs gas exchange. <b>Facilitated diffusion</b> uses channels or carriers. Carriers can saturate, so glucose uptake through GLUT transporters has a maximum rate. <b>Osmosis</b> is the diffusion of water toward the side with more dissolved particles.",
+        "<b>Active transport</b> moves substances against their gradient and therefore needs energy. <b>Primary active transport</b> uses ATP directly: the Na<sup>+</sup>/K<sup>+</sup>-ATPase pushes 3 Na<sup>+</sup> out and pulls 2 K<sup>+</sup> in per ATP, maintaining the gradients nerves and muscles use to fire action potentials, and it accounts for a substantial share of resting energy use. <b>Secondary active transport</b> borrows energy from a gradient the pump already built: the sodium-glucose cotransporter in the small intestine lets Na<sup>+</sup> flow downhill into the cell and drags glucose uphill with it. Bulk transport handles large cargo: <b>endocytosis</b>, including phagocytosis by neutrophils and macrophages, and <b>exocytosis</b>, such as acetylcholine release at the neuromuscular junction or collagen secretion by fibroblasts.",
+        "<b>Tonicity</b> describes what a solution does to cell volume. In an isotonic solution volume is unchanged; in a hypotonic solution water enters and the cell swells; in a hypertonic solution water leaves and the cell shrinks. This is not abstract. The brain swelling of exercise-associated hyponatremia is cells taking on water from hypotonic plasma, and 0.9% saline is used for IV volume replacement because it is isotonic.",
+        "Cells also connect to each other. <b>Tight junctions</b> seal neighboring epithelial cells, as in the gut lining and blood-brain barrier. <b>Desmosomes</b> rivet cells together against mechanical stress and are abundant in skin and cardiac muscle. <b>Gap junctions</b> are protein channels that let ions pass directly between cells, so cardiac cells depolarize as a coordinated unit. Inside the cell, the cytoskeleton (actin microfilaments, intermediate filaments, microtubules) maintains shape and transmits mechanical force from the membrane toward the nucleus, one route by which cells sense load (mechanotransduction).",
+        "<b>Worked example</b>: a client with type 2 diabetes asks why a 20-minute walk after dinner lowers their glucose reading. Glucose is polar, so it cannot diffuse through the bilayer; it enters muscle by facilitated diffusion through GLUT4 carriers. Contracting muscle moves GLUT4 to the cell surface through a pathway that does not depend on insulin, so working muscle pulls glucose from the blood even when insulin signaling is impaired. Once inside, glucose is immediately phosphorylated, which keeps intracellular free glucose low and preserves the downhill gradient. Membrane structure, transport type, and the exercise prescription connect in three sentences, and that is the kind of explanation patients remember."
+      ],
+      terms: [
+        ["Eukaryotic cell", "A cell with a membrane-bound nucleus and organelles, as in all human cells."],
+        ["Mitochondrion", "Organelle that performs aerobic respiration and produces most of the cell's ATP."],
+        ["Rough endoplasmic reticulum", "Ribosome-studded membrane network that synthesizes proteins for secretion or for membranes."],
+        ["Sarcoplasmic reticulum", "Specialized smooth ER in muscle fibers that stores and releases calcium for contraction."],
+        ["Phospholipid bilayer", "Double layer of phospholipids with hydrophobic tails inward that forms the basic structure of cell membranes."],
+        ["Simple diffusion", "Passive movement of a small or lipid-soluble molecule directly through the bilayer down its concentration gradient."],
+        ["Facilitated diffusion", "Passive, carrier- or channel-mediated movement down a gradient that can saturate when all carriers are occupied."],
+        ["Primary active transport", "Movement of a substance against its gradient powered directly by ATP hydrolysis, as by the Na+/K+-ATPase."],
+        ["Secondary active transport", "Uphill movement of one substance powered by the downhill flow of another, usually Na+."],
+        ["Osmosis", "Net diffusion of water across a semipermeable membrane toward the region of higher solute concentration."],
+        ["Tonicity", "The effect of a solution on cell volume, determined by solutes that cannot freely cross the membrane."],
+        ["Gap junction", "Channel connecting the cytoplasm of adjacent cells that allows ions and electrical signals to pass directly."]
+      ],
       guide: [
         "<b>Prokaryotes</b> (bacteria) lack a nucleus and membrane-bound organelles; <b>eukaryotes</b> (human cells) have both.",
         "<b>Organelles</b>: nucleus (DNA), ribosomes (protein synthesis), rough ER (proteins for export/membranes), smooth ER (lipids; in muscle it is the sarcoplasmic reticulum storing Ca<sup>2+</sup>), Golgi (modifies and ships), lysosomes (digestion), mitochondria (ATP).",
@@ -43,7 +75,12 @@
         ["Why can steroid hormones cross the cell membrane easily while glucose cannot?", ["Steroids are lipid soluble and pass through the hydrophobic bilayer core", "Steroids are smaller than water molecules", "Glucose is pumped out as fast as it enters", "Steroids use gap junctions to enter cells"], "The membrane interior is hydrophobic, so lipid-soluble molecules diffuse through. Polar glucose needs a carrier protein (facilitated diffusion)."],
         ["Which type of cell junction allows electrical signals to pass directly between cardiac muscle cells?", ["Gap junctions", "Tight junctions", "Desmosomes", "Hemidesmosomes"], "Gap junctions form channels connecting adjacent cytoplasm, letting ions flow so the heart contracts as a unit. Desmosomes provide mechanical anchoring."],
         ["Glucose is absorbed from the small intestine using the sodium gradient. This is:", ["Secondary active transport", "Primary active transport", "Simple diffusion", "Phagocytosis"], "The Na+-glucose cotransporter uses the Na+ gradient (created by the Na+/K+ pump) to move glucose uphill. This principle underlies oral rehydration solutions."],
-        ["Which feature distinguishes a human cell from a bacterial cell?", ["A membrane-bound nucleus", "A plasma membrane", "Ribosomes", "DNA as genetic material"], "Eukaryotic cells have a nucleus and membrane-bound organelles. Both cell types have a plasma membrane, ribosomes, and DNA."]
+        ["Which feature distinguishes a human cell from a bacterial cell?", ["A membrane-bound nucleus", "A plasma membrane", "Ribosomes", "DNA as genetic material"], "Eukaryotic cells have a nucleus and membrane-bound organelles. Both cell types have a plasma membrane, ribosomes, and DNA."],
+        ["A client with type 2 diabetes asks why walking after meals lowers blood glucose. Which explanation is MOST accurate?", ["Contraction moves GLUT4 carriers to the membrane independent of insulin", "Exercise lets glucose diffuse directly through the lipid bilayer", "Walking activates the Na+/K+ pump to push glucose into fat cells", "Muscle contraction converts glucose to lactate in the bloodstream"], "Muscle contraction translocates GLUT4 to the cell surface through an insulin-independent pathway, so glucose enters by facilitated diffusion. Polar glucose cannot cross the bilayer on its own."],
+        ["Glucose uptake into a cell rises with blood glucose concentration but then plateaus despite further increases. What BEST explains the plateau?", ["The carrier proteins are saturated", "The membrane has become hypotonic", "Simple diffusion has reversed direction", "ATP supply to the pump has run out"], "Facilitated diffusion depends on a finite number of carriers; once all are occupied the rate cannot rise further. Simple diffusion has no such ceiling."],
+        ["Pulmonary edema thickens the barrier between alveolar air and capillary blood. How does this MOST directly affect oxygen transfer?", ["Diffusion slows because the distance increases", "Active transport of oxygen must increase", "Oxygen switches to facilitated diffusion", "Osmosis carries oxygen into the capillaries"], "Diffusion rate falls as membrane thickness or diffusion distance rises. Oxygen still crosses by simple diffusion; it does not use pumps or carriers."],
+        ["Which organelle would be MOST abundant in a fibroblast actively secreting collagen into a healing tendon?", ["Rough endoplasmic reticulum", "Smooth endoplasmic reticulum", "Lysosomes", "Peroxisomes"], "Secreted proteins such as procollagen are built on ribosomes bound to rough ER, then processed in the Golgi. Smooth ER mainly makes lipids."],
+        ["Desmosomes are especially numerous in the skin and the myocardium. What function do they provide in these tissues?", ["Mechanical anchoring that resists tearing forces", "Direct passage of ions between neighboring cells", "A watertight seal preventing leakage between cells", "Transport of glucose into the cytoplasm"], "Desmosomes link the cytoskeletons of adjacent cells so tissues that are stretched repeatedly do not pull apart. Gap junctions pass ions; tight junctions seal."]
       ]
     },
     {

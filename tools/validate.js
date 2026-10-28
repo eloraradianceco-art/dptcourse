@@ -65,7 +65,7 @@ for (const f of files) {
       const where = globalQ.get(key) || []; if (where.filter(w => w !== path.basename(f)).length) err(f, `${t} same question text also in ${where.filter(w => w !== path.basename(f)).join(", ")}`);
     });
   });
-  if (nq && longest / nq > 0.4) warn(f, `correct answer is clearly the longest option in ${Math.round(longest / nq * 100)}% of questions (aim under 40%)`);
+  if (nq && longest / nq > 0.25) warn(f, `correct answer is clearly the longest option in ${Math.round(longest / nq * 100)}% of questions (must be 25% or less; run: node tools/lengthbias.js ${path.relative(process.cwd(), f)})`);
   console.log(`✓ ${s.id}: ${s.units.length} units, ${nq} questions, ${s.units.reduce((n, u) => n + (u.terms || []).length, 0)} terms, ${s.units.reduce((n, u) => n + (u.lesson || []).reduce((m, p) => m + words(p), 0), 0)} lesson words`);
 }
 console.log(`\n${files.length} files, ${totalU} units, ${totalQ} questions, ${errors} error(s), ${warnings} warning(s)`);
