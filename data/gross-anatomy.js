@@ -147,7 +147,7 @@
       t: "Abdomen & Pelvis",
       sub: "Abdominal wall, hip flexors, pelvic floor, visceral referral",
       guide: [
-        "<b>Abdominal wall</b>: rectus abdominis (trunk flexion), external oblique (fibers run down and in; rotates trunk to the <i>opposite</i> side), internal oblique (rotates to the <i>same</i> side), transversus abdominis (deepest; compresses the abdomen and raises intra-abdominal pressure). Supplied mainly by T7-T12, plus L1 for the lower obliques and TrA.",
+        "<b>Abdominal wall</b>: rectus abdominis (trunk flexion), external oblique (fibers run down and in; rotates trunk to the <i>opposite</i> side), internal oblique (rotates to the <i>same</i> side), transversus abdominis (deepest; compresses the abdomen and raises intra-abdominal pressure). Supplied mainly by T7-T12, plus L1 (iliohypogastric and ilioinguinal) for internal oblique and TrA.",
         "<b>Diastasis recti</b>: separation of the two rectus abdominis bellies along the linea alba, common in late pregnancy and postpartum; seen as midline doming during a curl-up.",
         "<b>Pelvic floor</b>: levator ani (puborectalis, pubococcygeus, iliococcygeus) plus coccygeus. Supplied by S3-S4 branches (nerve to levator ani) with help from the <b>pudendal nerve (S2-S4)</b>, which also supplies the external anal and urethral sphincters.",
         "<b>Puborectalis</b> forms a sling around the anorectal junction, keeping the anorectal angle for fecal continence.",
