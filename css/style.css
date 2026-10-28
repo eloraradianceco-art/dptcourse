@@ -169,3 +169,6 @@ td a{color:inherit}
 .check input{flex:none;margin-top:2px}
 .areas{display:flex;flex-direction:column;gap:8px}
 .arow{display:grid;grid-template-columns:minmax(0,1.4fr) 1fr 44px;gap:10px;align-items:center;font-size:.88rem}
+a.btn{text-decoration:none;display:inline-flex;align-items:center;color:inherit}
+a.btn.primary{color:var(--accent-ink)}
+@media (max-width:480px){.tabs button{padding:8px 9px;font-size:.88rem}}

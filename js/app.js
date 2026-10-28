@@ -204,7 +204,7 @@ function renderUnit(s,i,tab){
   if(tab)UT.tab=tab;
   S.last={sid:s.id,u:i};save();
   const u=s.units[i],k=uk(s.id,i);
-  const tabs=[["lesson","Lesson",!!u.lesson],["guide","Study guide",true],["cards","Flashcards",!!(u.terms&&u.terms.length)],["work","Coursework",true]].filter(t=>t[2]);
+  const tabs=[["lesson","Lesson",!!u.lesson],["guide","Guide",true],["cards","Flashcards",!!(u.terms&&u.terms.length)],["work","Coursework",true]].filter(t=>t[2]);
   if(!tabs.some(t=>t[0]===UT.tab))UT.tab=tabs[0][0];
   let body="";
   if(UT.tab==="lesson")body=`<article class="panel lesson">${u.lesson.map(p=>`<p>${p}</p>`).join("")}
