@@ -40,6 +40,7 @@
         "<b>Chart review</b>: diagnosis, PLOF, orders and precautions, weight bearing, vitals trends, labs trends, imaging, code status, isolation.",
         "<b>Labs</b>: interpret trends and context; acceptable ranges for therapy vary by institution.",
         "<b>Approximate adult reference ranges</b> (vary by lab): hemoglobin about 12-16 g/dL (women) and 13.5-17.5 g/dL (men); platelets about 150,000-450,000/&micro;L; WBC about 4,500-11,000/&micro;L; potassium about 3.5-5.0 mEq/L; sodium about 135-145 mEq/L; INR about 0.8-1.2 off anticoagulation (often 2-3 on warfarin).",
+        "<b>Approximate adult reference ranges</b> (vary by lab): hemoglobin about 12-16 g/dL (women) and 13.5-17.5 g/dL (men); platelets about 150,000-450,000/&micro;L; WBC about 4,500-11,000/&micro;L; potassium about 3.5-5.0 mEq/L; sodium about 135-145 mEq/L; INR about 0.8-1.2 off anticoagulation (often 2-3 on warfarin).",
         "<b>Bed rest harms</b>: strength loss, orthostatic intolerance, deconditioning, pressure injury, delirium, hospital-associated disability.",
         "<b>AM-PAC 6-Clicks</b>: six mobility items on a four-level help scale; higher = more independent; supports discharge and mobility triage.",
         "<b>Discharge planning</b> starts on admission: PLOF, home setup, support, equipment."
