@@ -53,7 +53,7 @@
         "<b>Solution</b> = solute dissolved in solvent (water in the body).",
         "<b>Molarity</b>: <span class='formula'>M = moles of solute / liters of solution</span>. One mole = 6.02 &times; 10<sup>23</sup> particles; molar mass in grams/mol from the periodic table.",
         "<b>Osmolarity</b> counts dissolved particles: <span class='formula'>osmolarity = molarity &times; particles per formula unit</span>. NaCl dissociates into 2 particles; glucose stays as 1.",
-        "<b>Plasma osmolality</b> is about 285-295 mOsm/kg; the body keeps it tightly regulated mainly through ADH and thirst.",
+        "<b>Plasma osmolality</b> is a little under 300 mOsm/kg (exact reference ranges vary by lab); the body keeps it tightly regulated mainly through ADH and thirst.",
         "<b>Osmosis</b>: water moves from lower solute concentration to higher solute concentration across a semipermeable membrane.",
         "<b>Tonicity</b> (effect on cell volume): isotonic (no change), hypotonic (cell swells), hypertonic (cell shrinks). 0.9% NaCl (normal saline) is isotonic.",
         "<b>Body water</b>: about 60% of adult body weight; roughly 2/3 intracellular, 1/3 extracellular (interstitial + plasma).",
@@ -120,7 +120,7 @@
         "<b>Activation energy</b>: the energy barrier a reaction must overcome to start. Catalysts lower it without being consumed.",
         "<b>Enzymes</b>: usually proteins; highly specific; bind substrate at the active site (induced fit). They do not change &Delta;G or the equilibrium, only the rate.",
         "<b>Factors affecting rate</b>: temperature, pH, substrate concentration, enzyme concentration. Too much heat or wrong pH denatures enzymes.",
-        "<b>Saturation</b>: as substrate rises, rate increases until all enzymes are busy (V<sub>max</sub>). Cofactors (minerals) and coenzymes (vitamin-derived, e.g., NAD<sup>+</sup> from niacin) are often required.",
+        "<b>Saturation</b>: as substrate rises, rate increases until all enzymes are busy (V<sub>max</sub>). Cofactors (e.g., metal ions such as Mg<sup>2+</sup>) and coenzymes (organic, often vitamin-derived, e.g., NAD<sup>+</sup> from niacin) are often required.",
         "<b>Inhibition</b>: competitive inhibitors compete for the active site; noncompetitive inhibitors bind elsewhere. Many drugs work this way (e.g., NSAIDs inhibit COX enzymes, reducing prostaglandins)."
       ],
       assignment: {
@@ -167,7 +167,7 @@
         ["Which polysaccharide do humans store in liver and muscle?", ["Glycogen", "Starch", "Cellulose", "Chitin"], "Glycogen is a highly branched glucose polymer that can be broken down quickly during exercise. Starch is the plant storage form."],
         ["Which bond links amino acids in a protein?", ["Peptide bond", "Glycosidic bond", "Ester bond", "Phosphodiester bond"], "Peptide bonds form between the carboxyl group of one amino acid and the amino group of the next. Glycosidic bonds link sugars."],
         ["Which lipid forms the main structure of cell membranes?", ["Phospholipids", "Triglycerides", "Saturated fatty acids", "Cholesterol esters"], "Phospholipids have hydrophilic heads and hydrophobic tails, forming a bilayer. Triglycerides are for energy storage."],
-        ["Cortisol, testosterone, and estrogen all belong to which class of molecules?", ["Steroids (lipids)", "Proteins", "Carbohydrates", "Nucleic acids"], "These hormones are steroids built on a four-ring structure derived from cholesterol, which is why they cross cell membranes."],
+        ["Cortisol, testosterone, and estrogen all belong to which class of molecules?", ["Steroids (lipids)", "Proteins", "Carbohydrates", "Nucleic acids"], "These hormones are steroids built on a four-ring structure derived from cholesterol; because they are lipid soluble, they cross cell membranes."],
         ["Hemoglobin is made of four polypeptide chains. This describes which level of protein structure?", ["Quaternary", "Primary", "Secondary", "Tertiary"], "Quaternary structure is the arrangement of multiple polypeptide subunits. Primary is the amino acid sequence."],
         ["Why does collagen's triple-helix structure suit tendons?", ["Tightly wound chains provide high tensile strength", "It stores large amounts of glucose", "It conducts electrical signals quickly", "It dissolves easily in water for transport"], "Collagen's three intertwined chains, stabilized by hydrogen bonds and cross-links, resist pulling forces, which is the main load on tendons."],
         ["ATP belongs to which class of biomolecules?", ["Nucleotides", "Amino acids", "Polysaccharides", "Triglycerides"], "ATP is a nucleotide made of adenine, ribose, and three phosphate groups. It is chemically related to the building blocks of RNA."],
