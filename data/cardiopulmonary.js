@@ -1,0 +1,178 @@
+(window.SUBJECTS = window.SUBJECTS || []).push({
+  id: "cardiopulmonary",
+  track: "clinical",
+  order: 3,
+  code: "DPT 730",
+  title: "Cardiopulmonary Physical Therapy",
+  credits: 4,
+  desc: "Exercise response, monitoring, and intervention for patients with cardiac, vascular, and pulmonary disease, from cardiac rehab to the ICU. Every PT has to know when exercise is safe, when to stop, and what the monitors are saying, whatever the setting.",
+  objectives: [
+    "Interpret basic ECG rhythms, vital signs, and lab values to decide whether exercise is safe",
+    "Apply exercise termination criteria and recognize abnormal heart rate and blood pressure responses",
+    "Differentiate left from right heart failure and arterial from venous disease, and screen for DVT",
+    "Distinguish obstructive from restrictive lung disease on pulmonary function tests and choose breathing and airway clearance techniques",
+    "Mobilize patients safely in acute care and the ICU while managing lines, tubes, oxygen, and orthostatic hypotension"
+  ],
+  units: [
+    {
+      t: "Cardiac Anatomy, ECG & Labs",
+      sub: "Conduction system, rhythm basics, vital signs, labs that change the exercise decision",
+      guide: [
+        "<b>Conduction</b>: SA node (pacemaker) → atria → AV node (delay) → bundle of His → bundle branches → Purkinje fibers. Coronary arteries fill mainly during diastole, so very high HR shortens perfusion time.",
+        "<b>ECG waves</b>: P wave = atrial depolarization; QRS = ventricular depolarization; T wave = ventricular repolarization. Normal PR interval 0.12–0.20 s; normal QRS under 0.12 s.",
+        "<b>ST segment</b>: ST depression = myocardial ischemia (e.g., during exercise); ST elevation = acute injury/infarction. New ST changes during exercise = stop.",
+        "<b>Atrial fibrillation</b>: irregularly irregular rhythm, no distinct P waves; risk of thrombus/stroke; HR may be poorly controlled, so monitor HR by apical pulse or monitor and use RPE.",
+        "<b>Ventricular rhythms</b>: isolated unifocal PVCs are often benign. Multifocal PVCs, couplets, or rising frequency with exercise = stop. Ventricular tachycardia = stop and get help; ventricular fibrillation = cardiac arrest, start CPR and use an AED.",
+        "<b>Heart blocks</b>: 1st degree = prolonged PR (over 0.20 s), every P followed by QRS. 2nd degree = some P waves not conducted. 3rd degree (complete) = atria and ventricles beat independently; medical emergency, typically needs a pacemaker.",
+        "<b>Labs and vitals</b>: normal resting adult HR 60–100 bpm, RR 12–20, SpO2 95–100%. Potassium 3.5–5.0 mEq/L (abnormal K+ raises arrhythmia risk). Elevated troponin = myocardial injury. Warfarin therapeutic INR typically 2–3; a high INR raises bleeding and fall-injury risk.",
+        "<b>Beta-blockers</b> blunt resting and exercise HR (and BP), so use RPE (Borg 6–20, target about 11–13) rather than HR targets to prescribe intensity."
+      ],
+      assignment: {
+        title: "Rhythm-strip go / no-go cards",
+        task: "Make a set of flash cards for normal sinus rhythm, sinus tachycardia, atrial fibrillation, unifocal PVCs, multifocal PVCs, PVC couplets, ventricular tachycardia, ventricular fibrillation, and 1st- and 3rd-degree heart block. For each, describe the key ECG features and decide whether you would start, continue, modify, or stop exercise, and what you would do next.",
+        deliverable: "Ten flash cards (front: rhythm description; back: features and go/no-go decision with action)."
+      },
+      gen: [],
+      qs: [
+        ["During a cardiac rehab session, the monitor shows a new run of three consecutive wide, bizarre QRS complexes with no P waves. What is the MOST appropriate action?", ["Stop exercise, monitor the patient, and notify the medical team", "Continue at the same workload and recheck in five minutes", "Increase the workload to see whether the rhythm persists", "Have the patient perform a Valsalva maneuver to slow the heart"], "Three or more consecutive PVCs is ventricular tachycardia, which can deteriorate to ventricular fibrillation. Stop exercise and get medical help."],
+        ["Which ECG change during exercise MOST suggests myocardial ischemia?", ["ST-segment depression", "Normal PR interval of 0.16 seconds", "Upright T waves in most leads", "Narrow QRS under 0.12 seconds"], "ST depression with exercise indicates subendocardial ischemia. The other choices are normal findings."],
+        ["The QRS complex on an ECG represents which event?", ["Ventricular depolarization", "Atrial depolarization", "Ventricular repolarization", "AV node conduction delay"], "QRS = ventricular depolarization. The P wave is atrial depolarization and the T wave is ventricular repolarization."],
+        ["An ECG shows an irregularly irregular rhythm with no distinct P waves. What is this rhythm?", ["Atrial fibrillation", "First-degree heart block", "Normal sinus rhythm", "Sinus bradycardia"], "Chaotic atrial activity without organized P waves and an irregularly irregular ventricular response defines atrial fibrillation."],
+        ["A patient's monitor shows P waves and QRS complexes that occur completely independently of each other. What is the BEST action?", ["Do not begin exercise and notify the medical team immediately", "Proceed with exercise at a reduced intensity", "Proceed and monitor RPE instead of HR", "Begin exercise because the HR is regular"], "Complete (third-degree) heart block is a medical emergency with risk of hemodynamic collapse. Exercise is not appropriate."],
+        ["A patient takes a beta-blocker. Which method is MOST appropriate to monitor exercise intensity?", ["Rating of perceived exertion", "Age-predicted maximal HR formula", "Target HR at 85% of age-predicted max", "Resting HR plus 50 beats per minute"], "Beta-blockers blunt the HR response, making HR-based targets inaccurate. RPE remains a valid guide."],
+        ["A patient's morning potassium is 2.9 mEq/L. Why is this relevant to the PT before exercise?", ["Low potassium increases the risk of cardiac arrhythmias", "Low potassium indicates the patient is dehydrated", "Low potassium improves exercise tolerance", "Low potassium only affects kidney function"], "Normal K+ is 3.5–5.0 mEq/L. Hypokalemia increases arrhythmia risk and muscle weakness; consult the team before exercising."],
+        ["A patient on warfarin has an INR of 2.5. What does this MOST likely indicate?", ["The patient is within a typical therapeutic range", "The patient is at high risk for clot formation", "The patient has a dangerously low platelet count", "The patient should not be mobilized today"], "A typical therapeutic INR for most warfarin indications is 2–3. The patient can be mobilized with usual fall precautions."],
+        ["A patient with chest discomfort has an elevated troponin level. What does this MOST likely indicate?", ["Myocardial injury such as myocardial infarction", "Pulmonary infection such as pneumonia", "Renal failure with fluid retention", "Normal response to recent exercise"], "Troponin is released from damaged cardiac muscle and is a key marker of myocardial infarction. Exercise should be held pending medical clearance."],
+        ["An ECG shows a PR interval of 0.26 seconds, and every P wave is followed by a QRS complex. What is this rhythm?", ["First-degree AV block", "Third-degree AV block", "Atrial fibrillation", "Ventricular tachycardia"], "A PR interval over 0.20 s with 1:1 conduction is first-degree block, usually benign. Third-degree block has no relationship between P waves and QRS."]
+      ]
+    },
+    {
+      t: "Cardiac Rehab & Exercise Response",
+      sub: "Rehab phases, normal and abnormal HR/BP responses, termination criteria",
+      guide: [
+        "<b>Phases</b>: Phase I = inpatient (early mobilization, ADLs, education). Phase II = outpatient, ECG-monitored and supervised. Phase III/IV = community/maintenance with less supervision.",
+        "<b>Phase I intensity</b>: HR rise of about 20 bpm or less above resting after MI (30 bpm or less after cardiac surgery), RPE 13 or less.",
+        "<b>Normal response</b>: HR rises linearly with workload; SBP rises with workload; DBP stays about the same or changes slightly.",
+        "<b>Abnormal responses</b>: <b>SBP fails to rise or drops more than 10 mmHg with increasing workload</b> (exertional hypotension: possible ischemia/LV dysfunction); hypertensive response (SBP over 250 or DBP over 115 mmHg); HR that does not rise appropriately (chronotropic incompetence, if not on beta-blockers).",
+        "<b>Stop exercise for</b>: angina, new arrhythmia, ST changes, dizziness or near-syncope, confusion, ataxia, pallor or cyanosis, severe dyspnea, the patient asks to stop, or the abnormal BP responses above.",
+        "<b>Sternal precautions</b> (after median sternotomy): avoid heavy lifting and pushing/pulling with the arms, and avoid large bilateral shoulder motions that stress the sternum. Splint the chest with a pillow for coughing.",
+        "<b>Valsalva</b> spikes BP and changes venous return; teach exhalation during exertion in cardiac patients.",
+        "<b>Angina</b>: chest pain/pressure from ischemia, may refer to the jaw, left arm, or epigastric area. Stable angina is relieved by rest/nitroglycerin. Angina at rest or a new or changing pattern = unstable, refer urgently."
+      ],
+      assignment: {
+        title: "Session vitals log and decisions",
+        task: "Write a mock phase II cardiac rehab log for one patient across six stages of a treadmill session, with HR, BP, RPE, and symptoms at each stage. Build in one abnormal response (e.g., SBP drop with increasing workload). Annotate each stage with whether the response is normal and what you do.",
+        deliverable: "A six-row vitals table with annotations plus a one-paragraph incident note documenting the abnormal response and your action."
+      },
+      gen: [],
+      qs: [
+        ["During a phase II cardiac rehab session, a patient's SBP drops from 148 to 130 mmHg as the treadmill grade increases. What is the MOST appropriate action?", ["Stop exercise and notify the physician", "Increase the grade to recheck the response", "Continue and recheck BP at the next stage", "Have the patient drink water and continue"], "A drop of more than 10 mmHg in SBP with increasing workload suggests ischemia or LV dysfunction and is a criterion to stop."],
+        ["Which BP response to progressive aerobic exercise is NORMAL?", ["SBP rises with workload while DBP stays about the same", "SBP and DBP both drop with each increase in workload", "SBP stays the same while DBP rises sharply", "SBP falls while DBP rises by 20 mmHg"], "Normally SBP rises with cardiac output, while DBP changes little because peripheral resistance falls in working muscle."],
+        ["On day 2 after an uncomplicated MI, a patient walks in the hallway. Which HR response is within typical phase I guidelines?", ["Rise of about 15 bpm above resting", "Rise of about 45 bpm above resting", "HR at 85% of age-predicted maximum", "HR that does not change at all"], "Phase I post-MI guidelines keep the HR rise to about 20 bpm or less above resting with RPE 13 or less."],
+        ["During exercise, a patient reports chest pressure radiating to the jaw. What is the MOST appropriate immediate action?", ["Stop exercise, have the patient rest, and monitor vitals", "Reduce the treadmill speed and continue walking", "Encourage deep breathing and continue the session", "Increase the workload to determine the threshold"], "Exertional angina is an absolute indication to stop. Rest, monitor, and follow the facility protocol (e.g., nitroglycerin, emergency activation if unrelieved)."],
+        ["A patient with a history of stable angina reports that chest pain now occurs at rest and more often than before. What is the BEST action?", ["Refer for urgent medical evaluation of unstable angina", "Proceed with exercise at a lower intensity", "Proceed and monitor with RPE only", "Teach diaphragmatic breathing and continue"], "Angina at rest or a new or changing pattern indicates unstable angina, which requires urgent medical evaluation, not exercise."],
+        ["Five days after CABG via median sternotomy, which activity should the patient AVOID?", ["Pushing up from a chair with both arms to stand", "Walking in the hallway with a gait belt", "Hugging a pillow while coughing", "Performing ankle pumps in bed"], "Pushing up with both arms places high load on the healing sternum. Pillow splinting during coughing protects it."],
+        ["Which statement BEST describes phase II cardiac rehabilitation?", ["Supervised outpatient exercise with ECG monitoring", "Unsupervised community exercise for maintenance", "Bedside mobilization in the intensive care unit", "Home walking program without any monitoring"], "Phase II is outpatient, supervised, and ECG-monitored. Phase I is inpatient; phase III/IV is community maintenance."],
+        ["A patient performing resistance exercise holds his breath during each lift. Why is this a concern for a cardiac patient?", ["Valsalva causes large BP fluctuations", "Breath holding increases muscle hypertrophy", "Breath holding lowers HR to unsafe levels", "Valsalva increases venous return to the heart"], "Valsalva sharply raises intrathoracic pressure and BP, then lowers venous return; teach exhaling during exertion."],
+        ["Which finding is an indication to stop an exercise session?", ["Dizziness with pallor during exercise", "HR rising in proportion to workload", "RPE of 12 on the 6–20 Borg scale", "Mild sweating during moderate exercise"], "Dizziness and pallor suggest inadequate cardiac output or perfusion. The other findings are normal responses."],
+        ["A patient not taking any rate-controlling medication shows an HR that barely rises as workload increases. What is this called?", ["Chronotropic incompetence", "Exertional hypotension", "Hypertensive response", "Normal training adaptation"], "Failure of HR to rise appropriately with workload (without beta-blockade) is chronotropic incompetence and is an abnormal response."]
+      ]
+    },
+    {
+      t: "Heart Failure & Vascular Disease",
+      sub: "Left vs right HF, PAD and claudication, DVT signs, Wells criteria concept",
+      guide: [
+        "<b>Left-sided HF</b>: backs up into the lungs: dyspnea on exertion, orthopnea, paroxysmal nocturnal dyspnea, crackles, cough, fatigue, S3 heart sound.",
+        "<b>Right-sided HF</b>: backs up into systemic veins: bilateral peripheral (dependent) edema, jugular venous distension, weight gain, hepatomegaly. Left-sided HF is the most common cause of right-sided HF.",
+        "<b>HF monitoring</b>: daily weight (sudden gain = fluid retention, notify the team), dyspnea, edema, RPE; exercise is beneficial in stable HF but not in acute decompensation.",
+        "<b>Peripheral arterial disease</b>: intermittent claudication = reproducible cramping in the calf with walking, relieved within minutes by rest. ABI under 0.90 indicates PAD; over 1.30 suggests noncompressible (calcified) vessels, common in diabetes.",
+        "<b>Arterial signs</b>: diminished or absent pulses, cool, pale on elevation, dependent rubor, shiny hairless skin, thick nails. Severe disease = rest pain eased by hanging the leg dependent.",
+        "<b>PAD exercise</b>: supervised walking is first-line: walk until moderate claudication pain, rest until it resolves, repeat. Interval walking improves pain-free walking distance.",
+        "<b>DVT signs</b>: unilateral calf swelling, pain/tenderness, warmth, and redness. Homans sign is unreliable. Risk: immobility, recent surgery (especially hip/knee), cancer, prior DVT, oral contraceptives, pregnancy.",
+        "<b>Wells criteria (concept)</b>: a clinical decision rule that estimates the pretest probability of DVT from signs and risk factors. Moderate/high probability = hold activity and refer for medical evaluation (usually ultrasound). Shortness of breath, chest pain, and tachycardia in a patient with DVT signs = possible pulmonary embolism, emergency."
+      ],
+      assignment: {
+        title: "Leg pain differential",
+        task: "Write four one-paragraph cases with leg pain: arterial claudication, neurogenic claudication from stenosis, DVT, and venous insufficiency. For each, give the history, exam findings (pulses, skin, edema, positional effects), the decision tool you would use, and your action (treat, modify, or refer).",
+        deliverable: "Four case paragraphs plus a comparison table of positional effects, skin findings, and pulses."
+      },
+      gen: [],
+      qs: [
+        ["Three days after TKA, a patient's operated calf is swollen, warm, red, and tender compared with the other side. What is the MOST appropriate action?", ["Hold mobility and notify the physician for medical evaluation", "Massage the calf to reduce swelling before walking", "Proceed with gait training and elevate afterward", "Apply heat to the calf and continue exercise"], "These are DVT signs in a high-risk post-op patient. Hold activity and refer for evaluation; massage and vigorous exercise are inappropriate."],
+        ["A patient being treated for suspected DVT suddenly develops shortness of breath, pleuritic chest pain, and tachycardia. What is the BEST action?", ["Activate emergency medical services for possible pulmonary embolism", "Have the patient rest and recheck vitals in ten minutes", "Teach pursed-lip breathing and continue therapy", "Elevate the legs and apply compression stockings"], "Sudden dyspnea, chest pain, and tachycardia in a DVT patient suggest pulmonary embolism, a medical emergency."],
+        ["What is the purpose of the Wells criteria for DVT?", ["To estimate the pretest probability of DVT", "To confirm DVT without the need for imaging", "To determine the anticoagulation dose", "To grade the severity of venous insufficiency"], "Wells is a clinical decision rule that stratifies DVT likelihood to guide further testing; it does not confirm diagnosis."],
+        ["A 72-year-old with HF reports needing three pillows to sleep, wakes up at night short of breath, and has crackles at both bases. These findings are MOST consistent with which condition?", ["Left-sided heart failure", "Right-sided heart failure", "Peripheral arterial disease", "Chronic venous insufficiency"], "Orthopnea, paroxysmal nocturnal dyspnea, and crackles reflect pulmonary congestion from left-sided failure."],
+        ["Which finding is MOST characteristic of right-sided heart failure?", ["Bilateral dependent edema with jugular venous distension", "Crackles in the lungs with orthopnea", "Intermittent claudication in the calf", "Unilateral calf swelling with warmth"], "Right-sided failure backs up into systemic veins, causing dependent edema, JVD, and hepatomegaly."],
+        ["A patient with HF has gained a few pounds since yesterday and reports more ankle swelling and dyspnea. What is the MOST appropriate action?", ["Notify the medical team before exercising", "Increase exercise to burn the extra weight", "Proceed with the session as planned", "Elevate the legs and exercise at higher intensity"], "Rapid weight gain with worsening symptoms signals fluid retention and possible decompensation; exercise is not appropriate until the team evaluates."],
+        ["A 66-year-old smoker reports calf cramping after walking one block that resolves within a few minutes of standing still. Pedal pulses are diminished. What is the MOST likely diagnosis?", ["Intermittent claudication from PAD", "Neurogenic claudication from stenosis", "Deep vein thrombosis", "Chronic venous insufficiency"], "Exercise-induced calf pain relieved by simply standing still, with diminished pulses, is vascular claudication. Neurogenic claudication requires sitting or flexion for relief."],
+        ["Which exercise approach is BEST for a patient with intermittent claudication?", ["Interval walking to moderate claudication pain, then rest, repeated", "Walking only until the first sign of any discomfort", "Avoidance of walking in favor of upper body exercise", "Continuous walking through severe pain without rest"], "Walking to moderate claudication pain with rest intervals is the evidence-based first-line program and improves pain-free walking distance."],
+        ["A patient with diabetes has an ABI of 1.45. How should this be interpreted?", ["The vessels may be noncompressible, so the ABI is unreliable", "Circulation is normal and no further testing is needed", "Severe PAD is present and requires emergency referral", "The patient has mild PAD with claudication"], "An ABI over 1.30 suggests arterial calcification preventing compression, common in diabetes. Further vascular testing (e.g., toe pressures) is needed."],
+        ["Which sign is LEAST reliable for detecting a DVT?", ["Homans sign", "Unilateral calf swelling", "Pitting edema confined to the symptomatic leg", "Localized tenderness along the deep veins"], "Homans sign (calf pain with dorsiflexion) has poor sensitivity and specificity. Unilateral swelling, pitting edema, and tenderness are Wells criteria items."]
+      ]
+    },
+    {
+      t: "Pulmonary Disease & Airway Clearance",
+      sub: "Obstructive vs restrictive PFTs, breathing techniques, postural drainage, pursed-lip breathing",
+      guide: [
+        "<b>Obstructive disease</b> (COPD, asthma, cystic fibrosis, bronchiectasis): trouble getting air <i>out</i>. <b>FEV1/FVC reduced</b>; RV and TLC increased (air trapping, hyperinflation). Barrel chest, flattened diaphragm, prolonged expiration.",
+        "<b>Restrictive disease</b> (pulmonary fibrosis, chest wall deformity, neuromuscular weakness, obesity): trouble getting air <i>in</i>. <b>Lung volumes reduced</b> (TLC, FVC); FEV1/FVC normal or increased.",
+        "<b>Pursed-lip breathing</b>: inhale through the nose, exhale slowly through pursed lips (exhale longer than inhale). Creates back-pressure that keeps airways open, slows RR, increases tidal volume, and reduces dyspnea in COPD.",
+        "<b>Other techniques</b>: diaphragmatic breathing; paced breathing during activity (exhale on exertion); positions of relief = forward-leaning with arms supported (improves diaphragm length-tension and accessory muscle use).",
+        "<b>Airway clearance</b>: huffing / forced expiration technique (open-glottis, less airway collapse and fatigue than coughing); active cycle of breathing (breathing control, thoracic expansion, forced expiration); incentive spirometry after surgery; positive expiratory pressure devices; postural drainage with percussion and vibration.",
+        "<b>Postural drainage</b>: position the involved segment so gravity drains it toward the trachea. Upper lobe apical segments = sitting upright; lower lobe basal segments = head-down positions; right middle lobe = left side-lying turned a quarter back, head down; posterior segments = prone.",
+        "<b>Head-down contraindications</b>: increased intracranial pressure, uncontrolled hypertension, pulmonary edema/HF, GERD or aspiration risk, recent eye or brain surgery, hemoptysis. <b>Percussion precautions</b>: rib fracture, osteoporosis, coagulopathy/low platelets, over a fresh incision.",
+        "<b>COPD oxygen</b>: chronic CO2 retainers rely partly on hypoxic drive; titrate O2 to a prescribed target (often 88–92%) rather than maximizing it."
+      ],
+      assignment: {
+        title: "Airway clearance plan for cystic fibrosis",
+        task: "Write a home airway clearance plan for a 17-year-old with cystic fibrosis who has thick secretions in both lower lobes. Choose two techniques (e.g., ACBT and postural drainage), describe positions and steps, list the contraindications you screened, and explain how you would make it fit into a teen's daily schedule.",
+        deliverable: "One-page patient handout with positions, step-by-step instructions, and a red-flag list for when to call the care team."
+      },
+      gen: [],
+      qs: [
+        ["A patient's PFTs show a reduced FEV1/FVC ratio with an increased residual volume and total lung capacity. Which pattern is this?", ["Obstructive", "Restrictive", "Normal", "Mixed neuromuscular"], "Airflow limitation (low FEV1/FVC) with air trapping (high RV and TLC) is obstructive, as in COPD."],
+        ["A patient with idiopathic pulmonary fibrosis is MOST likely to show which PFT pattern?", ["Reduced lung volumes with a normal or high FEV1/FVC", "Reduced FEV1/FVC with increased residual volume", "Increased total lung capacity with prolonged expiration", "Normal lung volumes with low FEV1/FVC"], "Fibrosis stiffens the lungs and reduces volumes (restrictive). FEV1/FVC is preserved or increased because airflow is not obstructed."],
+        ["A patient with COPD becomes short of breath while walking. Which technique is MOST appropriate to teach first?", ["Pursed-lip breathing with prolonged exhalation", "Rapid shallow breathing to increase rate", "Breath holding during each step", "Forceful maximal inspiration through the mouth"], "Pursed-lip breathing creates back-pressure that prevents early airway collapse, slows RR, and reduces dyspnea."],
+        ["What is the primary physiological effect of pursed-lip breathing in COPD?", ["It prevents early airway collapse during exhalation", "It increases the respiratory rate", "It strengthens the inspiratory muscles", "It reduces tidal volume to save energy"], "Back-pressure from pursed lips stents small airways open, reducing air trapping and allowing a slower, deeper breathing pattern."],
+        ["Which position is MOST appropriate for postural drainage of the apical segments of the upper lobes?", ["Sitting upright", "Prone with the head down", "Supine with the head down", "Side-lying with the head down"], "Apical segments drain with gravity when the patient sits upright, possibly leaning slightly back or forward depending on the segment."],
+        ["A patient with a recent hemorrhagic stroke and increased intracranial pressure has lower lobe secretions. Which airway clearance approach should be AVOIDED?", ["Head-down postural drainage", "Assisted cough in a seated position", "Huffing in a supported sitting position", "Positioning for comfort in a flat or head-up position"], "Head-down (Trendelenburg) positions increase intracranial pressure and are contraindicated here."],
+        ["A patient with osteoporosis and a recent rib fracture has retained secretions. Which technique should be AVOIDED over the fracture site?", ["Percussion", "Active cycle of breathing", "Huffing", "Incentive spirometry"], "Percussion over a fracture or osteoporotic ribs risks further injury. Breathing-based techniques are safe alternatives."],
+        ["Why is huffing often preferred over coughing for patients with COPD?", ["It keeps the glottis open and reduces airway collapse", "It increases intrathoracic pressure more than coughing", "It requires more effort, which builds endurance", "It is mainly used to increase inspiratory volume"], "The open-glottis huff produces lower pressures than a cough, moving secretions with less airway collapse and less fatigue."],
+        ["A patient with severe COPD is very short of breath after walking. Which resting position is MOST appropriate?", ["Sitting leaning forward with the forearms supported on the thighs or a table", "Supine flat with the arms at the sides", "Standing with the arms raised overhead", "Prone with the head turned to the side"], "Forward-leaning with arm support improves diaphragm length-tension and lets accessory muscles assist breathing."],
+        ["A patient with COPD and chronic CO2 retention is on supplemental oxygen at a prescribed target of 88–92%. During exercise, his SpO2 is 91%. What is the BEST action?", ["Continue, because he is within his prescribed target range", "Increase oxygen until SpO2 reaches 100%", "Stop exercise because SpO2 is below 95%", "Remove the oxygen because he is stable"], "In CO2 retainers, excessive O2 can worsen hypercapnia. Staying within the prescribed target is appropriate."]
+      ]
+    },
+    {
+      t: "Acute Care & ICU",
+      sub: "Lines and tubes, SpO2 targets, orthostatic hypotension, early mobility",
+      guide: [
+        "<b>Before every session</b>: chart review (vitals, labs, orders, activity restrictions), check lines and tubes, and get baseline vitals. Early mobility in the ICU is safe when screened and reduces deconditioning and length of stay.",
+        "<b>SpO2</b>: most patients should stay at 90% or above during activity; chronic CO2 retainers have prescribed lower targets (often 88–92%). Rest and adjust O2 (per orders) if SpO2 falls below target.",
+        "<b>Orthostatic hypotension</b>: drop in SBP of 20 mmHg or more or DBP of 10 mmHg or more within 3 minutes of standing, with or without dizziness. Progress slowly (supine → sitting → dangling → standing), use ankle pumps, compression stockings, an abdominal binder; return to supine and elevate the legs if symptomatic.",
+        "<b>IV lines</b>: avoid taking BP on the IV arm; keep the bag above the insertion site; watch for kinks and infiltration. <b>Arterial line</b>: continuous BP; avoid kinking and dislodging; patient can mobilize with care.",
+        "<b>Foley catheter</b>: keep the bag below bladder level (prevents backflow) and off the floor; do not pull the tubing. <b>Chest tube</b>: keep the drainage system below chest level and upright; avoid kinks; do not clamp unless instructed.",
+        "<b>Nasogastric tube / tube feeding</b>: keep the head of bed elevated about 30° or more to reduce aspiration risk; the feeding may need to be paused before lying flat per orders.",
+        "<b>Mechanical ventilation</b>: patients can mobilize, even walk, on a ventilator with team coordination; watch RR, SpO2, HR, and signs of distress, and protect the airway tubing.",
+        "<b>Common stop signs</b>: new arrhythmia, chest pain, SpO2 dropping below target and not recovering, symptomatic hypotension, severe dyspnea, new confusion, diaphoresis."
+      ],
+      assignment: {
+        title: "First ICU mobility session",
+        task: "Write a pre-session checklist and a session note for a 64-year-old, day 3 in the ICU with pneumonia on 4 L O2, an arterial line, a peripheral IV, and a Foley catheter. Describe how you manage each line, the progression from supine to standing, the vitals you monitor, and the thresholds that make you stop.",
+        deliverable: "A pre-mobility checklist plus a one-page SOAP note documenting vitals at each position."
+      },
+      gen: [],
+      qs: [
+        ["A patient's BP is 128/78 supine and 104/66 after two minutes of standing, and she reports lightheadedness. What is the MOST appropriate action?", ["Return her to sitting or supine and progress more gradually", "Have her march in place to raise BP and continue walking", "Continue gait training because the change is expected", "Have her stand longer to accommodate to the position"], "A 24 mmHg SBP drop with symptoms is orthostatic hypotension. Return to a safe position and progress gradually with countermeasures."],
+        ["What is the commonly used definition of orthostatic hypotension?", ["Drop of 20 mmHg or more SBP or 10 mmHg or more DBP within 3 minutes of standing", "Drop of 5 mmHg SBP within 10 minutes of sitting", "Increase of 20 mmHg SBP within 3 minutes of standing", "Drop of 10 mmHg SBP after 30 minutes of standing"], "The consensus definition is a sustained SBP drop of 20 mmHg or more, or DBP drop of 10 mmHg or more, within 3 minutes of standing."],
+        ["A patient with a Foley catheter is walking in the hallway. Where should the drainage bag be held?", ["Below the level of the bladder", "Above the level of the bladder", "On the patient's lap", "At chest height on the IV pole"], "Keeping the bag below the bladder prevents backflow of urine and reduces infection risk."],
+        ["Before walking a patient with a chest tube, which action is MOST appropriate?", ["Keep the drainage unit below chest level and upright without kinks", "Clamp the tube so it does not drain during walking", "Lift the drainage unit above the chest to aid flow", "Disconnect the tube and reconnect after the walk"], "The chest drainage system must stay below the chest and upright. Clamping or disconnecting without orders can cause a tension pneumothorax."],
+        ["A patient receiving continuous nasogastric tube feeding needs bed mobility training. What is the MOST appropriate precaution?", ["Keep the head of the bed elevated to reduce aspiration risk", "Position the patient flat supine for all bed mobility", "Pull the tube back slightly to give more slack", "Lower the head of bed below horizontal for drainage"], "Head-of-bed elevation (about 30° or more) reduces aspiration of tube feeding. Never manipulate tube placement."],
+        ["A patient's IV is in the right forearm. How should the PT measure BP?", ["Use the left arm", "Use the right arm above the IV", "Use the right arm below the IV", "Use either arm, as the IV does not matter"], "BP cuff inflation on the IV arm can occlude the line and damage the vein. Use the opposite arm."],
+        ["A patient with pneumonia on 2 L of oxygen drops from 95% to 86% SpO2 while walking, without a history of CO2 retention. What is the BEST action?", ["Stop, rest, and adjust oxygen per orders until SpO2 recovers above 90%", "Continue walking because SpO2 above 85% is acceptable", "Remove the oxygen to test room-air tolerance", "Increase walking speed to finish the distance quickly"], "For most patients, SpO2 should stay at 90% or above. Rest and titrate oxygen per orders before continuing."],
+        ["A patient on mechanical ventilation in the ICU is hemodynamically stable and alert. Which statement BEST reflects current evidence on early mobility?", ["Mobilization, including standing and walking, can be done safely with team coordination", "Patients on ventilators must remain on bed rest until extubated", "Only passive ROM is allowed while the patient is intubated", "Mobility should wait until the patient is transferred out of the ICU"], "Early mobility in screened, stable ventilated patients is safe and reduces ICU-acquired weakness and length of stay."],
+        ["A patient with an arterial line in the radial artery is cleared to sit at the edge of bed. What is the MOST important consideration for the line?", ["Prevent kinking or dislodging the line during movement", "Clamp the line before sitting the patient up", "Take a cuff BP on the same arm to confirm readings", "Lower the transducer to the floor for accuracy"], "Arterial lines can bleed rapidly if dislodged. Manage the tubing so it is not pulled or kinked during the transfer."],
+        ["During ICU mobility, a patient suddenly becomes confused, diaphoretic, and develops a new irregular rhythm on the monitor. What is the BEST action?", ["Stop the activity, return the patient to a safe position, and notify the team", "Continue walking to see if the rhythm settles", "Have the patient perform pursed-lip breathing while standing", "Increase oxygen and complete the planned distance"], "New confusion, diaphoresis, and arrhythmia are signs of instability. Stop, secure the patient, and alert the medical team."]
+      ]
+    }
+  ]
+});
