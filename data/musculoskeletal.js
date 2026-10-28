@@ -84,7 +84,7 @@
       sub: "FAI, OA, ACL, meniscus, PFPS, post-op ACL and TKA/THA rehab",
       guide: [
         "<b>FAI</b>: cam = aspherical femoral head-neck junction (often young athletic males); pincer = acetabular over-coverage. Anterior groin pain (C-sign), pain with FADIR, limited hip flexion and IR.",
-        "<b>Hip OA</b>: groin/anterior thigh pain, morning stiffness under an hour, IR is the earliest and most painful restriction. Exercise, education, and weight management are first-line; a cane goes in the hand <i>opposite</i> the painful hip.",
+        "<b>Hip OA</b>: groin/anterior thigh pain, morning stiffness under an hour, painful, limited IR is an early hallmark finding. Exercise, education, and weight management are first-line; a cane goes in the hand <i>opposite</i> the painful hip.",
         "<b>Knee OA</b> (ACR clinical criteria): age over 50, morning stiffness under 30 minutes, crepitus, bony enlargement/tenderness, no palpable warmth. Knee capsular pattern = flexion more limited than extension. Quad and hip strengthening are first-line.",
         "<b>ACL vs meniscus</b>: ACL = noncontact deceleration or cutting with valgus, a pop, rapid effusion within hours (hemarthrosis); Lachman is the most sensitive test, pivot shift the most specific. Meniscus = twisting on a flexed weight-bearing knee, effusion developing over a day, joint-line tenderness, catching/locking; McMurray, Thessaly.",
         "<b>PFPS</b>: diffuse anterior knee pain with stairs, squatting, and prolonged sitting. Best-supported intervention = combined hip (abductor/ER) and knee (quadriceps) strengthening.",
