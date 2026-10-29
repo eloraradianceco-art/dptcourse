@@ -76,7 +76,7 @@ function curveSVG(frac){
 function header(active){
   const rk=rankOf(S.xp);const pct=rk.next?Math.min(100,(S.xp-rk.floor)/(rk.next[0]-rk.floor)*100):100;
   const nav=[["","Courses"],["plan","Semester plan"],["admissions","Admissions"],["transcript","Transcript"],["npte","NPTE mock"]];
-  return `<div class="top"><div><div class="eyebrow">Doctor of Physical Therapy · study program</div><h1><a href="#" class="plain">Reject the Null</a></h1></div>
+  return `<div class="top"><div><div class="eyebrow">Doctor of Physical Therapy · study program</div><h1><a href="#" class="plain brand"><img src="icons/icon.svg" alt="" width="36" height="36">Reject the Null</a></h1></div>
    <div class="rank"><span class="eyebrow">Rank</span><b>${rk.name}</b><span class="mono muted small">${S.xp.toLocaleString()} XP${rk.next?" · "+(rk.next[0]-S.xp).toLocaleString()+" to "+rk.next[1]:""}</span><div class="xpbar"><i style="width:${pct}%"></i></div></div></div>
    <nav class="nav">${nav.map(([h,l])=>`<a href="#${h}" class="${active===h?"on":""}">${l}</a>`).join("")}</nav>`;
 }

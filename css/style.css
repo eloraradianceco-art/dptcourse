@@ -172,3 +172,5 @@ td a{color:inherit}
 a.btn{text-decoration:none;display:inline-flex;align-items:center;color:inherit}
 a.btn.primary{color:var(--accent-ink)}
 @media (max-width:480px){.tabs button{padding:8px 9px;font-size:.88rem}}
+.brand{display:inline-flex;align-items:center;gap:10px}
+.brand img{width:1.05em;height:1.05em;border-radius:22%;flex:none}
